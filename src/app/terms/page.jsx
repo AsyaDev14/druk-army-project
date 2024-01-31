@@ -2,7 +2,7 @@ import React from 'react'
 
 const Terms = () => {
   return (
-    <div>Terms</div>
+    <div>Terms page</div>
   )
 }
 
