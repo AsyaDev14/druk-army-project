@@ -1,10 +1,12 @@
 {
+  "homepage": "https://AsyaDev14.github.io/druk-army-project",
   "name": "druk-army-project",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "deploy": "gh-pages -d build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -17,6 +19,7 @@
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.1.0"
+    "eslint-config-next": "14.1.0",
+    "gh-pages": "^6.1.1"
   }
 }
