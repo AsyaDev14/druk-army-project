@@ -1,13 +1,19 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import RootLayout from "./layout";
+import Section from "../components/Section/Section";
+import Slider from "../components/Slider/Slider";
+import Container from "../components/container/Container";
 
 export default function Home() {
+
   return (
- 
-    <main className={styles.main}>
+    <>
+    <main>
+      <Section>
+        <Container>
+          <Slider/>
+        </Container>   
+      </Section>
       Main
-      </main>
-      
+    </main>
+    </>    
   );
 }
