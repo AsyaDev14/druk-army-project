@@ -16,7 +16,6 @@
 }
 
 .firstString {
-  font-family: Montserrat-Medium;
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
@@ -49,9 +48,7 @@
 
 .description {
   width: 90%;
-  font-family: Montserrat-Medium;
   font-size: 14px;
-  font-weight: 500;
 
   @media only screen and (min-width: 768px) {
     font-size: 20px;
