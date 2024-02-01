@@ -1,22 +1,23 @@
 .container {
+  background-color: var(--accent-color);
+  color: var(--main-bg);
   border-left-width: 2px;
   border-left-style: solid;
   /* border-left-color: ; */
   padding: 0 6px;
 
   @media only screen and (min-width: 768px) {
-    max-width: 550px;
+    max-width: 625px;
     padding: 0 18px;
     border-left-width: 4px;
   }
 
   @media only screen and (min-width: 1200px) {
-    max-width: 625px;
+    max-width: 707px;
   }
 }
 
 .firstString {
-  font-family: Montserrat-Medium;
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
