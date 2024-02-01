@@ -18,7 +18,6 @@
 }
 
 .firstString {
-  margin-bottom: 5px;
   font-family: Montserrat-Medium;
   font-size: 15px;
   font-weight: 700;
@@ -34,6 +33,7 @@
 }
 
 .secondString {
+  margin-bottom: 5px;
   font-family: Benzin-ExtraBold;
   font-size: 24px;
   text-transform: uppercase;
