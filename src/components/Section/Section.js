@@ -1,12 +1,13 @@
 import React from 'react';
-import styles from '../Section/Section.module.css';
+import styles from './Section.module.css';
 
-const Section = ({children}) => {
+const Section = ({ children }) => {
   return (
-    <section className={styles.section}>Section
-        {children}
+    <section className={styles.section}>
+      Section
+      {children}
     </section>
-  )
-}
+  );
+};
 
-export default Section
+export default Section;

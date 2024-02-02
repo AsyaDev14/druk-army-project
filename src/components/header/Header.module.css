@@ -1,0 +1,53 @@
+/* Header.module.css */
+.header {
+    background-color: #FFFFFF; /* Adjust the color to match your design */
+    padding: 10px 0;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+  }
+  
+  .logo {
+    cursor: pointer;
+  }
+  
+  .menuList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menuItem {
+    padding: 0 20px;
+  }
+  
+  .menuLink {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .menuLink:hover {
+    color: #aaaaaa; /* Adjust the hover color to match your design */
+  }
+  
+  .loginButton a {
+    background-color: #556B2F; /* Adjust the button color to match your design */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .loginButton a:hover {
+    background-color: #6B8E23; /* Adjust the hover color to match your design */
+  }
+  
