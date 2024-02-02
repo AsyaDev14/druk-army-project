@@ -1,23 +1,28 @@
-"use client"
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+"use client";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import { nanoid } from 'nanoid';
+import { nanoid } from "nanoid";
+import styles from "./Slider.module.css";
+import "swiper/css";
+import Image from "next/image";
+import { useMediaQuery } from 'react-responsive';
 
-import 'swiper/css';
-import Image from 'next/image';
 
 const Slider = () => {
-  const slides = [
-    { img: "/img/home/slider/slide-1.jpg", id: nanoid() },
-    { img: "/img/home/slider/slide-2.jpg", id: nanoid() },
-    { img: "/img/home/slider/slide-3.jpg", id: nanoid() },
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isTablet = useMediaQuery({ minWidth: 768 });
+  const isDesktop = useMediaQuery({ minWidth: 1200 });
+
+  const deskSlides = [
+    { img: "/img/home/slider/slide-1-desc.jpg", id: nanoid() },
+    { img: "/img/home/slider/slide-2-desc.jpg", id: nanoid() },
+    { img: "/img/home/slider/slide-3-desc.jpg", id: nanoid() },
   ];
 
-
   return (
-    <div className="container">
-    <Swiper
+    <div className={styles.sliderContainer}>
+      <Swiper
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
@@ -29,16 +34,21 @@ const Slider = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className={styles.mySwiper}
       >
         {slides.map(({ img, id }) => (
           <SwiperSlide key={id}>
-            <Image alt="photo" src={img} width={1000} height={500} />
+            <Image
+              alt="photo"
+              src={img}
+              width={520}
+              height={330}
+            />
           </SwiperSlide>
         ))}
       </Swiper>
     </div>
-  )
-}
+  );
+};
 
-export default Slider
+export default Slider;

@@ -145,11 +145,10 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--accent-color);
-  border-radius: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: lightgray;
+  background-color: gray;
 }
 
 @media screen and (min-width: 767px) and (max-width: 1279px) {
