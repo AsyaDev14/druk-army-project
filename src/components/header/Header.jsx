@@ -1,55 +1,26 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import styles from './Header.module.css'; 
+"use client";
 
+import BurgerButton from "./BurgerButton/BurgerButton";
+import css from "./Header.module.css";
+import HeaderMenu from "./HeaderMenu/HeaderMenu";
+import HeaderSettings from "./HeaderSettings/HeaderSettings";
+import LoginBtn from "./LoginBtn/LoginBtn";
+import Logo from "./Logo/Logo";
 
 const Header = () => {
   return (
-    <header className={styles.header}>
-      <nav className={styles.nav}>
-        <div className={styles.logo}>
-          <Link href="/">
-           
-              <Image src="/img/logo.png" alt="Logo" width={120} height={60} />
-            
-          </Link>
+    <header>
+      <div className={css.headerContainer}>
+        <Logo />
+        <HeaderMenu />
+        <div className={css.buttonsBox}>
+          <LoginBtn />
+          <HeaderSettings/>
         </div>
-        <ul className={styles.menuList}>
-          <li className={styles.menuItem}>
-            <Link href="/">
-             Головна
-            </Link>
-          </li>
-          <li className={styles.menuItem}>
-            <Link href="/about">
-             Про нас
-            </Link>
-          </li>
-          <li className={styles.menuItem}>
-            <Link href="/how-it-works">
-             Як це працює
-            </Link>
-          </li>
-          <li className={styles.menuItem}>
-            <Link href="/reservations">
-             Забронювати
-            </Link>
-          </li>
-          <li className={styles.menuItem}>
-            <Link href="/news">
-             Новини
-            </Link>
-          </li>
-        </ul>
-        <div className={styles.loginButton}>
-          <Link href="/login">
-         Вхід
-          </Link>
-        </div>
-      </nav>
+        <BurgerButton />
+      </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
