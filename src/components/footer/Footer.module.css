@@ -1,61 +1,20 @@
 /* Footer.module.css */
 .footer {
-    background-color: #333; /* Dark background, adjust color to match your design */
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: var(--bg-details);
+  color: var(--main-bg);
+  padding: 18px 38px;
+}
+
+.footerTitle {
+  font-family: "Benzin-Bold", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .footer {
+    padding: 18px 14px 40px 14px;
   }
-  
-  .leftSection {
-    display: flex;
-flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #444; /* Lighter line for separation */
-  }
-  
-  .links,
-  .socialLinks {
-    display: flex;
-    gap: 20px; /* Adjust space between links and icons */
-  }
-  
-  .link {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .link:hover {
-    color: #aaa; /* Light grey on hover */
-  }
-  
-  .bottomSection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-  }
-  
-  .contactInfo {
-    font-size: 0.9rem;
-  }
-  
-  .recommendations {
-    text-align: center;
-  }
-  
-  .logos {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Adjust space between logos */
-  }
-  
-  .copyRight {
-    text-align: center;
-    font-size: 0.8rem;
-    padding-top: 20px;
-  }
-  
+}

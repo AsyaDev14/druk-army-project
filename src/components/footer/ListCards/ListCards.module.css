@@ -1,0 +1,45 @@
+.cardsList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 17px 30px;
+  max-width: 244px;
+  margin: 17px auto 0 auto;
+}
+
+.cardsList li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description {
+  font-size: 11px;
+  text-align: center;
+  color: #6b6b6b;
+  margin-top: 16px;
+}
+
+.cardsList li:last-of-type .description {
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 480px) {
+  .cardsList {
+    column-gap: 18px;
+    max-width: 414px;
+  }
+  .firstCard {
+    order: 2;
+  }
+  .secondCard {
+    order: 1;
+  }
+  .thirdCard {
+    order: 3;
+  }
+  .cardsList li:last-of-type .description {
+    margin-top: 4px;
+  }
+}
