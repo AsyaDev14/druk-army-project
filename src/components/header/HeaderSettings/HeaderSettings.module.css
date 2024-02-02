@@ -1,0 +1,15 @@
+.settings {
+    position: relative;
+}
+
+.buttonSettings {
+    background-color: inherit;
+    border: none;
+    outline: none;
+}
+
+.iconSettings {
+    width: 30px;
+    height: 33px;
+    fill: #5E6A8A;
+}

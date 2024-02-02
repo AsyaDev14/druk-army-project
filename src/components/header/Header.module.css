@@ -1,53 +1,42 @@
-/* Header.module.css */
-.header {
-    background-color: #FFFFFF; /* Adjust the color to match your design */
-    padding: 10px 0;
-  }
-  
-  .nav {
+.headerContainer {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 10%;
+    justify-content: space-between;
+    padding-left: 48px;
+    padding-right: 29px;
+    background: var(--header-bg);
+    box-shadow: 0px 4px 139.3px 0px rgba(0, 0, 0, 0.11);
   }
-  
-  .logo {
-    cursor: pointer;
+
+  .buttonsBox {
+    display: none;
   }
-  
-  .menuList {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+
+  @media screen and (min-width: 480px) {
+    .headerContainer {
+      padding-left: 64px;
+      padding-right: 38px;
+    }
   }
-  
-  .menuItem {
-    padding: 0 20px;
+
+  @media screen and (min-width: 768px) {
+    .headerContainer {
+      padding-left: 55px;
+      padding-right: 35px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .headerContainer {
+      padding-left: 70px;
+      padding-right: 45px;
+    }
   }
-  
-  .menuLink {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s ease;
+
+  @media screen and (min-width: 1200px) {
+    .buttonsBox {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
   }
-  
-  .menuLink:hover {
-    color: #aaaaaa; /* Adjust the hover color to match your design */
-  }
-  
-  .loginButton a {
-    background-color: #556B2F; /* Adjust the button color to match your design */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .loginButton a:hover {
-    background-color: #6B8E23; /* Adjust the hover color to match your design */
-  }
-  
