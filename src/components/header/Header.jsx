@@ -22,10 +22,12 @@ const Header = () => {
 
   // Якщо мобільне меню відкрите то блокуємо скрол
 const operateScroll = () => {
-  if(isShowMobile) {
-    window.document.body.style.overflow = 'hidden';
-  } else {
-    window.document.body.style.overflow = 'auto';
+  if (typeof window !== "undefined") {
+    if(isShowMobile) {
+      window.document.body.style.overflow = 'hidden';
+    } else {
+      window.document.body.style.overflow = 'auto';
+    }
   }
 }
 operateScroll();
