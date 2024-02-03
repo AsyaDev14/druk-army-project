@@ -1,0 +1,24 @@
+.backdrop {
+    width: 100dvw;
+    height: 100%;
+}
+
+.menuContainer {
+    padding: 150px 0;
+}
+
+.navMenuList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.buttonsBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 6px;
+    margin-top: 38px;
+}
