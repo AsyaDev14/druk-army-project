@@ -1,24 +1,77 @@
-.burgerBtn {
-    background-color: inherit;
-    border: none;
-    outline: none;
-  }
-
-  .icon {
-    width: 37px;
-    height: 18px;
-    fill: var(--paragraph-text);
+.burgerBtn,
+.burgerBtnOpen {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  width: 56px;
+  height: 25px;
 }
 
-@media screen and (min-width: 768px) {
-   .icon {
-    width: 43px;
-    height: 25px;
-   }
-    }
+.burger {
+  width: 37px;
+  height: 2px;
+  background-color: var(--paragraph-text);
+  transition: all 400ms ease;
+}
 
-  @media screen and (min-width: 1200px) {
-    .burgerBtn {
-      display: none;
-    }
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 37px;
+  height: 2px;
+  background-color: var(--paragraph-text);
+  transition: all 400ms ease;
+}
+
+.burger::before {
+  transform: translateY(-5px);
+}
+
+.burger::after {
+  transform: translateY(5px);
+}
+
+.burgerBtnOpen .burger {
+   transform: translateX(-50px);
+   background-color: transparent;
+}
+
+.burgerBtnOpen .burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.burgerBtnOpen .burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+
+@media screen and (min-width: 768px) {
+  .burger, .burger::before,
+  .burger::after {
+     width: 43px;
+     height: 3px;
   }
+  .burger::before {
+    transform: translateY(-8px);
+  }
+  
+  .burger::after {
+    transform: translateY(8px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .burgerBtnOpen,
+  .burgerBtn {
+    display: none;
+  }
+}

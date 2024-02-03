@@ -1,10 +1,9 @@
-import Icon from '@/components/Icon/Icon'
 import css from './BurgerButton.module.css'
 
-const BurgerButton = () => {
+const BurgerButton = ({onClick, isOpen}) => {
   return (
-    <button type='button' className={css.burgerBtn}>
-        <Icon className={css.icon} name={'icon-burger'}/>
+    <button type='button' className={isOpen ? css.burgerBtnOpen : css.burgerBtn} onClick={onClick}>
+        <div className={css.burger}></div>
     </button>
   )
 }
