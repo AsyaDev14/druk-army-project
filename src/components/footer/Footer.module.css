@@ -1,61 +1,60 @@
 /* Footer.module.css */
 .footer {
-    background-color: #333; /* Dark background, adjust color to match your design */
-    color: #fff;
-    padding: 20px;
+  background-color: var(--bg-details);
+  color: white;
+  padding: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footerTitle {
+  font-family: "Benzin-Bold", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .footer {
+    padding: 18px 14px 40px 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .leftSection {
-    display: flex;
-flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #444; /* Lighter line for separation */
-  }
-  
-  .links,
-  .socialLinks {
-    display: flex;
-    gap: 20px; /* Adjust space between links and icons */
-  }
-  
-  .link {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .link:hover {
-    color: #aaa; /* Light grey on hover */
-  }
-  
-  .bottomSection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-  }
-  
-  .contactInfo {
-    font-size: 0.9rem;
-  }
-  
-  .recommendations {
-    text-align: center;
-  }
-  
-  .logos {
-    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
     justify-content: center;
-    gap: 20px; /* Adjust space between logos */
+    column-gap: 33px;
+    padding: 29px 20px 26px 20px;
   }
-  
-  .copyRight {
-    text-align: center;
-    font-size: 0.8rem;
-    padding-top: 20px;
+}
+
+@media screen and (min-width: 960px) {
+  .footer {
+    padding: 67px 20px 46px 20px;
+    column-gap: 70px;
   }
-  
+  .footer h2 {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 46px 20px;
+    align-items: baseline;
+    column-gap: 56px;
+  }
+  .footer h2 {
+    font-weight: 400;
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    column-gap: 120px;
+  }
+}

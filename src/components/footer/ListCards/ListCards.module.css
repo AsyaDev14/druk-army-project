@@ -1,0 +1,87 @@
+.cardsList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 17px 30px;
+  max-width: 244px;
+  margin: 17px auto 0 auto;
+}
+
+.cardsList li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description {
+  font-size: 11px;
+  text-align: center;
+  color: #6b6b6b;
+  margin-top: 16px;
+}
+
+.cardsList li:last-of-type .description {
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 480px) {
+  .cardsList {
+    column-gap: 18px;
+    max-width: 414px;
+  }
+  .firstCard {
+    order: 2;
+  }
+  .secondCard {
+    order: 1;
+  }
+  .thirdCard {
+    order: 3;
+  }
+  .cardsList li:last-of-type .description {
+    margin-top: 4px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .firstCard {
+    order: 3;
+  }
+  .thirdCard {
+    order: 2;
+  }
+  .cardsList {
+    max-width: 242px;
+    column-gap: 22px;
+    row-gap: 10px;
+  }
+  .cardsList li:last-of-type .description {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .cardsList {
+    max-width: 412px;
+    margin-top: 21px;
+  }
+  .firstCard {
+    order: 2;
+  }
+  .thirdCard {
+    order: 3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cardsList {
+    max-width: 571px;
+    margin-top: 14px;
+    column-gap: 38px;
+  }
+  .description {
+    font-size: 16px;
+  }
+}
