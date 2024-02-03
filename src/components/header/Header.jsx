@@ -9,15 +9,30 @@ import HeaderSettings from "./HeaderSettings/HeaderSettings";
 import LoginBtn from "./LoginBtn/LoginBtn";
 import Logo from "./Logo/Logo";
 import MobileMenu from "./MobileMenu/MobileMenu";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [isShowMobile, setIsShowMobile] = useState(false);
   const isMediumTabletEnd = useMediaQuery({maxWidth: 1199.98});
-
+  const pathname = usePathname();
 
   const handleClickShowMobile = () => {
     setIsShowMobile(prev => !prev);
-  } 
+  }
+
+  // Якщо мобільне меню відкрите то блокуємо скрол
+const operateScroll = () => {
+  if(isShowMobile) {
+    window.document.body.style.overflow = 'hidden';
+  } else {
+    window.document.body.style.overflow = 'auto';
+  }
+}
+operateScroll();
+// Якщо переходимо кудись по меню і змінюється наш URL, то дозволяємо скрол і закриваємо меню
+  useEffect(() => {
+    setIsShowMobile(false);
+  }, [pathname])
 
   return (
     <header>

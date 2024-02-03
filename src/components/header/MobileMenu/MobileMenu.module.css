@@ -1,10 +1,14 @@
 .backdrop {
+    position: absolute;
+    z-index: 10;
     width: 100dvw;
     max-height: 100dvh;
 }
 
 .menuContainer {
-    padding: 150px 0;
+    padding: 20% 0 50% 0;
+    background-color: var(--main-bg);
+    margin-bottom: auto;
 }
 
 .navMenuList {
@@ -19,6 +23,46 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 6px;
+    column-gap: 21px;
     margin-top: 38px;
+}
+
+@media screen and (min-width: 480px) {
+    .navMenuList {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 335px;
+        row-gap: 28px;
+        column-gap: 65px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .backdrop {
+        background-color: rgba(0, 0, 0, 0.068);
+        backdrop-filter: blur(14.8px);
+        min-width: 100dvw;
+        min-height: 100dvh;
+    }
+    .menuContainer {
+        padding-top: 58px;
+        padding-bottom: 39px;
+        max-height: 243px;
+    }
+
+    .navMenuList {
+        max-width: 483px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .navMenuList {
+        max-width: 100%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .backdrop {
+        display: none;
+    }
 }
