@@ -6,6 +6,11 @@
     background-color: inherit;
     border: none;
     outline: none;
+    transition: all 400ms ease;
+}
+
+.buttonSettings:hover, .buttonSettings:active {
+    transform: scale(1.1);
 }
 
 .iconSettings {
