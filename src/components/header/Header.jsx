@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import BurgerButton from "./BurgerButton/BurgerButton";
 import css from "./Header.module.css";
@@ -14,9 +14,10 @@ const Header = () => {
   const [isShowMobile, setIsShowMobile] = useState(false);
   const isMediumTabletEnd = useMediaQuery({maxWidth: 1199.98});
 
+
   const handleClickShowMobile = () => {
     setIsShowMobile(prev => !prev);
-  }
+  } 
 
   return (
     <header>
@@ -27,7 +28,7 @@ const Header = () => {
           <LoginBtn />
           <HeaderSettings/>
         </div>
-        <BurgerButton onClick={handleClickShowMobile}/>
+        <BurgerButton onClick={handleClickShowMobile} isOpen={isShowMobile}/>
       </div>
       {isShowMobile && isMediumTabletEnd && <MobileMenu/>}
     </header>
