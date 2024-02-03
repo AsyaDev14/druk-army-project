@@ -43,3 +43,45 @@
     margin-top: 4px;
   }
 }
+
+@media screen and (min-width: 768px) {
+
+  .firstCard {
+    order: 3;
+  }
+  .thirdCard {
+    order: 2;
+  }
+  .cardsList {
+    max-width: 242px;
+    column-gap: 22px;
+    row-gap: 10px;
+  }
+  .cardsList li:last-of-type .description {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .cardsList {
+    max-width: 412px;
+    margin-top: 21px;
+  }
+  .firstCard {
+    order: 2;
+  }
+  .thirdCard {
+    order: 3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cardsList {
+    max-width: 571px;
+    margin-top: 14px;
+    column-gap: 38px;
+  }
+  .description {
+    font-size: 16px;
+  }
+}

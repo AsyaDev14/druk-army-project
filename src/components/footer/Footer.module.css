@@ -2,7 +2,8 @@
 .footer {
   background-color: var(--bg-details);
   color: var(--main-bg);
-  padding: 18px 38px;
+  padding: 18px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .footerTitle {
@@ -16,5 +17,44 @@
 @media screen and (min-width: 480px) {
   .footer {
     padding: 18px 14px 40px 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 33px;
+    padding: 29px 20px 26px 20px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .footer {
+    padding: 67px 20px 46px 20px;
+    column-gap: 70px;
+  }
+  .footer h2 {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 46px 20px;
+    align-items: baseline;
+    column-gap: 56px;
+  }
+  .footer h2 {
+    font-weight: 400;
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    column-gap: 120px;
   }
 }

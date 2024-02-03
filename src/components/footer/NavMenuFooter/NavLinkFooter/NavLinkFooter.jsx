@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import css from "./NavLink.module.css";
+import css from "./NavLinkFooter.module.css";
 
-const NavLink = ({ item }) => {
+const NavLinkFooter = ({ item }) => {
   const pathName = usePathname();
 
   return (
@@ -18,4 +18,4 @@ const NavLink = ({ item }) => {
   );
 };
 
-export default NavLink;
+export default NavLinkFooter;
