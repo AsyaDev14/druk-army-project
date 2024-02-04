@@ -7,7 +7,7 @@
 
 .menuContainer {
     padding: 20% 0 50% 0;
-    background-color: var(--main-bg);
+    background-color: var(--header-bg);
     margin-bottom: auto;
 }
 

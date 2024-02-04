@@ -6,16 +6,17 @@
   --bg-details: #333333;
   --title-small: #333333;
   --paragraph-text: #333333;
+  --footer-bg: #333333;
   --buttons-text: #ffffff;
   --accent-color: #5169ff;
 }
-body.page-theme-dark {
+[data-theme='dark'] {
   --header-bg: #0f1022;
-  /* --main-bg: url('../../public/img/homePage/darkMood-bg.jpg'); */
   --bg-details: #ffffff;
   --title-small: #ffffff;
   --title-accent: #5169ff;
   --paragraph-text: #ffffff;
+  --footer-bg: #0f1022;
   --buttons-text: #0f1022;
   --accent-color: #5169ff;
 }
@@ -131,7 +132,7 @@ body {
   font-family: "Montserrat-Medium";
   font-weight: 500;
   font-size: 16px;
-  background: var(--main-bg);
+  background: var(--header-bg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
