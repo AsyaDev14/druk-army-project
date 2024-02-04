@@ -1,5 +1,6 @@
 .notFoundPageContainer {
   padding: 0 10px 62px 10px;
+  background-color: var(--header-bg);
 }
 
 .imageContainer {

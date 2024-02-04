@@ -45,4 +45,11 @@
 .otherLangs div {
   border-bottom: 2px solid var(--accent-color);
   text-align: center;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.otherLangs div:hover, .otherLangs div:focus {
+  background-color: var(--accent-color);
+  color: white;
 }

@@ -1,18 +1,24 @@
+'use client';
+
 import Link from "next/link";
 import css from "./Logo.module.css";
 import logo from "/public/img/logo.png";
 import Image from "next/image";
+import { useTheme } from "next-themes";
+import Icon from "@/components/Icon/Icon";
 
 const Logo = () => {
+  const {theme} = useTheme();
+
   return (
     <Link href={"/"} className={css.logo}>
-      <Image
+     {theme === 'light' ? (<Image
         src={logo}
         alt="Оновити та перейти на головну сторінку"
         width={76}
         height={37}
         className={css.logoImage}
-      />
+      />) : (<Icon className={css.logoImage} name={'icon-logo'}/>)} 
     </Link>
   );
 };

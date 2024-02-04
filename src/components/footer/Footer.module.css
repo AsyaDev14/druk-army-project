@@ -1,6 +1,6 @@
 /* Footer.module.css */
 .footer {
-  background-color: var(--bg-details);
+  background-color: var(--footer-bg);
   color: white;
   padding: 18px;
   font-family: "Montserrat", sans-serif;

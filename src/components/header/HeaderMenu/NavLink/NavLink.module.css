@@ -1,4 +1,5 @@
 .link {
+  color: var(--title-small);
   position: relative;
   transition: all 400ms ease;
 }
