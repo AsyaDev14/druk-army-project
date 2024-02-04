@@ -3,9 +3,11 @@
   color: var(--paragraph-text);
   max-width: 320px;
   padding: 0 8px;
+  text-align: left;
 }
+
 .titleBlock {
-  text-transform: uppercase;
+  border-left: 2px solid var(--paragraph-text);
 }
 
 .title {
@@ -15,7 +17,8 @@
   color: #5169ff;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  text-transform: uppercase;
 }
 
 .title span {

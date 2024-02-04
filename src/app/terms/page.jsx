@@ -16,7 +16,6 @@ const Terms = () => {
             ефективне використання донатів.
           </p>
         </div>
-        Terms page
       </div>
     </div>
   );
