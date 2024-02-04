@@ -1,0 +1,5 @@
+.termsImage {
+  object-fit: cover;
+  padding-right: 120px;
+  filter: drop-shadow(-1px 31px 29px #000000);
+}

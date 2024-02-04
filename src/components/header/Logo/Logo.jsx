@@ -5,10 +5,20 @@ import css from "./Logo.module.css";
 import logo from "/public/img/logo.png";
 import Image from "next/image";
 import { useTheme } from "next-themes";
+import { useState, useEffect } from 'react'
 import Icon from "@/components/Icon/Icon";
 
 const Logo = () => {
+  const [mounted, setMounted] = useState(false)
   const {theme} = useTheme();
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null
+  }
 
   return (
     <Link href={"/"} className={css.logo}>
