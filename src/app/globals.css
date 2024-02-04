@@ -9,7 +9,7 @@
   --buttons-text: #ffffff;
   --accent-color: #5169ff;
 }
-body.page-theme-dark {
+[data-theme='dark'] {
   --header-bg: #0f1022;
   /* --main-bg: url('../../public/img/homePage/darkMood-bg.jpg'); */
   --bg-details: #ffffff;

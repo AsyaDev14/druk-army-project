@@ -1,6 +1,6 @@
+import { Providers } from "./providers";
 import { Inter } from "next/font/google";
-
-import Header from '@/components/header/Header.jsx';
+import Header from "@/components/header/Header.jsx";
 import Footer from "../components/footer/Footer.jsx";
 
 import "./globals.css";
@@ -16,9 +16,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={font.className}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <Providers>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
