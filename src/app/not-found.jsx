@@ -1,18 +1,12 @@
-import Image from "next/image";
 import css from "./not-found.module.css";
 import Link from "next/link";
+import Icon from "@/components/Icon/Icon";
+import ImageNotFound from "@/components/notFoundPage/ImageNotFound";
 
 export default function notFound() {
   return (
-    <div>
-      <div className={css.imageContainer}>
-        <Image
-          src={"/img/notfound/notfound.png"}
-          alt="Error 404. This page not found"
-          width={310}
-          height={139}
-        />
-      </div>
+    <div className={css.notFoundPageContainer}>
+      <ImageNotFound />
       <h2 className={css.title}>Загублена сторінка</h2>
       <p className={css.text}>
         Вибачте, шлях, який ви обрали, виявився руйнівним. Наш солдат уже
@@ -21,7 +15,17 @@ export default function notFound() {
         справу.
       </p>
       <div className={css.buttonsContainer}>
-        <Link href={'/'} aria-label="Перейти до головної сторінки" className={css.linkHome}>додому</Link>
+        <Link
+          href={"/"}
+          aria-label="Перейти до головної сторінки"
+          className={css.linkHome}
+        >
+          додому
+        </Link>
+        <button type="button" className={css.buttonSupport}>
+          <Icon className={css.iconSupportBtn} name={"icon-banknote"} />
+          підтримати
+        </button>
       </div>
     </div>
   );
