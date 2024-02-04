@@ -1,0 +1,35 @@
+.imageContainer {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin: 51px 0;
+}
+
+.title {
+  text-transform: uppercase;
+  color: var(--accent-color);
+  font-family: "Benzin-ExtraBold", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: var(--paragraph-text);
+}
+
+.linkHome {
+  text-transform: uppercase;
+  font-family: "Benzin-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  color: var(--paragraph-text);
+}
