@@ -1,6 +1,5 @@
 .termsImage {
   object-fit: cover;
-  overflow: hidden;
-  padding-right: 120px;
+  object-position: -70px 0;
   filter: drop-shadow(-1px 31px 29px #000000);
 }

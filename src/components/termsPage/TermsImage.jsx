@@ -18,7 +18,7 @@ const TermsImage = () => {
   }
 
   return (
-    <div>
+    <div className={css.imageContainer}>
       <Image
         src={
           theme === "light"
