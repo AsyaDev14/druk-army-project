@@ -4,15 +4,19 @@
   /* border-left-color: ; */
   padding: 0 6px;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 960px) {
     max-width: 550px;
     padding: 0 18px;
     border-left-width: 4px;
   }
 
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1920px) {
     max-width: 625px;
   }
+}
+
+.rightMargin {
+  margin-right: 20px;
 }
 
 .firstString {
@@ -20,11 +24,11 @@
   font-weight: 700;
   text-transform: uppercase;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 960px) {
     font-size: 32px;
   }
 
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1920px) {
     font-size: 36px;
   }
 }
@@ -35,13 +39,13 @@
   font-size: 24px;
   text-transform: uppercase;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 960px) {
     line-height: 0.9;
     margin-bottom: 16px;
     font-size: 48px;
   }
 
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1920px) {
     font-size: 64px;
   }
 }
@@ -50,7 +54,7 @@
   width: 90%;
   font-size: 14px;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 960px) {
     font-size: 20px;
     font-weight: 500;
   }
