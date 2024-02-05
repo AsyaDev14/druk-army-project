@@ -125,31 +125,31 @@ const Terms = () => {
             </div>
 
             <div>
-              <p>
-                Рахунок отримувача у форматі
-              </p>
+              <p>Рахунок отримувача у форматі</p>
               <p>
                 <b>IBAN:UA313052990000026000040810747</b>
               </p>
             </div>
-            <div>
-              <p>Email:</p>
-              <p>
-                <strong>vilni.neskoreni.nebajdugi@gmail.com</strong>
-              </p>
-            </div>
-            <div className={css.telMoney}>
+            <div className={css.emailPhoneMoneyContainer}>
               <div>
-                <p>Валюта:</p>
+                <p>Email:</p>
                 <p>
-                  <b>UAH</b>
+                  <strong>vilni.neskoreni.nebajdugi@gmail.com</strong>
                 </p>
               </div>
-              <div>
-                <p>Телефон:</p>
-                <p>
-                  <strong>+38 066 412 93 82</strong>
-                </p>
+              <div className={css.telMoney}>
+                <div>
+                  <p>Валюта:</p>
+                  <p>
+                    <b>UAH</b>
+                  </p>
+                </div>
+                <div className={css.telephone}>
+                  <p>Телефон:</p>
+                  <p>
+                    <strong>+38 066 412 93 82</strong>
+                  </p>
+                </div>
               </div>
             </div>
             <address className={css.address}>

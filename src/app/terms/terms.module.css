@@ -2,7 +2,6 @@
   padding-bottom: 66px;
   max-width: 100%;
   overflow: hidden;
-
 }
 
 .containerTerms {
@@ -29,6 +28,7 @@
   line-height: 0.9;
   margin-bottom: 9px;
 }
+
 .content h3,
 .title span {
   font-family: "Montserrat", sans-serif;
@@ -43,6 +43,7 @@
   font-weight: 500;
   font-size: 16px;
 }
+
 .content h4,
 .content h3 {
   text-transform: uppercase;
@@ -62,7 +63,7 @@
 
 .textList li::before {
   font-weight: 700;
-  content: '.';
+  content: ".";
   margin-right: 0.5em;
 }
 
@@ -73,13 +74,22 @@
   align-items: flex-start;
   row-gap: 20px;
 }
+
 .dataOrganisation p {
   margin: 0;
+}
+
+.emailPhoneMoneyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 20px;
 }
 
 .telMoney {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   column-gap: 30px;
 }
 
@@ -90,12 +100,101 @@
 .linkReports {
   color: #5169ff;
 }
+
 @media screen and (min-width: 480px) {
   .containerTerms {
     padding: 0 21px;
   }
+
   .titleBlock {
     border-left: 3px solid var(--paragraph-text);
     padding-left: 17px;
+  }
+
+  .dataOrganisation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+
+  .emailPhoneMoneyContainer {
+    flex-direction: row;
+    column-gap: 20px;
+    position: relative;
+    padding-bottom: 40px;
+  }
+
+  .telMoney {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .telephone {
+    margin-right: auto;
+    position: absolute;
+    left: 0;
+    bottom: -10%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .termsPage {
+    padding-bottom: 28px;
+  }
+
+  .titleBlock {
+    margin-top: -10px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .title span {
+    font-size: 32px;
+  }
+
+  .titleBlock_text {
+    font-size: 20px;
+  }
+
+  .emailPhoneMoneyContainer {
+    padding-bottom: 0;
+  }
+
+  .telephone {
+    margin-right: 0;
+    position: relative;
+  }
+
+  .telMoney {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .termsPage {
+    padding-bottom: 48px;
+  }
+
+  .containerTerms {
+    padding: 0 80px;
+  }
+
+  .titleBlock {
+    max-width: 480px;
+    margin-left: auto;
+  }
+
+  .title span {
+    font-size: 36px;
+  }
+
+  .title {
+    font-size: 64px;
   }
 }

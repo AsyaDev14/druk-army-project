@@ -1,3 +1,7 @@
+.imageContainer {
+  min-width: 100%;
+}
+
 .termsImage {
   object-fit: cover;
   object-position: -70px 0;
@@ -7,5 +11,17 @@
 @media screen and (min-width: 480px) {
   .termsImage {
     object-position: -110px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .termsImage {
+    object-position: 0 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .termsImage {
+    object-position: 30px 14px;
   }
 }
