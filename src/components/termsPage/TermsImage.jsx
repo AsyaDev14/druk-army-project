@@ -57,7 +57,7 @@ const TermsImage = () => {
             ? 643
             : 328.69
         }
-        className={css.termsImage}
+        className={theme === 'light' ? css.termsImage : css.termsImageDark}
       />
     </div>
   );

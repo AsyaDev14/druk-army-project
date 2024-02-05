@@ -188,6 +188,8 @@
   .titleBlock {
     max-width: 480px;
     margin-left: auto;
+    margin-bottom: 82px;
+    margin-top: -30px;
   }
 
   .title span {
@@ -196,5 +198,36 @@
 
   .title {
     font-size: 64px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .termsPage {
+    padding-bottom: 45px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .containerTerms {
+    padding: 0 185px;
+  }
+
+  .titleBlock {
+    margin-top: -133px;
+    margin-right: -100px;
+  }
+
+  .content {
+    margin-top: 102px;
+  }
+
+  .content h4,
+  .content h3 {
+    font-size: 36px;
+    line-height: 1.22;
+  }
+
+  .content p {
+    font-size: 20px;
   }
 }
