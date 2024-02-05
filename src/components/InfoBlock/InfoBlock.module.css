@@ -4,10 +4,14 @@
   /* border-left-color: ; */
   padding: 0 6px;
 
-  @media only screen and (min-width: 960px) {
-    max-width: 550px;
+  @media only screen and (min-width: 768px) {
+    max-width: 450px;
     padding: 0 18px;
     border-left-width: 4px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    max-width: 550px;
   }
 
   @media only screen and (min-width: 1920px) {
@@ -19,7 +23,7 @@
   margin-right: 20px;
 }
 
-.firstString {
+.firstTitle {
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
@@ -33,7 +37,7 @@
   }
 }
 
-.secondString {
+.secondTitle {
   margin-bottom: 5px;
   font-family: Benzin-ExtraBold;
   font-size: 24px;
