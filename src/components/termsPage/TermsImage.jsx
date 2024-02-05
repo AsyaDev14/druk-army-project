@@ -3,9 +3,13 @@
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from 'react';
+import { useMediaQuery } from "react-responsive";
 import css from "./TermsImage.module.css";
 
 const TermsImage = () => {
+  const isMobileStart = useMediaQuery({ minWidth: 480 });
+  const isMobileEnd = useMediaQuery({ maxWidth: 767.98 });
+
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -26,8 +30,8 @@ const TermsImage = () => {
             : "/img/terms/bg-img.png"
         }
         alt="Макет міської вулиці"
-        width={442}
-        height={328.69}
+        width={isMobileStart && isMobileEnd ? 690 : 442}
+        height={isMobileStart && isMobileEnd ? 530.67 : 328.69}
         className={css.termsImage}
       />
     </div>
