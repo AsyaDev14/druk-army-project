@@ -18,7 +18,9 @@ export default function RootLayout({ children }) {
       <body className={font.className}>
         <Providers>
           <Header />
-          <main>{children}</main>
+          <main>
+            {children}
+            </main>
           <Footer />
         </Providers>
       </body>

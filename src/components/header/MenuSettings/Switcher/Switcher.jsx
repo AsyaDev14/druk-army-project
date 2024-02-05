@@ -3,9 +3,20 @@
 import Icon from '@/components/Icon/Icon'
 import css from './Switcher.module.css'
 import { useTheme } from 'next-themes'
+import { useState, useEffect } from 'react'
+
 
 const Switcher = () => {
+  const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme('light');
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null
+  }
 
   return (
     <div className={css.switcherContainer}>
