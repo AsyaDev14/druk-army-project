@@ -14,11 +14,8 @@ export default function RootLayout({ children }) {
   return (
     <>
       <Header />
-        <main>
-        {/* {children} */}
-        hello 
-        </main>
-      <Footer/>
+      <main>{children}</main>
+      <Footer />
     </>
   );
 }
