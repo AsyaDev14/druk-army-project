@@ -1,0 +1,16 @@
+.loginBtn {
+  background-color: var(--accent-color);
+  color: var(--buttons-text);
+  padding: 2px 6px;
+  font-weight: 500;
+  font-size: 20px;
+  border: 1px solid var(--buttons-text);
+  transition: all 400ms ease;
+}
+
+.loginBtn:hover,
+.loginBtn:focus {
+  background-color: var(--buttons-text);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}

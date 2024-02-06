@@ -1,0 +1,83 @@
+.termsPage {
+  padding-bottom: 66px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.containerTerms {
+  font-family: "Montserrat", sans-serif;
+  color: var(--paragraph-text);
+  padding: 0 8px;
+  text-align: left;
+}
+
+.content h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  color: var(--paragraph-text);
+}
+
+.content h4,
+.content h3 {
+  text-transform: uppercase;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.content h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 480px) {
+  .containerTerms {
+    padding: 0 21px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .termsPage {
+    padding-bottom: 28px;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .termsPage {
+    padding-bottom: 48px;
+    max-width: 964px;
+  }
+
+  .containerTerms {
+    padding: 0 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .termsPage {
+    padding-bottom: 45px;
+    max-width: 1200px;
+  }
+
+  .containerTerms {
+    padding: 0 185px;
+  }
+
+  .content {
+    margin-top: 102px;
+  }
+
+  .content h4,
+  .content h3 {
+    font-size: 36px;
+    line-height: 1.22;
+  }
+
+  .content p {
+    font-size: 20px;
+  }
+}

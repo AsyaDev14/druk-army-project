@@ -8,10 +8,11 @@
 @media only screen and (min-width: 480px) {
   .container {
     width: 480px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
+
 @media only screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -19,6 +20,14 @@
     padding-right: 20px;
   }
 }
+@media only screen and (min-width: 960px) {
+  .container {
+    width: 960px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 @media only screen and (min-width: 960px) {
   .container {
     width: 960px;

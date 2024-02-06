@@ -12,10 +12,14 @@
   },
   "dependencies": {
     "modern-normalize": "^2.0.0",
+    "nanoid": "^5.0.5",
     "next": "14.1.0",
+    "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
-    "react-svg": "^16.1.32"
+    "react-responsive": "^9.0.2",
+    "react-svg": "^16.1.32",
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "eslint": "^8",
