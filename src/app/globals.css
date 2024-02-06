@@ -1,4 +1,4 @@
-@import 'modern-normalize/modern-normalize.css';
+@import "modern-normalize/modern-normalize.css";
 
 :root {
   --header-bg: #ffffff;
@@ -10,7 +10,7 @@
   --buttons-text: #ffffff;
   --accent-color: #5169ff;
 }
-[data-theme='dark'] {
+[data-theme="dark"] {
   --header-bg: #0f1022;
   --bg-details: #ffffff;
   --title-small: #ffffff;
@@ -122,6 +122,11 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+abbr[title] {
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 button {

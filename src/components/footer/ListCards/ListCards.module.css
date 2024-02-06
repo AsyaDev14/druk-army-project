@@ -30,15 +30,19 @@
     column-gap: 18px;
     max-width: 414px;
   }
+
   .firstCard {
     order: 2;
   }
+
   .secondCard {
     order: 1;
   }
+
   .thirdCard {
     order: 3;
   }
+
   .cardsList li:last-of-type .description {
     margin-top: 4px;
   }
@@ -49,14 +53,17 @@
   .firstCard {
     order: 3;
   }
+
   .thirdCard {
     order: 2;
   }
+
   .cardsList {
     max-width: 242px;
     column-gap: 22px;
     row-gap: 10px;
   }
+
   .cardsList li:last-of-type .description {
     margin-top: 16px;
   }
@@ -67,9 +74,11 @@
     max-width: 412px;
     margin-top: 21px;
   }
+
   .firstCard {
     order: 2;
   }
+
   .thirdCard {
     order: 3;
   }
@@ -81,6 +90,7 @@
     margin-top: 14px;
     column-gap: 38px;
   }
+  
   .description {
     font-size: 16px;
   }

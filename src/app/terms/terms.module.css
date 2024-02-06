@@ -2,7 +2,6 @@
   padding-bottom: 66px;
   max-width: 100%;
   overflow: hidden;
-
 }
 
 .containerTerms {
@@ -12,25 +11,7 @@
   text-align: left;
 }
 
-.titleBlock {
-  border-left: 2px solid var(--paragraph-text);
-  padding-left: 16px;
-}
-
-.title {
-  font-family: "Benzin-ExtraBold", sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  color: #5169ff;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-transform: uppercase;
-  line-height: 0.9;
-  margin-bottom: 9px;
-}
-.content h3,
-.title span {
+.content h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -39,10 +20,6 @@
   color: var(--paragraph-text);
 }
 
-.titleBlock_text {
-  font-weight: 500;
-  font-size: 16px;
-}
 .content h4,
 .content h3 {
   text-transform: uppercase;
@@ -55,47 +32,52 @@
   font-weight: 500;
 }
 
-.textList li {
-  display: flex;
-  align-items: flex-start;
-}
-
-.textList li::before {
-  font-weight: 700;
-  content: '.';
-  margin-right: 0.5em;
-}
-
-.dataOrganisation {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  row-gap: 20px;
-}
-.dataOrganisation p {
-  margin: 0;
-}
-
-.telMoney {
-  display: flex;
-  align-items: center;
-  column-gap: 30px;
-}
-
-.address {
-  font-style: normal;
-}
-
-.linkReports {
-  color: #5169ff;
-}
 @media screen and (min-width: 480px) {
   .containerTerms {
     padding: 0 21px;
   }
-  .titleBlock {
-    border-left: 3px solid var(--paragraph-text);
-    padding-left: 17px;
+}
+
+@media screen and (min-width: 768px) {
+  .termsPage {
+    padding-bottom: 28px;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .termsPage {
+    padding-bottom: 48px;
+    max-width: 964px;
+  }
+
+  .containerTerms {
+    padding: 0 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .termsPage {
+    padding-bottom: 45px;
+    max-width: 1200px;
+  }
+
+  .containerTerms {
+    padding: 0 185px;
+  }
+
+  .content {
+    margin-top: 102px;
+  }
+
+  .content h4,
+  .content h3 {
+    font-size: 36px;
+    line-height: 1.22;
+  }
+
+  .content p {
+    font-size: 20px;
   }
 }

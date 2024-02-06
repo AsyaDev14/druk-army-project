@@ -41,8 +41,8 @@
 }
 
 .burgerBtnOpen .burger {
-   transform: translateX(-50px);
-   background-color: transparent;
+  transform: translateX(-50px);
+  background-color: transparent;
 }
 
 .burgerBtnOpen .burger::before {
@@ -53,17 +53,18 @@
   transform: rotate(-45deg) translate(35px, 35px);
 }
 
-
 @media screen and (min-width: 768px) {
-  .burger, .burger::before,
+  .burger,
+  .burger::before,
   .burger::after {
-     width: 43px;
-     height: 3px;
+    width: 43px;
+    height: 3px;
   }
+
   .burger::before {
     transform: translateY(-8px);
   }
-  
+
   .burger::after {
     transform: translateY(8px);
   }
