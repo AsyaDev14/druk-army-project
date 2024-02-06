@@ -4,17 +4,18 @@
 }
 
 .logo {
-    padding-top: 20px;
-    padding-bottom: 16px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 24px;
+    padding-bottom: 13px;
   }
 
-  @media screen and (min-width: 768px) {
-    .logo {
-      padding-top: 24px;
-      padding-bottom: 13px;
-    }
-    .logoImage {
-      width: 95px;
-      height: 47px;
-    }
+  .logoImage {
+    width: 95px;
+    height: 47px;
   }
+}

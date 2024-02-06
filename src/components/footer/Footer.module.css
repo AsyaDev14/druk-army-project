@@ -36,6 +36,7 @@
     padding: 67px 20px 46px 20px;
     column-gap: 70px;
   }
+
   .footer h2 {
     text-align: left;
   }
@@ -47,6 +48,7 @@
     align-items: baseline;
     column-gap: 56px;
   }
+  
   .footer h2 {
     font-weight: 400;
     font-size: 32px;
