@@ -50,7 +50,7 @@ const LanguagesList = () => {
     <div className={css.langs}>
       <div className={css.listLang}>
         <div className={css.selectedLang}>
-          <p>UA</p>
+          <p>{language}</p>
           <button
             type="button"
             className={css.showLang}

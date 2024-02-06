@@ -32,6 +32,10 @@
   padding-top: 2px;
 }
 
+.selectedLang p {
+  text-transform: uppercase;
+}
+
 .selectedLang p, .otherLangs p {
   margin: 0;
   padding: 0;
