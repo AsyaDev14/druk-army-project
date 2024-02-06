@@ -13,6 +13,7 @@
   .termsImage {
     object-position: -110px 0;
   }
+
   .termsImageDark {
     object-position: -160px 0;
   }
@@ -22,6 +23,7 @@
   .termsImage {
     object-position: 0 0;
   }
+
   .termsImageDark {
     object-position: -60px 0;
   }
@@ -36,5 +38,9 @@
 @media screen and (min-width: 1200px) {
   .termsImage {
     object-position: 39px 19px;
+  }
+
+  .termsImageDark {
+    object-position: -93px 16px;
   }
 }

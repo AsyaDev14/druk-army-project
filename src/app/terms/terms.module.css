@@ -11,37 +11,13 @@
   text-align: left;
 }
 
-.titleBlock {
-  border-left: 2px solid var(--paragraph-text);
-  padding-left: 16px;
-}
-
-.title {
-  font-family: "Benzin-ExtraBold", sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  color: #5169ff;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-transform: uppercase;
-  line-height: 0.9;
-  margin-bottom: 9px;
-}
-
-.content h3,
-.title span {
+.content h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 20px;
   padding: 0;
   margin: 0;
   color: var(--paragraph-text);
-}
-
-.titleBlock_text {
-  font-weight: 500;
-  font-size: 16px;
 }
 
 .content h4,
@@ -56,148 +32,28 @@
   font-weight: 500;
 }
 
-.textList li {
-  display: flex;
-  align-items: flex-start;
-}
-
-.textList li::before {
-  font-weight: 700;
-  content: ".";
-  margin-right: 0.5em;
-}
-
-.dataOrganisation {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  row-gap: 20px;
-}
-
-.dataOrganisation p {
-  margin: 0;
-}
-
-.emailPhoneMoneyContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  row-gap: 20px;
-}
-
-.telMoney {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  column-gap: 30px;
-}
-
-.address {
-  font-style: normal;
-}
-
-.linkReports {
-  color: #5169ff;
-}
-
 @media screen and (min-width: 480px) {
   .containerTerms {
     padding: 0 21px;
-  }
-
-  .titleBlock {
-    border-left: 3px solid var(--paragraph-text);
-    padding-left: 17px;
-  }
-
-  .dataOrganisation {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
-    justify-content: flex-start;
-  }
-
-  .emailPhoneMoneyContainer {
-    flex-direction: row;
-    column-gap: 20px;
-    position: relative;
-    padding-bottom: 40px;
-  }
-
-  .telMoney {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .telephone {
-    margin-right: auto;
-    position: absolute;
-    left: 0;
-    bottom: -10%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .termsPage {
     padding-bottom: 28px;
-  }
-
-  .titleBlock {
-    margin-top: -10px;
-  }
-
-  .title {
-    font-size: 48px;
-  }
-
-  .title span {
-    font-size: 32px;
-  }
-
-  .titleBlock_text {
-    font-size: 20px;
-  }
-
-  .emailPhoneMoneyContainer {
-    padding-bottom: 0;
-  }
-
-  .telephone {
-    margin-right: 0;
-    position: relative;
-  }
-
-  .telMoney {
-    flex-wrap: nowrap;
+    max-width: 768px;
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 960px) {
   .termsPage {
     padding-bottom: 48px;
+    max-width: 964px;
   }
 
   .containerTerms {
     padding: 0 80px;
-  }
-
-  .titleBlock {
-    max-width: 480px;
-    margin-left: auto;
-    margin-bottom: 82px;
-    margin-top: -30px;
-  }
-
-  .title span {
-    font-size: 36px;
-  }
-
-  .title {
-    font-size: 64px;
   }
 }
 
@@ -205,16 +61,10 @@
   .termsPage {
     padding-bottom: 45px;
     max-width: 1200px;
-    margin: 0 auto;
   }
 
   .containerTerms {
     padding: 0 185px;
-  }
-
-  .titleBlock {
-    margin-top: -133px;
-    margin-right: -100px;
   }
 
   .content {

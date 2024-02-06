@@ -65,6 +65,7 @@
     margin: 22px 0;
   }
 }
+
 @media screen and (min-width: 768px) {
   .listSocialMedia {
     justify-content: flex-start;

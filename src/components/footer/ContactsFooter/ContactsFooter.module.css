@@ -1,12 +1,12 @@
-
 .contactList {
   line-height: 1.22;
   text-align: center;
 }
 
 .contactList li:first-of-type {
-    margin: 4px 0;
+  margin: 4px 0;
 }
+
 .creatorsLink,
 .copyright,
 .text {
@@ -15,22 +15,26 @@
 }
 
 .copyrightContainer {
-    text-align: center;
-    max-width: 380px;
-    margin: 0 auto;
+  text-align: center;
+  max-width: 380px;
+  margin: 0 auto;
 }
+
 .contact {
   font-weight: 600;
 }
+
 .creatorsLink {
-    margin-left: 8px;
-    text-decoration: underline;
-    transition: color 400ms ease;
+  margin-left: 8px;
+  text-decoration: underline;
+  transition: color 400ms ease;
 }
 
-.creatorsLink:hover, .creatorsLink:focus {
-    color: var(--accent-color);
+.creatorsLink:hover,
+.creatorsLink:focus {
+  color: var(--accent-color);
 }
+
 @media screen and (min-width: 480px) {
   .contactList {
     display: flex;
@@ -40,6 +44,7 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   .copyrightContainer {
     text-align: left;
     max-width: 370px;
@@ -49,7 +54,7 @@
   .creatorsLink {
     margin-left: 0;
   }
- 
+
   .container {
     max-width: 408px;
     margin: 0 auto;
@@ -57,16 +62,18 @@
 }
 
 @media screen and (min-width: 768px) {
-  .contactList, .copyrightContainer {
+  .contactList,
+  .copyrightContainer {
     padding-left: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .container, 
+  .container,
   .copyrightContainer {
     max-width: 100%;
   }
+
   .creatorsLink {
     margin-left: 8px;
   }
