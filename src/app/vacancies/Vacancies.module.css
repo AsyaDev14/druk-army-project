@@ -17,6 +17,11 @@
     margin-right: -20px;
   }
 
+  @media only screen and (min-width: 960px) {
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+
   @media only screen and (min-width: 1200px) {
     margin-top: 40px;
   }
@@ -29,11 +34,47 @@
   object-position: center;
 }
 
+.vacTitle {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: var(--paragraph-text);
+  text-align: center;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+.vacTitle span {
+  font-family: "Benzin-ExtraBold", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--accent-color);
+
+  @media only screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1;
+  }
+}
+
+.vacTitleDescription {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: var(--paragraph-text);
+
+  @media only screen and (min-width: 768px) {
+    font-size: 20px;
+    width: 552px;
+    margin: 0 auto;
+  }
+}
+
 .allVacanciesContainer {
   @media only screen and (min-width: 1200px) {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto auto;
@@ -41,21 +82,46 @@
   }
 }
 
-/* .vacancieContainer:nth-child(1) {
+.vacancieContainer:nth-child(1) {
   order: 1;
 }
 .vacancieContainer:nth-child(2) {
   order: 3;
 }
 .vacancieContainer:nth-child(3) {
-  order: 2;
+  @media only screen and (min-width: 1200px) {
+    order: 2;
+    height: 400px;
+    margin-top: -160px;
+  }
+  @media only screen and (min-width: 1920px) {
+    margin-top: -160px;
+    height: 350px;
+  }
 }
 .vacancieContainer:nth-child(4) {
-  order: 4;
+  @media only screen and (min-width: 1200px) {
+    order: 4;
+    height: 660px;
+    margin-top: -430px;
+  }
+  @media only screen and (min-width: 1920px) {
+    margin-top: -320px;
+    height: 450px;
+  }
 }
 .vacancieContainer:nth-child(5) {
-  order: 5;
-} */
+  @media only screen and (min-width: 1200px) {
+    order: 5;
+    grid-column: 2;
+    margin-top: -580px;
+    height: 530px;
+  }
+  @media only screen and (min-width: 1920px) {
+    margin-top: -440px;
+    height: 380px;
+  }
+}
 
 .vacancieContainer {
   display: flex;
@@ -112,7 +178,7 @@
 }
 
 .vacancieTitle {
-  color: var(--black, #333);
+  color: var(--paragraph-text);
   font-family: Montserrat-Bold;
   font-size: 24px;
   line-height: normal;
@@ -124,7 +190,7 @@
 }
 
 .skillsTitle {
-  color: var(--black, #333);
+  color: var(--paragraph-text);
   font-family: Montserrat-Semibold;
   font-size: 20px;
   line-height: normal;
@@ -132,7 +198,7 @@
 }
 
 .skillsDescription {
-  color: var(--black, #333);
+  color: var(--paragraph-text);
 
   font-family: Montserrat-Medium, sans-serif;
   font-size: 14px;
@@ -152,14 +218,14 @@
 
 .btnRespond {
   position: relative;
-  color: var(--white, #fff);
+  color: var(--buttons-text);
   text-align: center;
   border: none;
   font-family: Benzin-Medium;
   font-size: 15px;
   line-height: normal;
   text-transform: uppercase;
-  background: var(--black, #333);
+  background: var(--paragraph-text);
   display: flex;
   padding: 15px 20px;
   justify-content: center;
@@ -174,12 +240,12 @@
 }
 
 .btnRespond::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   height: 100%;
   width: 0;
-  background: #333;
+  background: var(--bg-details);
   transition: width 600ms ease;
   z-index: -1;
 }
@@ -189,8 +255,24 @@
 }
 
 .btnRespond:hover::after {
-  background: #5169ff;
+  background: var(--accent-color);
   width: 100%;
+}
+
+.vacBottomDescription {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: var(--paragraph-text);
+
+  @media only screen and (min-width: 768px) {
+    font-size: 20px;
+    width: 726px;
+    margin: 0 auto;
+  }
+  @media only screen and (min-width: 960px) {
+    width: 866px;
+  }
 }
 
 .vacanciesContacts {
@@ -204,7 +286,7 @@
 }
 
 .vacContactInfo {
-  font-family: 'Montserrat-Medium', sans-serif;
+  font-family: "Montserrat-Medium", sans-serif;
   font-size: 16px;
   text-align: center;
   color: #5e6a8a;
@@ -224,7 +306,7 @@
 
 .btnContactUs {
   position: relative;
-  color: var(--white, #fff);
+  color: var(--buttons-text);
   text-align: center;
   border: none;
   font-family: Benzin-Medium;
@@ -237,7 +319,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background: var(--black, #333);
+  background: var(--bg-details);
   margin: 8px auto;
 
   overflow: hidden;
@@ -250,100 +332,25 @@
 }
 
 .btnContactUs::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 0;
-  background: #333;
+  background: var(--bg-details);
   transition: width 600ms ease;
   z-index: -1;
 }
 
 .btnContactUs:hover::after {
-  background: #5169ff;
+  background: var(--accent-color);
   width: 100%;
 }
 
 .btnSvg {
   width: 37px;
   height: 21px;
-  fill: white;
+  fill: var(--buttons-text);
   margin-right: 10px;
-}
-
-/* TITLES/TEXT styles */
-
-/* .vacTitleContainer {
-  margin: 0 auto;
-} */
-
-/* .vacContainerLine {
-  width: 95px;
-  height: 1px;
-  background: #333;
-  transform: rotate(-90deg);
-} */
-
-.vacTitle {
-  font-family: 'Montserrat-Bold', sans-serif;
-  font-size: 15px;
-  text-transform: uppercase;
-  color: #333;
-  text-align: center;
-
-  @media only screen and (min-width: 768px) {
-    font-size: 32px;
-  }
-
-  /* @media only screen and (min-width: 1200px) {
-    font-size: 36px;
-  } */
-}
-
-.vacTitle span {
-  font-family: 'Benzin-ExtraBold', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.2;
-  text-transform: uppercase;
-  color: #5169ff;
-
-  @media only screen and (min-width: 768px) {
-    font-size: 48px;
-    line-height: 1;
-  }
-}
-
-.vacTitleDescription {
-  font-family: 'Montserrat-Medium', sans-serif;
-  font-size: 14px;
-  text-align: center;
-  color: #333;
-
-  @media only screen and (min-width: 768px) {
-    font-size: 20px;
-    /* width: 552px; */
-    margin: 0 auto;
-  }
-}
-
-.vacSubTitleDescr {
-  font-family: 'Montserrat-Medium', sans-serif;
-  font-size: 14px;
-  text-align: center;
-  color: #333;
-  @media only screen and (min-width: 768px) {
-    font-size: 20px;
-    width: 552px;
-  }
-}
-
-.vacSubTitle {
-  text-align: start;
-
-  @media only screen and (min-width: 768px) {
-    width: 552px;
-  }
 }

@@ -1,17 +1,18 @@
-import React from 'react';
-import officeImg from '../../../public/img/vacancies/office-tab.jpg';
-import office2 from '../../../public/img/vacancies/office2-tab.jpg';
-import ruby from '../../../public/img/vacancies/employee-1.jpg';
-import fand from '../../../public/img/vacancies/employee-2.jpg';
-import manager from '../../../public/img/vacancies/employee-3.jpg';
-import designer from '../../../public/img/vacancies/employee-4.jpg';
-import smm from '../../../public/img/vacancies/employee-5.jpg';
-import Image from 'next/image';
-import styles from './Vacancies.module.css';
-import Section from '@/components/Section/Section';
-import Container from '@/components/container/Container';
-import Icon from '@/components/Icon/Icon';
-import Link from 'next/link';
+import React from "react";
+import officeImg from "../../../public/img/vacancies/office-tab.jpg";
+import office2 from "../../../public/img/vacancies/office2-tab.jpg";
+import ruby from "../../../public/img/vacancies/employee-1.jpg";
+import fand from "../../../public/img/vacancies/employee-2.jpg";
+import manager from "../../../public/img/vacancies/employee-3.jpg";
+import designer from "../../../public/img/vacancies/employee-4.jpg";
+import smm from "../../../public/img/vacancies/employee-5.jpg";
+import Image from "next/image";
+import styles from "@/app/vacancies/Vacancies.module.css";
+import Section from "@/components/Section/Section";
+import Container from "@/components/container/Container";
+import Icon from "@/components/Icon/Icon";
+import Link from "next/link";
+import InfoBlock from "@/components/InfoBlock/InfoBlock";
 
 const Vacancies = () => {
   return (
@@ -25,7 +26,8 @@ const Vacancies = () => {
               className={styles.centerCrop}
             />
           </div>
-          <div className={styles.vacTitleContainer}>
+
+          <div>
             <h2 className={styles.vacTitle}>
               Стати частиною команди <br />
               <span>ДрукАрмії</span>
@@ -41,15 +43,14 @@ const Vacancies = () => {
 
       <Section>
         <div>
-          <div className={styles.vacContainerLine}>
-            <h3 className={`${styles.vacTitle} ${styles.vacSubTitle}`}>
-              Зараз відкриті <span>Вакансія:</span>
-            </h3>
-            <p className={`${styles.vacSubTitleDescr} ${styles.vacSubTitle}`}>
-              Якщо ви вважаєте що можете допомогти, ми раді вітати вас у нашій
-              команді.
-            </p>
-          </div>
+          <InfoBlock
+            firstTitle={"Зараз відкриті"}
+            secondTitle={"Вакансія:"}
+            color={"#5169ff"}
+            description={
+              "Якщо ви вважаєте що можете допомогти, ми раді вітати вас у нашій команді."
+            }
+          />
           <div className={styles.allVacanciesContainer}>
             <div className={styles.vacancieContainer}>
               <Image src={ruby} alt="employee" className={styles.vacancieImg} />
@@ -213,20 +214,21 @@ const Vacancies = () => {
             />
           </div>
           <h3 className={styles.vacTitle}>
-            Стати частиною команди <span>ДрукАрмії</span>
+            Стати частиною команди <br />
+            <span>ДрукАрмії</span>
           </h3>
-          <p className={styles.vacTitleDescription}>
+          <p className={styles.vacBottomDescription}>
             Якщо ви розумієте, як ваші компетенції можуть бути корисними для
             допомоги у досягненні цілей, для яких була створена ДрукАрмія, будь
             ласка, напишіть на пошту. Ваш внесок може мати велике значення,
             дозволяючи використовувати ваші унікальні навички та знання для
-            спільного блага.{' '}
+            спільного блага.{" "}
           </p>
           <div className={styles.vacanciesContacts}>
             <div className={styles.vacContactInfo}>
-              <Link href={'tel:+380739207804'}>+38 0(73) 920 78 04</Link>
+              <Link href={"tel:+380739207804"}>+38 0(73) 920 78 04</Link>
 
-              <Link href={'mailto:3d@drukarmy.org.ua'}>3d@drukarmy.org.ua</Link>
+              <Link href={"mailto:3d@drukarmy.org.ua"}>3d@drukarmy.org.ua</Link>
             </div>
             <button className={styles.btnContactUs} type="button">
               <Icon name="icon-people" className={styles.btnSvg} />
