@@ -1,35 +1,29 @@
+.titleTop {
+  margin-top: 48px;
+  margin-bottom: 20px;
+}
+
+.titleBottom {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.accentDiv {
+  padding: 25px 0;
+}
+
 .cablesWrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  @media only screen and (min-width: 768px) {
-    flex-direction: column-reverse;
-    justify-content: space-between;
-  }
-
-  @media only screen and (min-width: 960px) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
-  }
+  margin-bottom: 20px;
 }
 
 .connectorsWrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  @media only screen and (min-width: 768px) {
-    flex-direction: column-reverse;
-    justify-content: space-between;
-  }
-
-  @media only screen and (min-width: 960px) {
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: start;
-  }
+  margin-bottom: 50px;
 }
 
 .droneWrapper {
@@ -37,27 +31,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
 
   background-color: var(--accent-color);
-
-  @media only screen and (min-width: 960px) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  /* @media only screen and (min-width: 960px) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
-  } */
 }
 
 .cables {
   max-width: 100%;
   height: auto;
-  margin-top: 20px;
-  margin-bottom: 12px;
 }
 
 .connectors {
@@ -68,14 +49,35 @@
 }
 
 .drone {
-  width: 100%;
+  max-width: 100%;
   height: auto;
-
-  @media only screen and (min-width: 960px) {
-    width: auto;
-  }
 }
 
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  margin: 0 auto 75px;
+  padding: 15px 20px;
+
+  background-color: var(--bg-details);
+  color: var(--buttons-text);
+  font-family: Benzin-Regular;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 0.9;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.icon {
+  width: 23px;
+  height: 13px;
+  fill: var(--buttons-text);
+}
+/* 
 @media only screen and (min-width: 320px) {
   .connectors {
     max-width: 320px;
@@ -110,4 +112,4 @@
   .connectors {
     max-width: 1920px;
   }
-}
+} */
