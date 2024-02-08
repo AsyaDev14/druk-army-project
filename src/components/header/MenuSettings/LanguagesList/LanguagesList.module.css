@@ -1,4 +1,73 @@
-.langs {
+.select {
+  display: none;
+  background-color: white;
+}
+
+.select .language {
+  background-color: white;
+  color: var(--accent-color);
+}
+
+.customSelect {
+  position: relative;
+  display: inline-block;
+  max-width: 49px;
+}
+
+.icon {
+  width: 10px;
+  height: 10px;
+  margin-left: 2px;
+  margin-bottom: 2px;
+}
+
+.iconRotate {
+  width: 10px;
+  height: 10px;
+  margin-left: 2px;
+  margin-bottom: 2px;
+  transform: rotate(180deg);
+}
+
+/* .customSelect .selectedText {
+  padding: 2px;
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+} */
+
+.options {
+  display: none;
+}
+
+.optionsOpen {
+  position: relative;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid white;
+  color: var(--accent-color);
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  display: block;
+  max-width: 49px;
+}
+
+
+.customSelect .optionsOpen .item {
+  cursor: pointer;
+  max-width: 49px;
+  z-index: 5;
+}
+
+/* .langs {
   font-weight: 500;
   font-size: 20px;
 }
@@ -11,17 +80,6 @@
   height: 12px;
   margin-left: -5px;
   margin-top: -4px;
-}
-
-.iconArrowUp {
-  width: 12px;
-  height: 12px;
-}
-
-.iconArrowDown {
-  width: 12px;
-  height: 12px;
-  transform: rotate(180deg);
 }
 
 .selectedLang {
@@ -59,4 +117,4 @@
 .otherLangs button:hover, .otherLangs button:focus {
   background-color: var(--accent-color);
   color: white;
-}
+} */

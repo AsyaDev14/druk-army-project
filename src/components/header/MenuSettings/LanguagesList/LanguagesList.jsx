@@ -1,26 +1,24 @@
 "use client";
 
-import { useState } from "react";
 import css from "./LanguagesList.module.css";
 import Icon from "@/components/Icon/Icon";
-import { useRouter } from 'next/navigation';
-import { usePathname } from 'next/navigation';
-import { useTranslation } from 'react-i18next';
+import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+import { useTranslation } from "react-i18next";
 import i18nConfig from "../../../../../i18nConfig";
+import { useState } from "react";
 
 const LanguagesList = () => {
   const { i18n } = useTranslation();
   const currentLocale = i18n.language;
   const router = useRouter();
   const currentPathname = usePathname();
-  const [showLanguages, setShowLanguages] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => setIsOpen(prev => !prev);
 
 
-  const handleShowLanguages = () => {
-    setShowLanguages((prev) => !prev);
-  };
-
-  const handleChange = e => {
+  const handleChange = (e) => {
     const newLocale = e.target.value;
 
     // set cookie for next-i18n-router
@@ -35,7 +33,7 @@ const LanguagesList = () => {
       currentLocale === i18nConfig.defaultLocale &&
       !i18nConfig.prefixDefault
     ) {
-      router.push('/' + newLocale + currentPathname);
+      router.push("/" + newLocale + currentPathname);
     } else {
       router.push(
         currentPathname.replace(`/${currentLocale}`, `/${newLocale}`)
@@ -45,47 +43,26 @@ const LanguagesList = () => {
     router.refresh();
   };
 
-
   return (
-    <div className={css.langs}>
-      <div className={css.listLang}>
-        <div className={css.selectedLang}>
-          <p onChange={handleChange}>UK</p>
-          <button
-            type="button"
-            className={css.showLang}
-            onClick={handleShowLanguages}
-          >
-            <Icon
-              className={
-                showLanguages ? css.iconArrowUp : css.iconArrowDown
-              }
-              name={"icon-arrow-settings"}
-            />
-          </button>
-        </div>
-        {showLanguages && (<div className={css.otherLangs}>
-          <button value={"uk"} type="button">
-            <p>UK</p>
-          </button>
-          <button value={"pl"} type="button">
-            <p>PL</p>
-          </button>
-          <button value={"de"} type="button">
-            <p>DE</p>
-          </button>
-          <button value={"en"} type="button">
-            <p>EN</p>
-          </button>
+    <div className={css.customSelect}>
+      <div className={css.selectedText} onClick={handleClick}>UK<Icon className={isOpen ? css.iconRotate : css.icon} name={'icon-arrow-settings'}/></div>
 
-          <select onChange={handleChange} value={currentLocale}>
-      <option value="uk">Ukrainian</option>
-      <option value="pl">Poland</option>
-      <option value="de">Deutch</option>
-      <option value="en">English</option>
-    </select>
-        </div>)}
-      </div>
+      <select
+        onChange={handleChange}
+        value={currentLocale}
+        className={css.select}
+      >
+        <option value="uk" className={css.language}>UK</option>
+        <option value="pl" className={css.language}>PL</option>
+        <option value="de" className={css.language}>DE</option>
+        <option value="en" className={css.language}>EN</option>
+      </select>
+      <ul className={isOpen ? css.optionsOpen : css.options}>
+        <li className={css.item}>UK</li>
+        <li className={css.item}>PL</li>
+        <li className={css.item}>DE</li>
+        <li className={css.item}>EN</li>
+      </ul>
     </div>
   );
 };
