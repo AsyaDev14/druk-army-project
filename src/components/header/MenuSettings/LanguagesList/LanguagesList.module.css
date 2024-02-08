@@ -12,6 +12,8 @@
   position: relative;
   display: inline-block;
   max-width: 49px;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .icon {
@@ -29,16 +31,14 @@
   transform: rotate(180deg);
 }
 
-/* .customSelect .selectedText {
-  padding: 2px;
+.customSelect .selectedText {
   border: 1px solid var(--accent-color);
   background-color: var(--accent-color);
   color: white;
   cursor: pointer;
   font-weight: 500;
   font-size: 20px;
-  text-align: center;
-} */
+}
 
 .options {
   display: none;
@@ -52,69 +52,22 @@
   border: 1px solid white;
   color: var(--accent-color);
   list-style: none;
-  padding: 10px;
-  margin: 0;
+  margin: -2px 0 -2px 0;
   font-weight: 500;
   font-size: 20px;
   display: block;
-  max-width: 49px;
+  width: 49px;
 }
-
 
 .customSelect .optionsOpen .item {
   cursor: pointer;
-  max-width: 49px;
-  z-index: 5;
-}
-
-/* .langs {
-  font-weight: 500;
-  font-size: 20px;
-}
-
-.showLang {
-  background-color: inherit;
-  border: none;
-  outline: none;
-  width: 12px;
-  height: 12px;
-  margin-left: -5px;
-  margin-top: -4px;
-}
-
-.selectedLang {
-  display: flex;
-  align-items: flex-start;
-  color: var(--buttons-text);
-  padding-left: 2px;
-  padding-top: 2px;
-}
-
-.selectedLang p {
-  text-transform: uppercase;
-}
-
-.selectedLang p, .otherLangs p {
-  margin: 0;
-  padding: 0;
-}
-
-.otherLangs {
-  background-color: var(--buttons-text);
-  color: var(--accent-color);
-}
-
-.otherLangs button {
-  width: 100%;
-  border: none;
-  outline: none;
-  border-bottom: 2px solid var(--accent-color);
   text-align: center;
-  cursor: pointer;
+  z-index: 5;
+  border-bottom: 3px solid var(--accent-color);
   transition: all 400ms ease;
 }
 
-.otherLangs button:hover, .otherLangs button:focus {
+.customSelect .optionsOpen .item:hover, .customSelect .optionsOpen .item:focus {
   background-color: var(--accent-color);
   color: white;
-} */
+}

@@ -14,12 +14,14 @@ const LanguagesList = () => {
   const router = useRouter();
   const currentPathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState('uk');
 
-  const handleClick = () => setIsOpen(prev => !prev);
+  const handleClick = () => setIsOpen((prev) => !prev);
 
-
+ 
   const handleChange = (e) => {
-    const newLocale = e.target.value;
+    const newLocale = e.target.textContent.toLowerCase();
+    setSelectedLanguage(newLocale);
 
     // set cookie for next-i18n-router
     const days = 30;
@@ -43,25 +45,48 @@ const LanguagesList = () => {
     router.refresh();
   };
 
+  
+
   return (
     <div className={css.customSelect}>
-      <div className={css.selectedText} onClick={handleClick}>UK<Icon className={isOpen ? css.iconRotate : css.icon} name={'icon-arrow-settings'}/></div>
+      <div className={css.selectedText} onClick={handleClick}>
+        UK
+        <Icon
+          className={isOpen ? css.iconRotate : css.icon}
+          name={"icon-arrow-settings"}
+        />
+      </div>
 
       <select
-        onChange={handleChange}
         value={currentLocale}
         className={css.select}
       >
-        <option value="uk" className={css.language}>UK</option>
-        <option value="pl" className={css.language}>PL</option>
-        <option value="de" className={css.language}>DE</option>
-        <option value="en" className={css.language}>EN</option>
+        <option value="uk" className={css.language}>
+          UK
+        </option>
+        <option value="pl" className={css.language}>
+          PL
+        </option>
+        <option value="de" className={css.language}>
+          DE
+        </option>
+        <option value="en" className={css.language}>
+          EN
+        </option>
       </select>
       <ul className={isOpen ? css.optionsOpen : css.options}>
-        <li className={css.item}>UK</li>
-        <li className={css.item}>PL</li>
-        <li className={css.item}>DE</li>
-        <li className={css.item}>EN</li>
+        <li className={css.item} onClick={handleChange}>
+          UK
+        </li>
+        <li className={css.item} onClick={handleChange}>
+          PL
+        </li>
+        <li className={css.item} onClick={handleChange}>
+          DE
+        </li>
+        <li className={css.item} onClick={handleChange}>
+          EN
+        </li>
       </ul>
     </div>
   );
