@@ -14,14 +14,14 @@ const LanguagesList = () => {
   const router = useRouter();
   const currentPathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState('uk');
+  const [selectedLanguage, setSelectedLanguage] = useState(currentLocale.toUpperCase());
 
   const handleClick = () => setIsOpen((prev) => !prev);
 
  
   const handleChange = (e) => {
     const newLocale = e.target.textContent.toLowerCase();
-    setSelectedLanguage(newLocale);
+    setSelectedLanguage(newLocale.toUpperCase());
 
     // set cookie for next-i18n-router
     const days = 30;
@@ -50,30 +50,12 @@ const LanguagesList = () => {
   return (
     <div className={css.customSelect}>
       <div className={css.selectedText} onClick={handleClick}>
-        UK
+        {selectedLanguage}
         <Icon
           className={isOpen ? css.iconRotate : css.icon}
           name={"icon-arrow-settings"}
         />
       </div>
-
-      <select
-        value={currentLocale}
-        className={css.select}
-      >
-        <option value="uk" className={css.language}>
-          UK
-        </option>
-        <option value="pl" className={css.language}>
-          PL
-        </option>
-        <option value="de" className={css.language}>
-          DE
-        </option>
-        <option value="en" className={css.language}>
-          EN
-        </option>
-      </select>
       <ul className={isOpen ? css.optionsOpen : css.options}>
         <li className={css.item} onClick={handleChange}>
           UK
