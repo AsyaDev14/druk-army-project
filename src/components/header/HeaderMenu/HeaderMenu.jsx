@@ -1,29 +1,31 @@
 "use client";
 
+import { useTranslation } from 'react-i18next';
 import css from "./HeaderMenu.module.css";
 import NavLink from "./NavLink/NavLink";
 
 const HeaderMenu = () => {
+  const { t } = useTranslation();
 
   const links = [
     {
-      title: "На головну",
+      title: t("header:toMain"),
       path: "/",
     },
     {
-      title: "Про нас",
+      title: t("header:toAbout"),
       path: "/about",
     },
     {
-      title:  "Як це працює",
+      title:  t("header:toHowItWorks"),
       path: "/how-it-works",
     },
     {
-      title: "Задонатити",
+      title: t("header:toDonate"),
       path: "/donations",
     },
     {
-      title: "Новини",
+      title: t("header:toNews"),
       path: "/news",
     },
   ];
