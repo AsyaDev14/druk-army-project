@@ -1,30 +1,33 @@
 "use client";
 
+import { useTranslation } from 'react-i18next';
 import css from "./MobileMenu.module.css";
 import NavLink from "../HeaderMenu/NavLink/NavLink";
 import LoginBtn from "../LoginBtn/LoginBtn";
 import HeaderSettings from "../HeaderSettings/HeaderSettings";
 
 const MobileMenu = () => {
+  const { t } = useTranslation();
+
   const links = [
     {
-      title: "На головну",
+      title: t("header:toMain"),
       path: "/",
     },
     {
-      title: "Про нас",
+      title: t("header:toAbout"),
       path: "/about",
     },
     {
-      title:  "Як це працює",
+      title:  t("header:toHowItWorks"),
       path: "/how-it-works",
     },
     {
-      title: "Задонатит",
+      title: t("header:toDonate"),
       path: "/donations",
     },
     {
-      title: "Новини",
+      title: t("header:toNews"),
       path: "/news",
     },
   ];

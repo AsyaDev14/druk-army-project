@@ -1,62 +1,67 @@
+"use client";
+
+import { useTranslation } from 'react-i18next';
 import Link from "next/link";
 import css from "./InfoData.module.css";
 
 const InfoData = () => {
+  const { t } = useTranslation();
+
   return (
     <div className={css.dataOrganisation}>
       <div>
-        <p>Найменування організації:</p>
+        <p>{t("terms:nameOrganisation")}</p>
         <p>
-          <strong><abbr title="Благодійна організація благодійного фонду">БО БФ</abbr> ВIЛЬНI.НЕСКОРЕНI. НЕБАЙДУЖI </strong>
+          <strong><abbr title={t("terms:titleAbbr")}>{t("terms:ngoOrg")}</abbr> ВIЛЬНI.НЕСКОРЕНI. НЕБАЙДУЖI </strong>
         </p>
       </div>
       <div>
-        <p>Код отримувача:</p>
+        <p>{t("terms:codeRecept")}</p>
         <p>
           <strong>44858295</strong>
         </p>
       </div>
       <div>
-        <p>Назва банку:</p>
+        <p>{t("terms:nameOfBank")}</p>
         <p>
-          <strong>АТ КБ &quot;ПРИВАТБАНК&quot;</strong>
+          <strong>{t("terms:bank")}</strong>
         </p>
       </div>
       <div>
-        <p>Рахунок отримувача у форматі</p>
+        <p>{t("terms:accountBank")}</p>
         <p>
           <b>IBAN:UA313052990000026000040810747</b>
         </p>
       </div>
         <div>
-          <p>Email:</p>
+          <p>{t("terms:email")}</p>
           <p>
             <strong>vilni.neskoreni.nebajdugi@gmail.com</strong>
           </p>
         </div>
           <div>
-            <p>Валюта:</p>
+            <p>{t("terms:money")}</p>
             <p>
               <b>UAH</b>
             </p>
           </div>
           <div className={css.telephone}>
-            <p>Телефон:</p>
+            <p>{t("terms:phone")}</p>
             <p>
               <strong>+38 066 412 93 82</strong>
             </p>
           </div>
       <address className={css.address}>
-        <p>Адреса:</p>
+        <p>{t("terms:address")}</p>
         <p>
           <strong>
-            Україна, 43025, місто Луцьк, вул.Хмельницького Б., 16/1
+           {t("terms:addressDetail")}
           </strong>
         </p>
       </address>
       <div>
         <p>
-          Звіти публікуються щомісячно на сторінці звітів
+          {t("terms:invoices")}
           <Link
             href={"https://drukarmy.org.ua/reports"}
             aria-label="Перейти на сторінку звітів"
