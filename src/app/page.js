@@ -3,15 +3,16 @@ import Slider from "../components/Slider/Slider";
 import Container from "../components/container/Container.jsx";
 
 export default function Home() {
+
   return (
     <>
-      <main>
-        <Section>
-          <Container>
-            <Slider />
-          </Container>
-        </Section>
-      </main>
+        <main>
+          <Section>
+            <Container>
+              <Slider />
+            </Container>
+          </Section>
+        </main>
     </>
   );
 }
