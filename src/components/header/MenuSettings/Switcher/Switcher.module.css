@@ -1,11 +1,12 @@
 .switcherContainer {
     background-color: #333;
-    width: 100%;
+    width: 49px;
     height: 25px;
     position: relative;
     display: flex;
     align-items: center;
     column-gap: 4px;
+    padding: 2px;
 }
 
 .switchDark, 

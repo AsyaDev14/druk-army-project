@@ -6,9 +6,10 @@
 }
 
 .menuContainer {
-  padding: 20% 0 50% 0;
+  padding: 30% 0 50% 0;
   background-color: var(--header-bg);
   margin-bottom: auto;
+  height: 100dvh;
 }
 
 .navMenuList {

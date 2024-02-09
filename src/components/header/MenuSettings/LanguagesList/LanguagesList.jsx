@@ -57,18 +57,18 @@ const LanguagesList = () => {
         />
       </div>
       <ul className={isOpen ? css.optionsOpen : css.options}>
-        <li className={css.item} onClick={handleChange}>
-          UK
-        </li>
-        <li className={css.item} onClick={handleChange}>
+        {currentLocale !== 'ua' && (<li className={css.item} onClick={handleChange}>
+          UA
+        </li>)}
+        {currentLocale !== 'pl' && (<li className={css.item} onClick={handleChange}>
           PL
-        </li>
-        <li className={css.item} onClick={handleChange}>
+        </li>)}
+        {currentLocale !== 'de' && (<li className={css.item} onClick={handleChange}>
           DE
-        </li>
-        <li className={css.item} onClick={handleChange}>
+        </li>)}
+        {currentLocale !== 'en' && ( <li className={css.item} onClick={handleChange}>
           EN
-        </li>
+        </li>)}
       </ul>
     </div>
   );
