@@ -125,9 +125,11 @@
 
 .vacancieContainer {
   display: flex;
+  flex-direction: column;
 
   @media only screen and (min-width: 768px) {
     margin-top: 40px;
+    flex-direction: row;
   }
 }
 
@@ -139,7 +141,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 227px;
+  width: 290px;
 
   @media only screen and (min-width: 768px) {
     width: 476px;
@@ -159,13 +161,16 @@
 }
 
 .vacancieImg {
-  width: 63px;
-  height: auto;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
-  margin-right: 20px;
+  margin-bottom: 20px;
 
   @media only screen and (min-width: 768px) {
     width: 227px;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 0;
   }
 
   @media only screen and (min-width: 960px) {
