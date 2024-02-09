@@ -1,28 +1,27 @@
+"use client";
+
+import { useTranslation } from "react-i18next";
 import Link from "next/link";
 import Icon from "@/components/Icon/Icon";
 import css from "./ContentNotFound.module.css"
 
 const ContentNotFound = () => {
+ const { t } = useTranslation();
   return (
     <>
-      <h2 className={css.title}>Загублена сторінка</h2>
-      <p className={css.text}>
-        Вибачте, шлях, який ви обрали, виявився руйнівним. Наш солдат уже
-        готовий допомогти вам знайти дорогу назад до безпеки. Скористайтеся
-        кнопками нижче, щоб повернутися на головну сторінку або підтримати нашу
-        справу.
-      </p>
+      <h2 className={css.title}>{t("notfound:title")}</h2>
+      <p className={css.text}>{t("notfound:text")}</p>
       <div className={css.buttonsContainer}>
         <Link
           href={"/"}
-          aria-label="Перейти до головної сторінки"
+          aria-label={t("notfound:ariaLabeltoHome")}
           className={css.linkHome}
         >
-          додому
+          {t("notfound:toHome")}
         </Link>
         <button type="button" className={css.buttonSupport}>
           <Icon className={css.iconSupportBtn} name={"icon-banknote"} />
-          підтримати
+          {t("notfound:support")}
         </button>
       </div>
     </>

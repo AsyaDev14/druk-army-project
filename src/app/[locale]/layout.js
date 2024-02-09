@@ -7,7 +7,7 @@ import TranslationsProvider from "@/components/TranslationProvider/TranslationsP
 
 import '../globals.css'
 
-const i18nNamespaces = ["header", "footer", "terms"];
+const i18nNamespaces = ["header", "footer", "terms", "notfound"];
 
 const font = Inter({ subsets: ["latin"] });
 
