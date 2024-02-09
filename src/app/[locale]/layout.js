@@ -1,13 +1,13 @@
 import { Providers } from "./providers";
 import { Inter } from "next/font/google";
 import Header from "@/components/header/Header.jsx";
-import Footer from "../../components/footer/Footer.jsx";
+import Footer from "@/components/footer/Footer.jsx";
 import initTranslations from "../i18n";
 import TranslationsProvider from "@/components/TranslationProvider/TranslationsProvider";
 
-import "../globals.css";
+import '../globals.css'
 
-const i18nNamespaces = ["header", "footer"];
+const i18nNamespaces = ["header", "footer", "terms"];
 
 const font = Inter({ subsets: ["latin"] });
 
@@ -17,7 +17,7 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children, params: { locale } }) {
-  const { t, resources } = await initTranslations(locale, i18nNamespaces);
+  const { _, resources } = await initTranslations(locale, i18nNamespaces);
 
   return (
     <html lang="uk">

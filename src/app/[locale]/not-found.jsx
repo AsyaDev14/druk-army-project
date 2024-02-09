@@ -4,6 +4,8 @@ import Icon from "@/components/Icon/Icon";
 import ImageNotFound from "@/components/notFoundPage/ImageNotFound";
 
 export default function notFound() {
+
+  
   return (
     <div className={css.notFoundPageContainer}>
       <ImageNotFound />

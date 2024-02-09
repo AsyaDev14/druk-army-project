@@ -17,11 +17,11 @@ const NavMenuFooter = () => {
       path: "/reservations",
     },
     {
-      title: t("footer:toTerms"),
+      title: t("footer:toVacancies"),
       path: "/vacancies",
     },
     {
-      title: t("footer:toVacancies"),
+      title: t("footer:toTerms"),
       path: "/terms",
     },
   ];
