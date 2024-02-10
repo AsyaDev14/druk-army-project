@@ -63,3 +63,10 @@
     max-width: 100%;
   }
 }
+
+@media screen and (orientation: landscape) {
+  .menuContainer {
+    padding: 2% 0 40% 0;
+    overflow-y: scroll;
+  }
+}

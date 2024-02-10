@@ -19,6 +19,10 @@
   font-weight: 500;
 }
 
+.content p {
+  text-align: justify;
+}
+
 .textList li {
   display: flex;
   align-items: flex-start;
