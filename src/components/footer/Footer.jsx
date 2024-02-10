@@ -1,11 +1,11 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
-import ContactsFooter from "./ContactsFooter/ContactsFooter";
-import css from "./Footer.module.css";
-import ListCards from "./ListCards/ListCards";
-import NavMenuFooter from "./NavMenuFooter/NavMenuFooter";
-import SocialMedia from "./SocialMedia/SocialMedia";
+import ContactsFooter from "@/components/footer/ContactsFooter/ContactsFooter";
+import ListCards from "@/components/footer/ListCards/ListCards";
+import NavMenuFooter from "@/components/footer/NavMenuFooter/NavMenuFooter";
+import SocialMedia from "@/components/footer/SocialMedia/SocialMedia";
+import css from "@/components/footer/Footer.module.css";
 
 const Footer = () => {
   const { t } = useTranslation();

@@ -1,9 +1,9 @@
-import { Providers } from "./providers";
 import { Inter } from "next/font/google";
+import { Providers } from "@/app/[locale]/providers";
+import initTranslations from "@/app/i18n";
+import TranslationsProvider from "@/components/TranslationProvider/TranslationsProvider";
 import Header from "@/components/header/Header.jsx";
 import Footer from "@/components/footer/Footer.jsx";
-import initTranslations from "../i18n";
-import TranslationsProvider from "@/components/TranslationProvider/TranslationsProvider";
 
 import '../globals.css'
 

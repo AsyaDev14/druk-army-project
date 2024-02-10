@@ -1,7 +1,7 @@
 import TermsImage from "@/components/termsPage/TermsImage/TermsImage";
 import TermsTitle from "@/components/termsPage/TermsTitle/TermsTitle";
 import TermsGenerals from "@/components/termsPage/TermsGenerals/TermsGenerals";
-import css from "./terms.module.css";
+import css from "@/app/[locale]/terms/terms.module.css";
 
 const Terms = () => {
   return (

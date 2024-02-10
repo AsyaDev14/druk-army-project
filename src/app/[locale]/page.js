@@ -1,6 +1,6 @@
-import Section from "../../components/Section/Section";
-import Slider from "../../components/Slider/Slider";
-import Container from "../../components/container/Container.jsx";
+import Section from "@/components/Section/Section";
+import Slider from "@/components/Slider/Slider.jsx";
+import Container from "@/components/container/Container";
 
 export default function Home() {
 
