@@ -17,11 +17,11 @@ const ContentNotFound = () => {
           aria-label={t("notfound:ariaLabeltoHome")}
           className={css.linkHome}
         >
-          {t("notfound:toHome")}
+          <span className={css.btnTextToHome}>{t("notfound:toHome")}</span>
         </Link>
         <button type="button" className={css.buttonSupport}>
-          <Icon className={css.iconSupportBtn} name={"icon-banknote"} />
-          {t("notfound:support")}
+          <span className={css.btnText}><Icon className={css.iconSupportBtn} name={"icon-banknote"} />
+          {t("notfound:support")}</span>
         </button>
       </div>
     </>
