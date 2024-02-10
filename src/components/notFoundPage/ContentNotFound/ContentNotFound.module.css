@@ -66,15 +66,17 @@
   width: 0;
   background-color: var(--accent-color);
   display: block;
-  height: 53px;
+  height: 38px;
   z-index: 1;
   transition: all 400ms ease;
 }
 
 .linkHome::after {
-  height: 51px;
+  height: 35.25px;
 }
 
+.linkHome:focus::after,
+.buttonSupport:focus::after,
 .linkHome:hover::after,
 .buttonSupport:hover::after {
   width: 100%;
@@ -159,8 +161,16 @@
     padding: 15px 20px;
   }
 
+  .buttonSupport::after {
+    height: 53px;
+  }
+
   .linkHome {
     padding: 13px 18px;
+  }
+
+  .linkHome::after {
+    height: 51px;
   }
 }
 
