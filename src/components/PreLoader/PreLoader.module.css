@@ -1,0 +1,98 @@
+.loaderContainer {
+  width: 100dvw;
+  height: 80dvh;
+  padding-top: 20dvh;
+}
+
+.loaderContent {
+  max-width: 750px;
+  margin: 10% auto;
+  padding: 0 16px;
+}
+
+.progressBar {
+  width: 100%;
+  height: 15px;
+  background-color: var(--bg-loader);
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upperText {
+  font-weight: 400;
+  text-transform: uppercase;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.textLoading {
+  font-family: "Benzin-Medium", sans-serif;
+  font-size: 14px;
+  color: #5e6a8a;
+}
+
+.progressNumber {
+  font-family: "Benzin-ExtraBold", sans-serif;
+  font-size: 32px;
+  color: #5169ff;
+}
+
+.textEnd {
+  font-weight: 500;
+  font-size: 14px;
+  color: #5e6a8a;
+  margin-top: 6px;
+}
+
+@media screen and (min-width: 375px) {
+  .textEnd,
+  .textLoading {
+    font-size: 16px;
+  }
+
+  .progressNumber {
+    font-size: 46px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .textEnd,
+  .textLoading {
+    font-size: 18px;
+  }
+
+  .progressNumber {
+    font-size: 58px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .textEnd,
+  .textLoading {
+    font-size: 20px;
+  }
+
+  .progressNumber {
+    font-size: 96px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .loaderContainer {
+      padding-top: calc(14dvh - (84px + 314.33px));
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .loaderContainer {
+      padding-top: 10dvh;
+  }
+}

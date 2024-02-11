@@ -1,8 +1,10 @@
-import React from 'react'
+import React from "react";
 
 const News = () => {
   return (
-    <div>news</div>
+    <div>
+      News Page
+    </div>
   )
 }
 
