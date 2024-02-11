@@ -1,0 +1,23 @@
+.settingsBox {
+  position: absolute;
+  width: 49px;
+  top: 46px;
+  left: -4%;
+  background-color: var(--accent-color);
+  box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.11);
+  z-index: 999;
+}
+
+.shape {
+  position: absolute;
+  top: -10px;
+  left: 25%;
+  width: 20px;
+  height: 20px;
+  z-index: -1;
+}
+
+
+
+
+

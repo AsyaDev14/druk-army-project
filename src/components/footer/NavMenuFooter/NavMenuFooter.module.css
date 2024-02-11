@@ -1,0 +1,32 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  justify-content: center;
+  row-gap: 8px;
+  margin-top: 7px;
+  color: white;
+  max-width: 274px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .list {
+    flex-wrap: nowrap;
+    max-width: 450px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list {
+    max-width: 100%;
+    justify-content: flex-start;
+  }
+}

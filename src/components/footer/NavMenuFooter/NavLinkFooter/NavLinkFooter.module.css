@@ -1,0 +1,42 @@
+.link {
+  font-size: 16px;
+  line-height: 1.22;
+  font-weight: 300;
+  position: relative;
+  text-align: center;
+}
+
+.link:nth-of-type(1) {
+  margin-left: 30px;
+}
+
+.link:nth-of-type(2) {
+  margin-right: 30px;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #5e6a8a;
+  transition: width 400ms ease;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.link.active::after {
+  background-color: var(--buttons-text);
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .link:nth-of-type(2),
+  .link:nth-of-type(1) {
+    margin: 0;
+  }
+}

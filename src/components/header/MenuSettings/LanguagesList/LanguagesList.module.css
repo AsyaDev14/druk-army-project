@@ -1,0 +1,62 @@
+.langs {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.showLang {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  width: 12px;
+  height: 12px;
+  margin-left: -5px;
+  margin-top: -4px;
+}
+
+.iconArrowUp {
+  width: 12px;
+  height: 12px;
+}
+
+.iconArrowDown {
+  width: 12px;
+  height: 12px;
+  transform: rotate(180deg);
+}
+
+.selectedLang {
+  display: flex;
+  align-items: flex-start;
+  color: var(--buttons-text);
+  padding-left: 2px;
+  padding-top: 2px;
+}
+
+.selectedLang p {
+  text-transform: uppercase;
+}
+
+.selectedLang p, .otherLangs p {
+  margin: 0;
+  padding: 0;
+}
+
+.otherLangs {
+  background-color: var(--buttons-text);
+  color: var(--accent-color);
+}
+
+.otherLangs button {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--accent-color);
+  text-align: center;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.otherLangs button:hover, .otherLangs button:focus {
+  background-color: var(--accent-color);
+  color: white;
+}
