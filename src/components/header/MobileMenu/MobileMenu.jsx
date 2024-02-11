@@ -1,10 +1,34 @@
+"use client";
+
 import css from "./MobileMenu.module.css";
-import { links } from "../HeaderMenu/HeaderMenu";
 import NavLink from "../HeaderMenu/NavLink/NavLink";
 import LoginBtn from "../LoginBtn/LoginBtn";
 import HeaderSettings from "../HeaderSettings/HeaderSettings";
 
 const MobileMenu = () => {
+  const links = [
+    {
+      title: "На головну",
+      path: "/",
+    },
+    {
+      title: "Про нас",
+      path: "/about",
+    },
+    {
+      title:  "Як це працює",
+      path: "/how-it-works",
+    },
+    {
+      title: "Задонатит",
+      path: "/donations",
+    },
+    {
+      title: "Новини",
+      path: "/news",
+    },
+  ];
+
   return (
     <div className={css.backdrop}>
       <nav className={css.menuContainer}>

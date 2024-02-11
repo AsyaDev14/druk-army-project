@@ -32,6 +32,10 @@
   padding-top: 2px;
 }
 
+.selectedLang p {
+  text-transform: uppercase;
+}
+
 .selectedLang p, .otherLangs p {
   margin: 0;
   padding: 0;
@@ -42,14 +46,17 @@
   color: var(--accent-color);
 }
 
-.otherLangs div {
+.otherLangs button {
+  width: 100%;
+  border: none;
+  outline: none;
   border-bottom: 2px solid var(--accent-color);
   text-align: center;
   cursor: pointer;
   transition: all 400ms ease;
 }
 
-.otherLangs div:hover, .otherLangs div:focus {
+.otherLangs button:hover, .otherLangs button:focus {
   background-color: var(--accent-color);
   color: white;
 }

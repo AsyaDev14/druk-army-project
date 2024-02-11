@@ -11,11 +11,12 @@ const LanguagesList = () => {
     setShowLanguages((prev) => !prev);
   };
 
+
   return (
     <div className={css.langs}>
       <div className={css.listLang}>
         <div className={css.selectedLang}>
-          <p>UA</p>
+          <p>UK</p>
           <button
             type="button"
             className={css.showLang}
@@ -30,15 +31,15 @@ const LanguagesList = () => {
           </button>
         </div>
         {showLanguages && (<div className={css.otherLangs}>
-          <div defaultValue={"PL"}>
+          <button value={"pl"} type="button" >
             <p>PL</p>
-          </div>
-          <div defaultValue={"DE"}>
+          </button>
+          <button value={"de"} type="button" >
             <p>DE</p>
-          </div>
-          <div defaultValue={"EN"}>
+          </button>
+          <button value={"en"} type="button">
             <p>EN</p>
-          </div>
+          </button>
         </div>)}
       </div>
     </div>
