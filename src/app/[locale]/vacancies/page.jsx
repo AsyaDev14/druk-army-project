@@ -148,8 +148,8 @@ const Vacancies = () => {
                 <ul>
                   <p className={styles.skillsTitle}> SKILLS REQUIRED:</p>
                   <li className={styles.skillsDescription}>
-                    Навички фотореалістичної візуалізації об'єктів — інтер'єр та
-                    екстер'єр, візуалізація -статична. Анімація — буде
+                    Навички фотореалістичної візуалізації об&apos;єктів — інтер&apos;єр та
+                    екстер&apos;єр, візуалізація -статична. Анімація — буде
                     додатковою перевагою;
                   </li>
                   <li className={styles.skillsDescription}>
@@ -160,7 +160,7 @@ const Vacancies = () => {
                   <li className={styles.skillsDescription}>
                     Обов’язкове знання меблевих фабрик та виробників різного
                     цінового діапазону, навички комплектації приватних
-                    інтер'єрів.
+                    інтер&apos;єрів.
                   </li>
                 </ul>
                 <button className={styles.btnRespond} type="button">
