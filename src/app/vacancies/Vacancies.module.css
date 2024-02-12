@@ -126,15 +126,12 @@
 .vacancieContainer {
   display: flex;
   flex-direction: column;
+  margin-bottom: 39px;
 
   @media only screen and (min-width: 768px) {
     margin-top: 40px;
     flex-direction: row;
   }
-}
-
-.vacancieContainer:not(:last-child) {
-  margin-bottom: 39px;
 }
 
 .vacancieDescriptionContainer {
@@ -262,6 +259,10 @@
 .btnRespond:hover::after {
   background: var(--accent-color);
   width: 100%;
+}
+
+.vacBottomSectionContainer {
+  margin-top: -50px;
 }
 
 .vacBottomDescription {
