@@ -1,0 +1,21 @@
+@media screen and (min-width: 1920px) {
+  .merchHero {
+    padding-top: 152px;
+    margin-left: -100px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .merchOrder {
+    margin-left: -100px;
+    margin-right: -100px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .merchOrder {
+    padding-top: 158px;
+    margin-left: -100px;
+    margin-right: -100px;
+    display: flex;
+    align-items: center;
+  }
+}
