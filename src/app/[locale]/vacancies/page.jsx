@@ -7,13 +7,14 @@ import Icon from "@/components/Icon/Icon";
 import Link from "next/link";
 import InfoBlock from "@/components/InfoBlock/InfoBlock";
 
-import officeImg from "../../../public/img/vacancies/office-tab.jpg";
-import office2 from "../../../public/img/vacancies/office2-tab.jpg";
-import ruby from "../../../public/img/vacancies/ruby.jpg";
-import fand from "../../../public/img/vacancies/fand.jpg";
-import manager from "../../../public/img/vacancies/manager.jpg";
-import designer from "../../../public/img/vacancies/designer.jpg";
-import smm from "../../../public/img/vacancies/smm.jpg";
+import officeImg from "../../../../public/img/vacancies/office-tab.jpg";
+import office2 from "../../../../public/img/vacancies/office2-tab.jpg";
+import ruby from "../../../../public/img/vacancies/ruby.jpg";
+import fand from "../../../../public/img/vacancies/fand.jpg";
+import manager from "../../../../public/img/vacancies/manager.jpg";
+import designer from "../../../../public/img/vacancies/designer.jpg";
+import smm from "../../../../public/img/vacancies/smm.jpg";
+import { VacanciesModal } from "@/components/modals/VacanciesModal/VacanciesModal";
 
 const vacanciesData = [
   {
@@ -109,10 +110,9 @@ const Vacancies = () => {
             "Якщо ви вважаєте що можете допомогти, ми раді вітати вас у нашій команді."
           }
         />
-
-        {vacanciesData.map((vacancy, index) => (
-          <div key={index}>
-            <div className={styles.allVacanciesContainer}>
+        <div className={styles.allVacanciesContainer}>
+          {vacanciesData.map((vacancy, index) => (
+            <div key={index}>
               <div className={styles.vacancieContainer}>
                 <Image
                   src={vacancy.image}
@@ -140,11 +140,12 @@ const Vacancies = () => {
                       {vacancy.btnText}
                     </button>
                   )}
+                  {/* <VacanciesModal /> */}
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </Section>
 
       <Section>

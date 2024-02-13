@@ -1,0 +1,65 @@
+.vacModalContainer {
+  height: 748px;
+  background-color: var(--main-bg);
+}
+
+.modalImg {
+  width: 302px;
+  height: 365px;
+  /* top: -87.24px;
+  left: 77.08px; */
+  margin-bottom: 30px;
+}
+
+.vacModalBtn {
+  /* padding: 10px 20px; */
+  width: 280px;
+  height: 38px;
+
+  background: var(--accent-color);
+  border: none;
+
+  font-family: "Benzin-Medium", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--main-bg);
+
+  margin-bottom: 20px;
+}
+
+.vacModalBtnSvg {
+  width: 18px;
+  height: 18px;
+  fill: var(--main-bg);
+  /* fill: linear-gradient(0deg, #424d58 0%, #272a2f 100%); */
+  margin-right: 10px;
+}
+
+.vacModalTitleContainer {
+  border-left-width: 4px;
+  border-left-style: solid;
+  padding: 0 6px;
+}
+
+.vacModalTitle {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.vacModalTitle span {
+  font-family: "Benzin-ExtraBold", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.vacModalDescription {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 20px;
+  color: #333;
+
+  margin-bottom: 20px;
+}
