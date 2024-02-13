@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1920px;
   padding-left: 48px;
   padding-right: 29px;
   background: var(--header-bg);

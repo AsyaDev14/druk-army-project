@@ -1,62 +1,62 @@
-.langs {
+.customSelect {
+  position: relative;
+  display: inline-block;
+  max-width: 49px;
   font-weight: 500;
   font-size: 20px;
 }
 
-.showLang {
-  background-color: inherit;
-  border: none;
-  outline: none;
-  width: 12px;
-  height: 12px;
-  margin-left: -5px;
-  margin-top: -4px;
+.icon {
+  width: 10px;
+  height: 10px;
+  margin-left: 2px;
+  margin-bottom: 2px;
 }
 
-.iconArrowUp {
-  width: 12px;
-  height: 12px;
-}
-
-.iconArrowDown {
-  width: 12px;
-  height: 12px;
+.iconRotate {
+  width: 10px;
+  height: 10px;
+  margin-left: 2px;
+  margin-bottom: 2px;
   transform: rotate(180deg);
 }
 
-.selectedLang {
-  display: flex;
-  align-items: flex-start;
-  color: var(--buttons-text);
-  padding-left: 2px;
-  padding-top: 2px;
-}
-
-.selectedLang p {
-  text-transform: uppercase;
-}
-
-.selectedLang p, .otherLangs p {
-  margin: 0;
-  padding: 0;
-}
-
-.otherLangs {
-  background-color: var(--buttons-text);
-  color: var(--accent-color);
-}
-
-.otherLangs button {
-  width: 100%;
-  border: none;
-  outline: none;
-  border-bottom: 2px solid var(--accent-color);
-  text-align: center;
+.customSelect .selectedText {
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  color: white;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.options {
+  display: none;
+}
+
+.optionsOpen {
+  position: relative;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: var(--accent-color);
+  list-style: none;
+  margin: -2px 0 -2px 0;
+  font-weight: 500;
+  font-size: 20px;
+  display: block;
+  width: 49px;
+}
+
+.customSelect .optionsOpen .item {
+  cursor: pointer;
+  text-align: center;
+  z-index: 5;
+  border-bottom: 3px solid var(--accent-color);
   transition: all 400ms ease;
 }
 
-.otherLangs button:hover, .otherLangs button:focus {
+.customSelect .optionsOpen .item:hover, .customSelect .optionsOpen .item:focus {
   background-color: var(--accent-color);
   color: white;
 }
