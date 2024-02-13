@@ -2,34 +2,34 @@
     min-width: 100%;
     display: flex;
     justify-content: center;
-    margin: 51px 0;
+    padding: 51px 0;
   }
 
   @media screen and (min-width: 480px) {
     .imageContainer {
-      margin: 56px 0;
+      padding: 56px 0;
     }
 }
 
 @media screen and (min-width: 768px) {
     .imageContainer {
-        margin: 99px 0 35px 0;
+        padding: 99px 0 35px 0;
     }
 }
 
 @media screen and (min-width: 960px) {
     .imageContainer {
-        margin: 55px 0 47px 0;
+        padding: 55px 0 47px 0;
     }
 }
 @media screen and (min-width: 1200px) {
     .imageContainer {
-        margin: 44px 0 79px 0;
+        padding: 44px 0 79px 0;
     }
 }
 
 @media screen and (min-width: 1900px) {
     .imageContainer {
-        margin: 63px 0 33px 0;
+        padding: 63px 0 33px 0;
     }
 }

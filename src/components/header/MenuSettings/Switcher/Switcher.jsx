@@ -10,6 +10,10 @@ const Switcher = () => {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme('light');
 
+  if(theme !== 'light' && theme !== 'dark') {
+    setTheme('light');
+  }
+
   useEffect(() => {
     setMounted(true)
   }, [])

@@ -37,10 +37,10 @@
 
 @media screen and (min-width: 1200px) {
   .termsImage {
-    object-position: 39px 19px;
+    object-position: 39px 14px;
   }
 
   .termsImageDark {
-    object-position: -93px 16px;
+    object-position: -90px 9px;
   }
 }

@@ -5,7 +5,7 @@ import css from "./Logo.module.css";
 import logo from "/public/img/logo.png";
 import Image from "next/image";
 import { useTheme } from "next-themes";
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react"
 import Icon from "@/components/Icon/Icon";
 
 const Logo = () => {

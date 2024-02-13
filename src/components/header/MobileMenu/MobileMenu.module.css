@@ -6,9 +6,10 @@
 }
 
 .menuContainer {
-  padding: 20% 0 50% 0;
+  padding: 30% 0 50% 0;
   background-color: var(--header-bg);
   margin-bottom: auto;
+  height: 100dvh;
 }
 
 .navMenuList {
@@ -60,5 +61,12 @@
 @media screen and (min-width: 960px) {
   .navMenuList {
     max-width: 100%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .menuContainer {
+    padding: 2% 0 40% 0;
+    overflow-y: scroll;
   }
 }

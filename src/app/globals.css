@@ -9,6 +9,7 @@
   --footer-bg: #333333;
   --buttons-text: #ffffff;
   --accent-color: #5169ff;
+  --bg-loader: #5e6a8a;
 }
 [data-theme="dark"] {
   --header-bg: #0f1022;
@@ -19,6 +20,7 @@
   --footer-bg: #0f1022;
   --buttons-text: #0f1022;
   --accent-color: #5169ff;
+  --bg-loader: #ffffff;
 }
 
 @font-face {
@@ -100,12 +102,10 @@
 h1,
 h2,
 h3,
-h4 {
-  margin: 0;
-  padding: 0;
-}
+h4,
 p {
   margin: 0;
+  padding: 0;
 }
 
 ul,
