@@ -3,15 +3,16 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { nanoid } from 'nanoid';
+import css from "./Slider.module.css"
 
 import 'swiper/css';
 import Image from 'next/image';
 
 const Slider = () => {
   const slides = [
-    { img: "/img/home/slider/slide-1.jpg", id: nanoid() },
-    { img: "/img/home/slider/slide-2.jpg", id: nanoid() },
-    { img: "/img/home/slider/slide-3.jpg", id: nanoid() },
+    { img: "/img/home/slider/slide1.png", id: nanoid() },
+    { img: "/img/home/slider/slide2.png", id: nanoid() },
+    { img: "/img/home/slider/slide3.png", id: nanoid() },
   ];
 
 
@@ -33,7 +34,7 @@ const Slider = () => {
       >
         {slides.map(({ img, id }) => (
           <SwiperSlide key={id}>
-            <Image alt="photo" src={img} width={1000} height={500} />
+            <Image alt="photo" src={img} width={520} height={330} className={css.slideItem}/>
           </SwiperSlide>
         ))}
       </Swiper>

@@ -1,18 +1,13 @@
-import Section from "@/components/Section/Section";
-import Slider from "@/components/Slider/Slider.jsx";
-import Container from "@/components/container/Container";
+import Slider from "@/components/HomePage/Slider/Slider.jsx";
+import TitleHomePage from "@/components/HomePage/TitleHomePage/TitleHomePage";
 
 export default function Home() {
-
   return (
     <>
-        <main>
-          <Section>
-            <Container>
-              <Slider />
-            </Container>
-          </Section>
-        </main>
+        <section>
+          <Slider />
+          <TitleHomePage />
+        </section>
     </>
   );
 }
