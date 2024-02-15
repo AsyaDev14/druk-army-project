@@ -1,0 +1,50 @@
+.imageContainer {
+  width: 320px;
+}
+
+.imageCard {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.descriptionContainer {
+  background-color: var(--paragraph-text);
+  color: var(--cards-text);
+  display: flex;
+  align-items: center;
+  margin-top: -1px;
+  max-height: 101px;
+}
+
+.description {
+    padding: 0 16px;
+    text-align: left;
+}
+
+.description h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.description p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.number {
+    background-color: var(--accent-color);
+    max-height: 101px;
+    padding: 0 16px;
+}
+
+.number p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 96px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  line-height: 1.1;
+}

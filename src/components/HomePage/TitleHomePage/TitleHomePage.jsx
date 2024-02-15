@@ -8,7 +8,7 @@ import Icon from "@/components/Icon/Icon";
 const TitleHomePage = () => {
   return (
     <>
-      <Container>
+      <Container className={css.container}>
         <div className={css.logoSliderContainer}>
           <Image
             src={"/img/home/sliderLogo.png"}
@@ -19,7 +19,7 @@ const TitleHomePage = () => {
         </div>
         <div className={css.mainTitleContainer}>
           <h1 className={css.mainTitle}>
-            Друкуйте перемогу{" "}
+            Друкуйте перемогу
             <span className={css.titleAccent}>
               разом з <span>da</span>
             </span>
@@ -36,7 +36,7 @@ const TitleHomePage = () => {
               className={css.btn}
             >
               <span className={css.btnText}>
-                <Icon className={css.communityIcon} name={"icon-people"} />{" "}
+                <Icon className={css.communityIcon} name={"icon-people"} />
                 Долучитися
               </span>
             </button>

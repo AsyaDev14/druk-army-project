@@ -10,6 +10,7 @@
   --buttons-text: #ffffff;
   --accent-color: #5169ff;
   --bg-loader: #5e6a8a;
+  --cards-text: #ffffff;
 }
 [data-theme="dark"] {
   --header-bg: #0f1022;
@@ -21,6 +22,7 @@
   --buttons-text: #0f1022;
   --accent-color: #5169ff;
   --bg-loader: #ffffff;
+  --cards-text: #333333;
 }
 
 @font-face {
