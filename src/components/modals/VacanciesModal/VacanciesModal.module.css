@@ -1,18 +1,95 @@
+.vacModalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(20px);
+  background: rgba(38, 38, 38, 0.21);
+  z-index: 20;
+}
+
 .vacModalContainer {
+  /* height: 748px; */
+  width: 320px;
+  height: 922px;
+  /* background-color: var(--main-bg); */
+
+  background: transparent;
+  overflow: hidden;
+  border: none;
+  padding: 24px 73px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+
+  @media only screen and (min-width: 768px) {
+    width: 616px;
+    padding: 0;
+  }
+  @media only screen and (min-width: 960px) {
+    width: 960px;
+    height: 666px;
+    flex-direction: row;
+  }
+}
+
+.vacModalSecondContainer {
+  width: 320px;
   height: 748px;
   background-color: var(--main-bg);
+  margin-top: 90px;
+
+  @media only screen and (min-width: 768px) {
+    width: 616px;
+  }
+  @media only screen and (min-width: 960px) {
+    width: 960px;
+    height: 666px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.vacModalBtnClose {
+  width: 76px;
+  height: 76px;
+  background: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 38px;
+  right: 0;
+}
+
+.vacModalBtnCloseImg {
+  width: 56px;
+  height: 56px;
+}
+
+.vacModalImageBtnContainer {
+  @media only screen and (min-width: 960px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .modalImg {
   width: 302px;
   height: 365px;
-  /* top: -87.24px;
-  left: 77.08px; */
-  margin-bottom: 30px;
+  margin-top: -78px;
+  margin-bottom: 20px;
 }
 
 .vacModalBtn {
-  /* padding: 10px 20px; */
+  padding: 10px 20px;
   width: 280px;
   height: 38px;
 
@@ -25,6 +102,7 @@
   text-align: center;
   color: var(--main-bg);
 
+  margin-left: 20px;
   margin-bottom: 20px;
 }
 
@@ -34,6 +112,13 @@
   fill: var(--main-bg);
   /* fill: linear-gradient(0deg, #424d58 0%, #272a2f 100%); */
   margin-right: 10px;
+}
+
+.vacModalTitleFormContainer {
+  @media only screen and (min-width: 960px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .vacModalTitleContainer {

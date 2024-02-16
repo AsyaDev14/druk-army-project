@@ -140,7 +140,7 @@ const Vacancies = () => {
                       {vacancy.btnText}
                     </button>
                   )}
-                  {/* <VacanciesModal /> */}
+                  <VacanciesModal />
                 </div>
               </div>
             </div>
