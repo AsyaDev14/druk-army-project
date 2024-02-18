@@ -13,11 +13,11 @@ const InfoBlock = ({
 
   return (
     <div className={css.container} style={containerStyle}>
-      {firstTitle && <h3 className={css.firstTitle}>{firstTitle}</h3>}
+      {firstTitle && <h2 className={css.firstTitle}>{firstTitle}</h2>}
       {secondTitle && (
-        <h2 className={css.secondTitle} style={{ color: color }}>
+        <h3 className={css.secondTitle} style={{ color: color }}>
           {secondTitle}
-        </h2>
+        </h3>
       )}
       {description && <p className={css.description}>{description}</p>}
     </div>
