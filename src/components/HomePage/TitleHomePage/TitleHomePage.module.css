@@ -1,18 +1,7 @@
-.logoSliderContainer {
-  width: 125px;
-  height: 67.37px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  color: var(--paragraph-text);
-  margin-top: 2em;
-  margin-left: auto;
-}
-
 .mainTitleContainer {
   border-left: 3px solid var(--paragraph-text);
   padding-left: 16px;
+  margin-top: 80px;
 }
 
 .mainTitle {
@@ -108,4 +97,38 @@
     font-size: 14px;
     color: #5e6a8a;
     row-gap: 12px;
+  }
+
+  @media screen and (min-width: 480px) {
+    .mainTitleContainer {
+      margin-top: 40px;
+    }
+
+    .mainTitle {
+      font-size: 20px;
+    }
+
+    .titleAccent {
+      font-size: 36px;
+    }
+
+    .links, 
+    .mainTitleText {
+      font-size: 16px;
+    }
+
+    .communityIcon {
+      width: 37px;
+      height: 21px;
+    }
+
+    .btn {
+      font-size: 20px;
+      height: 51px;
+      padding: 15px 20px;
+    }
+
+    .links {
+      row-gap: 6px;
+    }
   }

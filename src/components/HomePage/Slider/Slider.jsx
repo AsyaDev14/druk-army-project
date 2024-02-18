@@ -1,12 +1,12 @@
-"use client"
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+"use client";
+import React from "react";
+import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import { nanoid } from 'nanoid';
-import css from "./Slider.module.css"
+import { nanoid } from "nanoid";
+import css from "./Slider.module.css";
 
-import 'swiper/css';
-import Image from 'next/image';
+import "swiper/css";
 
 const Slider = () => {
   const slides = [
@@ -15,10 +15,9 @@ const Slider = () => {
     { img: "/img/home/slider/slide3.png", id: nanoid() },
   ];
 
-
   return (
-    <div className="container">
-    <Swiper
+    <div className={css.container}>
+      <Swiper
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
@@ -34,12 +33,26 @@ const Slider = () => {
       >
         {slides.map(({ img, id }) => (
           <SwiperSlide key={id}>
-            <Image alt="photo" src={img} width={520} height={330} className={css.slideItem}/>
+            <Image
+              alt="photo"
+              src={img}
+              width={520}
+              height={330}
+              className={css.slideItem}
+            />
           </SwiperSlide>
         ))}
       </Swiper>
+      <div className={css.logoSliderContainer}>
+          <Image
+            src={"/img/home/sliderLogo.png"}
+            alt="Логотип ДрукАрмії"
+            width={107}
+            height={53}
+          />
+        </div>
     </div>
-  )
-}
+  );
+};
 
-export default Slider
+export default Slider;

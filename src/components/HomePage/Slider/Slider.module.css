@@ -2,3 +2,33 @@
     object-fit: cover;
     object-position: -110px;
 }
+
+.container {
+    position: relative;
+}
+
+.logoSliderContainer {
+    width: 125px;
+    height: 67.37px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: var(--paragraph-text);
+    bottom: -80px;
+    right: 16px;
+    z-index: 10;
+  }
+
+@media screen and (min-width: 480px) {
+    .slideItem {
+        width: 768px;
+        height: 486px;
+    }
+    
+    .logoSliderContainer {
+        bottom: -34px;
+    }
+
+}

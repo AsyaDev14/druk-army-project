@@ -48,3 +48,9 @@
   vertical-align: middle;
   line-height: 1.1;
 }
+
+@media screen and (min-width: 480px) {
+  .imageContainer {
+    width: 480px;
+  }
+}

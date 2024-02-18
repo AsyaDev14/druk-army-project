@@ -1,6 +1,5 @@
 import React from "react";
 import css from "./TitleHomePage.module.css";
-import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/container/Container";
 import Icon from "@/components/Icon/Icon";
@@ -9,14 +8,6 @@ const TitleHomePage = () => {
   return (
     <>
       <Container className={css.container}>
-        <div className={css.logoSliderContainer}>
-          <Image
-            src={"/img/home/sliderLogo.png"}
-            alt="Логотип ДрукАрмії"
-            width={107}
-            height={53}
-          />
-        </div>
         <div className={css.mainTitleContainer}>
           <h1 className={css.mainTitle}>
             Друкуйте перемогу
