@@ -18,8 +18,8 @@
 }
 
 .description {
-    padding: 0 16px;
-    text-align: left;
+  padding: 0 16px;
+  text-align: left;
 }
 
 .description h3 {
@@ -34,9 +34,9 @@
 }
 
 .number {
-    background-color: var(--accent-color);
-    max-height: 101px;
-    padding: 0 16px;
+  background-color: var(--accent-color);
+  max-height: 101px;
+  padding: 0 16px;
 }
 
 .number p {
@@ -52,5 +52,29 @@
 @media screen and (min-width: 480px) {
   .imageContainer {
     width: 480px;
+  }
+
+  .descriptionContainer,
+  .number {
+    max-height: 156px;
+  }
+
+  .number p {
+    font-size: 128px;
+  }
+
+  .description {
+    padding: 46x 0 46px 20px;
+  }
+
+  .description h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 9px;
+  }
+
+  .description p {
+    font-size: 16px;
+    font-weight: 500;
   }
 }

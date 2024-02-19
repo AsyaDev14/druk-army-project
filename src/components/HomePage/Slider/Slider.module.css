@@ -1,34 +1,50 @@
 .slideItem {
-    object-fit: cover;
-    object-position: -110px;
+  object-fit: cover;
+  object-position: -110px;
 }
 
 .container {
-    position: relative;
+  position: relative;
 }
 
 .logoSliderContainer {
-    width: 125px;
-    height: 67.37px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    color: var(--paragraph-text);
-    bottom: -80px;
-    right: 16px;
-    z-index: 10;
-  }
+  width: 125px;
+  height: 67.37px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: var(--paragraph-text);
+  bottom: -80px;
+  right: 16px;
+  z-index: 10;
+}
 
 @media screen and (min-width: 480px) {
-    .slideItem {
-        width: 768px;
-        height: 486px;
-    }
-    
-    .logoSliderContainer {
-        bottom: -34px;
-    }
+  .slideItem {
+    width: 768px;
+    height: 486px;
+  }
 
+  .logoSliderContainer {
+    bottom: -34px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slideItem {
+    object-position: 0;
+  }
+
+  .logoSliderContainer {
+    width: 167px;
+    height: 90px;
+    bottom: -46px;
+  }
+
+  .logoSlider {
+    width: 143px;
+    height: 71px;
+  }
 }

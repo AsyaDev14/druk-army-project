@@ -132,3 +132,29 @@
       row-gap: 6px;
     }
   }
+
+  @media screen and (min-width: 768px) {
+    .mainTitle {
+      font-size: 32px;
+    }
+
+    .titleAccent {
+      font-size: 48px;
+    }
+
+    .links,
+    .mainTitleText {
+      font-size: 20px;
+    }
+
+    .contactsUs {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      column-gap: 23px;
+    }
+
+    .container {
+      padding: 0 114px;
+    }
+  }

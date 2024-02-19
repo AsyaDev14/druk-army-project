@@ -49,6 +49,7 @@ const Slider = () => {
             alt="Логотип ДрукАрмії"
             width={107}
             height={53}
+            className={css.logoSlider}
           />
         </div>
     </div>
