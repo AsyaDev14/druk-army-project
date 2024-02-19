@@ -4,17 +4,39 @@ import styles from "./VacanciesForm.module.css";
 const VacanciesForm = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  const [nameError, setNameError] = useState("");
+  const [phoneError, setPhoneError] = useState("");
 
   const handleNameChange = (e) => {
-    setName(e.target.value);
+    const value = e.target.value;
+    if (/^[A-Za-zА-Яа-я\s]+$/.test(value) || value === "") {
+      setName(value);
+      setNameError("");
+    } else {
+      setNameError("Введіть тільки літери");
+    }
   };
 
   const handlePhoneChange = (e) => {
-    setPhone(e.target.value);
+    const value = e.target.value;
+    if (/^[\d\s+]+$/.test(value) || value === "") {
+      setPhone(value);
+      setPhoneError("");
+    } else {
+      setPhoneError("Введіть тільки цифри");
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!name || !phone) {
+      alert("Будь ласка, заповніть всі поля форми");
+      return;
+    }
+
+    // const formData = { name, phone };
+    // console.log("Дані, які будуть відправлені:", formData);
   };
 
   return (
@@ -31,6 +53,7 @@ const VacanciesForm = () => {
             placeholder="Ім'я"
             className={styles.vacModalInput}
           />
+          <span className={styles.errorMsg}>{nameError}</span>
         </div>
         <div>
           <label htmlFor="phone"></label>
@@ -40,13 +63,16 @@ const VacanciesForm = () => {
             name="phone"
             value={phone}
             onChange={handlePhoneChange}
-            placeholder="телефон"
+            placeholder="Телефон"
             className={styles.vacModalInput}
           />
+          <span className={styles.errorMsg}>{phoneError}</span>
         </div>
-        <button type="submit">Відправити</button>
+        <button className={styles.vacModalBtnSend} type="submit">
+          Відправити
+        </button>
         <p className={styles.vacModalFormText}>
-          Натискаючи кнопку оплатити ви даєте згоду на обробку ваших
+          Натискаючи кнопку відправити, ви даєте згоду на обробку ваших
           персональних даних.
         </p>
       </form>

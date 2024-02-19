@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import styles from "./Vacancies.module.css";
@@ -75,6 +77,16 @@ const vacanciesData = [
 ];
 
 const Vacancies = () => {
+  const [isModalOpen, setModalOpen] = React.useState(false);
+
+  const handleOpenModal = () => {
+    setModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
+
   return (
     <Container>
       <Section>
@@ -102,23 +114,38 @@ const Vacancies = () => {
       </Section>
 
       <Section>
-        <InfoBlock
+        {/* <InfoBlock
           firstTitle={"Зараз відкриті"}
           secondTitle={"Вакансія:"}
           color={"#5169ff"}
           description={
             "Якщо ви вважаєте що можете допомогти, ми раді вітати вас у нашій команді."
           }
-        />
+        /> */}
         <div className={styles.allVacanciesContainer}>
           {vacanciesData.map((vacancy, index) => (
             <div key={index}>
               <div className={styles.vacancieContainer}>
-                <Image
-                  src={vacancy.image}
-                  alt="employee img"
-                  className={styles.vacancieImg}
-                />
+                <div className={styles.vacImgBtnContainer}>
+                  <Image
+                    src={vacancy.image}
+                    alt="employee img"
+                    className={styles.vacancieImg}
+                  />
+                  {vacancy.btnText && (
+                    <button
+                      className={styles.btnRespond}
+                      type="button"
+                      onClick={handleOpenModal}
+                    >
+                      {vacancy.btnText}
+                    </button>
+                  )}
+                  <VacanciesModal
+                    isOpen={isModalOpen}
+                    onClose={handleCloseModal}
+                  />
+                </div>
                 <div className={styles.vacancieDescriptionContainer}>
                   <h2 className={styles.vacancieTitle}>{vacancy.title}</h2>
 
@@ -135,12 +162,6 @@ const Vacancies = () => {
                       ))}
                     </ul>
                   )}
-                  {vacancy.btnText && (
-                    <button className={styles.btnRespond} type="button">
-                      {vacancy.btnText}
-                    </button>
-                  )}
-                  <VacanciesModal />
                 </div>
               </div>
             </div>

@@ -74,9 +74,16 @@
 }
 
 .allVacanciesContainer {
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 960px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-gap: 20px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto;
     grid-gap: 20px;
   }
@@ -89,7 +96,6 @@
 
   @media only screen and (min-width: 768px) {
     margin-top: 40px;
-    flex-direction: row;
   }
 }
 
@@ -98,21 +104,50 @@
   flex-direction: column;
   align-items: flex-start;
   width: 290px;
+  margin-top: 30px;
 
   @media only screen and (min-width: 768px) {
-    width: 476px;
+    margin-top: 50px;
+    width: 727px;
   }
 
   @media only screen and (min-width: 960px) {
-    width: 677px;
+    width: 450px;
   }
 
   @media only screen and (min-width: 1200px) {
-    width: 335px;
+    width: 391px;
   }
 
   @media only screen and (min-width: 1920px) {
-    width: 492px;
+    width: 493px;
+  }
+}
+
+.vacImgBtnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @media only screen and (min-width: 480px) {
+    width: 440px;
+    height: 344px;
+  }
+  @media only screen and (min-width: 768px) {
+    width: 728px;
+    height: 344px;
+  }
+  @media only screen and (min-width: 960px) {
+    width: 450px;
+    height: 344px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 374px;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    width: 493px;
   }
 }
 
@@ -122,19 +157,27 @@
   object-fit: cover;
   margin-bottom: 20px;
 
+  @media only screen and (min-width: 480px) {
+    width: 440px;
+    height: 344px;
+  }
+
   @media only screen and (min-width: 768px) {
-    width: 227px;
-    height: auto;
-    margin-right: 20px;
-    margin-bottom: 0;
+    width: 728px;
+    height: 344px;
   }
 
   @media only screen and (min-width: 960px) {
-    width: 215px;
+    width: 450px;
+    height: 344px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 374px;
   }
 
   @media only screen and (min-width: 1920px) {
-    width: 237px;
+    width: 493px;
   }
 }
 
@@ -178,6 +221,8 @@
 }
 
 .btnRespond {
+  width: 247px;
+  height: 35px;
   position: relative;
   color: var(--buttons-text);
   text-align: center;
@@ -186,7 +231,8 @@
   font-size: 15px;
   line-height: normal;
   text-transform: uppercase;
-  background: var(--paragraph-text);
+  background: var(--accent-color);
+
   display: flex;
   padding: 15px 20px;
   justify-content: center;
@@ -194,30 +240,12 @@
   gap: 10px;
   overflow: hidden;
   z-index: 1;
+  margin-top: -55px;
+  margin-left: 53px;
 
   @media only screen and (min-width: 768px) {
     width: 247px;
   }
-}
-
-.btnRespond::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 0;
-  background: var(--bg-details);
-  transition: width 600ms ease;
-  z-index: -1;
-}
-
-.btnRespond::after {
-  left: 0;
-}
-
-.btnRespond:hover::after {
-  background: var(--accent-color);
-  width: 100%;
 }
 
 .vacBottomSectionContainer {

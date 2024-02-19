@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
 import styles from "./VacanciesModal.module.css";
@@ -9,12 +7,21 @@ import modalImg from "../../../../public/img/vacancies/apply-modal.png";
 import btnClose from "../../../../public/img/vacancies/btn-close.jpg";
 import VacanciesForm from "./VacanciesForm";
 
-export const VacanciesModal = () => {
-  return (
-    <backdrop className={styles.vacModalBackdrop}>
+export const VacanciesModal = ({ isOpen, onClose }) => {
+  const handleBackdropClick = (e) => {
+    if (e.target === e.currentTarget) {
+      onClose();
+    }
+  };
+  return isOpen ? (
+    <div className={styles.vacModalBackdrop} onClick={handleBackdropClick}>
       <div className={styles.vacModalContainer}>
         <div className={styles.vacModalSecondContainer}>
-          <button type="button" className={styles.vacModalBtnClose}>
+          <button
+            type="button"
+            className={styles.vacModalBtnClose}
+            onClick={onClose}
+          >
             <Image src={btnClose} className={styles.vacModalBtnCloseImg} />
           </button>
           <div className={styles.vacModalImageBtnContainer}>
@@ -37,6 +44,6 @@ export const VacanciesModal = () => {
           </div>
         </div>
       </div>
-    </backdrop>
-  );
+    </div>
+  ) : null;
 };

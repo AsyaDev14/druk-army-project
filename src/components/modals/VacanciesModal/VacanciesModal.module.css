@@ -124,7 +124,8 @@
 .vacModalTitleContainer {
   border-left-width: 4px;
   border-left-style: solid;
-  padding: 0 6px;
+  padding: 0 12px;
+  margin-left: 12px;
 }
 
 .vacModalTitle {

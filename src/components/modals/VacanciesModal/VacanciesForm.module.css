@@ -27,8 +27,19 @@
   color: var(--accent-color);
 }
 
+.vacModalInput::placeholder {
+  color: var(--accent-color);
+}
+
 .vacModalFormText {
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 13px;
   color: var(--main-bg);
+}
+
+.vacModalBtnSend {
+  width: 181px;
+  height: 42px;
+  background: var(--accent-color);
+  /* border: 2px var(--main-bg); */
 }
