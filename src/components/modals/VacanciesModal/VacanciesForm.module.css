@@ -4,19 +4,45 @@
   width: 272px;
   height: 300px;
   margin: 0 auto;
+  position: relative;
+
+  @media only screen and (min-width: 768px) {
+    width: 483px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    margin-left: 12px;
+    margin-top: 10px;
+  }
+}
+
+.errorMsg {
+  display: block;
+  color: rgb(252, 248, 248);
+  font-size: 11px;
+  margin-top: 3px;
 }
 
 .vacanciesModalForm {
   display: flex;
   flex-direction: column;
   align-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
+
+  @media only screen and (min-width: 768px) {
+    align-items: center;
+    gap: 10px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    gap: 15px;
+  }
 }
 
 .vacModalInput {
   padding: 20px;
-  width: 214px;
+  width: 215px;
   height: 52px;
   background: var(--main-bg);
   border: none;
@@ -25,6 +51,11 @@
   font-size: 16px;
   text-transform: uppercase;
   color: var(--accent-color);
+
+  @media only screen and (min-width: 768px) {
+    width: 381px;
+    height: 55px;
+  }
 }
 
 .vacModalInput::placeholder {
@@ -32,14 +63,33 @@
 }
 
 .vacModalFormText {
+  width: 220px;
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 13px;
   color: var(--main-bg);
+
+  @media only screen and (min-width: 768px) {
+    width: 382px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    width: 385px;
+    font-size: 16px;
+  }
 }
 
 .vacModalBtnSend {
   width: 181px;
   height: 42px;
   background: var(--accent-color);
-  /* border: 2px var(--main-bg); */
+  border: 2px solid var(--main-bg);
+
+  font-family: "Benzin-Medium", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--main-bg);
+
+  @media only screen and (min-width: 768px) {
+    margin-left: -200px;
+  }
 }

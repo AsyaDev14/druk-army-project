@@ -13,6 +13,7 @@ export const VacanciesModal = ({ isOpen, onClose }) => {
       onClose();
     }
   };
+
   return isOpen ? (
     <div className={styles.vacModalBackdrop} onClick={handleBackdropClick}>
       <div className={styles.vacModalContainer}>
@@ -26,10 +27,15 @@ export const VacanciesModal = ({ isOpen, onClose }) => {
           </button>
           <div className={styles.vacModalImageBtnContainer}>
             <Image src={modalImg} alt="modal img" className={styles.modalImg} />
-            <button type="button" className={styles.vacModalBtn}>
+            <a
+              href="https://t.me/volnov"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.vacModalBtn}
+            >
               <Icon name="icon-telegram" className={styles.vacModalBtnSvg} />
               пиши в Telegram
-            </button>
+            </a>
           </div>
           <div className={styles.vacModalTitleFormContainer}>
             <div className={styles.vacModalTitleContainer}>
