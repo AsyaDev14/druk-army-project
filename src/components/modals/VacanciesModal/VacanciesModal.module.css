@@ -1,0 +1,178 @@
+.vacModalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(20px);
+  background: rgba(38, 38, 38, 0.21);
+  z-index: 20;
+}
+
+.vacModalContainer {
+  width: 320px;
+  height: 922px;
+
+  background: transparent;
+  overflow: hidden;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+
+  @media only screen and (min-width: 768px) {
+    width: 616px;
+    padding: 0;
+  }
+  @media only screen and (min-width: 960px) {
+    width: 960px;
+    height: 666px;
+    flex-direction: row;
+  }
+}
+
+.vacModalSecondContainer {
+  width: 320px;
+  height: 748px;
+  background-color: var(--main-bg);
+  margin-top: 90px;
+
+  @media only screen and (min-width: 768px) {
+    width: 616px;
+  }
+  @media only screen and (min-width: 960px) {
+    width: 960px;
+    height: 666px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.vacModalBtnClose {
+  width: 76px;
+  height: 76px;
+  background: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 0;
+
+  @media only screen and (min-width: 960px) {
+    top: 45px;
+  }
+}
+
+.vacModalBtnCloseImg {
+  width: 56px;
+  height: 56px;
+}
+
+.vacModalImageBtnContainer {
+  @media only screen and (min-width: 960px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.modalImg {
+  width: 302px;
+  height: 365px;
+  margin-top: -78px;
+  margin-bottom: 20px;
+
+  @media only screen and (min-width: 768px) {
+    width: 456px;
+    height: 552px;
+    margin-top: -150px;
+    margin-bottom: -10px;
+  }
+  @media only screen and (min-width: 960px) {
+    margin-top: 0;
+  }
+}
+
+.vacModalBtn {
+  padding: 10px 20px;
+  width: 280px;
+  height: 38px;
+
+  background: var(--accent-color);
+  border: none;
+
+  font-family: "Benzin-Medium", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--main-bg);
+
+  margin-left: 20px;
+  margin-bottom: 20px;
+
+  @media only screen and (min-width: 768px) {
+    width: 342px;
+    height: 47px;
+  }
+  @media only screen and (min-width: 960px) {
+  }
+}
+
+.vacModalBtnSvg {
+  width: 18px;
+  height: 18px;
+  fill: var(--main-bg);
+  /* fill: linear-gradient(0deg, #424d58 0%, #272a2f 100%); */
+  margin-right: 10px;
+}
+
+.vacModalTitleFormContainer {
+  @media only screen and (min-width: 960px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: -50px;
+  }
+}
+
+.vacModalTitleContainer {
+  border-left-width: 4px;
+  border-left-style: solid;
+  padding: 0 12px;
+  margin-left: 12px;
+}
+
+.vacModalTitle {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--title-small);
+
+  @media only screen and (min-width: 960px) {
+    font-size: 36px;
+  }
+}
+
+.vacModalTitle span {
+  font-family: "Benzin-ExtraBold", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: var(--title-small);
+
+  @media only screen and (min-width: 960px) {
+    font-size: 64px;
+  }
+}
+
+.vacModalDescription {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 20px;
+  color: var(--title-small);
+
+  margin-bottom: 20px;
+}
