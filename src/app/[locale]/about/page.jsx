@@ -61,18 +61,17 @@ const About = () => {
           </picture>
 
           <div className={css.aboutInfo}>
-              <h2 className={css.aboutTitle}>Євген Вольнов</h2>
-              <p className={css.aboutText}>
-                Український пранкер та блогер з Києва, волонтер, співзасновник
-                проекту Друк.Армія. Відомий телефонними розіграшами, які
-                супроводжуються великим об&apos;ємом ненормативної лексики. З
-                2018 року — офіційний спікер Центру «Миротворець».
-              </p>
+            <h2 className={css.aboutTitle}>Євген Вольнов</h2>
+            <p className={css.aboutText}>
+              Український пранкер та блогер з Києва, волонтер, співзасновник
+              проекту Друк.Армія. Відомий телефонними розіграшами, які
+              супроводжуються великим об&apos;ємом ненормативної лексики. З 2018
+              року — офіційний спікер Центру «Миротворець».
+            </p>
           </div>
         </div>
-        
-        
-        <div className={css.info}>
+
+        <div className={css.aboutCard}>
           <picture className={css.photo}>
             <source
               className={css.photo}
@@ -108,51 +107,54 @@ const About = () => {
             />
           </picture>
 
-          <div className={css.sharaievskyi}>
-              <h2 className={css.title}>Андрій Шараєвський</h2>
-              <p className={css.text}>
-                Український маркетолог з досвідом понад 10 років, який
-                займається блогеркою діяльністю, та допомагає ЗСУ як волонтер.
-              </p>
+          <div className={css.aboutInfo}>
+            <h2 className={css.aboutTitle}>Андрій Шараєвський</h2>
+            <p className={css.aboutText}>
+              Український маркетолог з досвідом понад 10 років, який займається
+              блогеркою діяльністю, та допомагає ЗСУ як волонтер.
+            </p>
           </div>
         </div>
       </div>
 
       <ContainerNoPadding>
         <div className={css.family}>
-          <div className={css.background}></div>
+          {/* <div className={css.background}></div> */}
           <picture className={css.photo}>
             <source
               className={css.familyImage}
               media="(max-width: 480px)"
-              srcSet="/img/about/family-320.jpg"
+              srcSet="/img/about/family-prints-320.jpg"
             />
 
-            {/* 
-        <source
-        className={css.photo}
-        media="(max-width: 767px)"
-        srcSet="/img/about/sharaievskyi-480.jpg"
-        />
-        <source
-        className={css.photo}
-        media="(max-width: 959px)"
-        srcSet="/img/about/sharaievskyi-768.jpg"
-        />
-        <source
-        className={css.photo}
-        media="(max-width: 1200px)"
-        srcSet="/img/about/sharaievskyi-960.jpg"
-        />
-        <source
-        className={css.photo}
-        media="(min-width: 1200px)"
-        srcSet="/img/about/sharaievskyi-1920.jpg"
-        />
-      */}
+            <source
+              className={css.photo}
+              media="(max-width: 767px)"
+              srcSet="/img/about/family-prints-480.jpg"
+            />
+            <source
+              className={css.photo}
+              media="(max-width: 959px)"
+              srcSet="/img/about/family-prints-768.jpg"
+            />
+            <source
+              className={css.photo}
+              media="(max-width: 1200px)"
+              srcSet="/img/about/family-prints-960.jpg"
+            />
+            <source
+              className={css.photo}
+              media="(max-width: 1920px)"
+              srcSet="/img/about/family-prints-1200.jpg"
+            />
+            <source
+              className={css.photo}
+              media="(min-width: 1920px)"
+              srcSet="/img/about/family-prints-1920.jpg"
+            />
             <img
               className={css.familyImage}
-              src="/img/about/family-1920.jpg"
+              src="/img/about/family-prints-1920.jpg"
               alt="A family standing around a 3D printer, looking puzzled and thinking about how to turn it on"
             />
           </picture>
@@ -166,6 +168,7 @@ const About = () => {
             secondTitle="друкувати?"
             description="Ми шукаємо свідомих громадян, які мають 3D-принтери та бажання приділити час і докласти зусиль задля допомоги нашим військовим. Ми радо надамо вам консультації та підтримку і допоможемо досягти високої якості друку."
             color="var(--accent-color)"
+            marginLeft="138px"
           />
         </Container>
       </div>
@@ -173,42 +176,43 @@ const About = () => {
       <div className={css.mapWrapper}>
         <picture className={css.photo}>
           <source
-            className=""
+            className={css.photo}
             media="(max-width: 480px)"
             srcSet="/img/about/map-320.png"
           />
 
-          {/* 
-        <source
-        className={css.photo}
-        media="(max-width: 767px)"
-        srcSet="/img/about/sharaievskyi-480.jpg"
-        />
-        <source
-        className={css.photo}
-        media="(max-width: 959px)"
-        srcSet="/img/about/sharaievskyi-768.jpg"
-        />
-        <source
-        className={css.photo}
-        media="(max-width: 1200px)"
-        srcSet="/img/about/sharaievskyi-960.jpg"
-        />
-        <source
-        className={css.photo}
-        media="(min-width: 1200px)"
-        srcSet="/img/about/sharaievskyi-1920.jpg"
-        />
-      */}
-          <img className="" src="/img/about/map-1920.jpg" alt="map" />
+          <source
+            className={css.photo}
+            media="(max-width: 767px)"
+            srcSet="/img/about/map-480.png"
+          />
+          <source
+            className={css.photo}
+            media="(max-width: 959px)"
+            srcSet="/img/about/map-768.png"
+          />
+          <source
+            className={css.photo}
+            media="(max-width: 1200px)"
+            srcSet="/img/about/map-960.png"
+          />
+          <source
+            className={css.photo}
+            media="(min-width: 1200px)"
+            srcSet="/img/about/map-1920.png"
+          />
+
+          <img className="" src="/img/about/map-1920.png" alt="map" />
         </picture>
       </div>
+
       <div className={css.accent}>
         <InfoBlockAccent
           firstTitle="Кого ми"
           secondTitle="підтримуємо"
           firstDescription="Обсяг задач, який ми охоплюємо, настільки ж великий, як і наші амбіції. Ми працюємо на потреби захисників на передовій та виконуємо запити штабів ЗСУ. Щодня ми забезпечуємо армію необхідними предметами 3D друку та закриваємо найрізноманітніші потреби. "
           secondDescription="Ми співпрацюємо з різними організаціями, які самовіддано допомагають українській армії. Ми готові перетворити моток пластику на вкрай необхідне обладнання, що зміцнює оборону нашої країни."
+          marginLeft="223px"
         />
       </div>
 
@@ -216,32 +220,31 @@ const About = () => {
         <source
           className=""
           media="(max-width: 480px)"
-          srcSet="/img/about/family-rest-320.jpg"
+          srcSet="/img/about/family-rests-320.jpg"
         />
 
-        {/* 
         <source
-        className={css.photo}
-        media="(max-width: 767px)"
-        srcSet="/img/about/family-rest-480.jpg"
+          className={css.photo}
+          media="(max-width: 767px)"
+          srcSet="/img/about/family-rests-480.jpg"
         />
         <source
-        className={css.photo}
-        media="(max-width: 959px)"
-        srcSet="/img/about/family-rest-768.jpg"
+          className={css.photo}
+          media="(max-width: 959px)"
+          srcSet="/img/about/family-rests-768.jpg"
         />
         <source
-        className={css.photo}
-        media="(max-width: 1200px)"
-        srcSet="/img/about/family-rest-960.jpg"
+          className={css.photo}
+          media="(max-width: 1200px)"
+          srcSet="/img/about/family-rests-960.jpg"
         />
         <source
-        className={css.photo}
-        media="(min-width: 1200px)"
-        srcSet="/img/about/family-rest-1920.jpg"
+          className={css.photo}
+          media="(min-width: 1200px)"
+          srcSet="/img/about/family-rests-1920.jpg"
         />
-      */}
-        <img className="" src="/img/about/family-rest-1920.jpg" alt="family" />
+
+        <img className="" src="/img/about/family-rests-1920.jpg" alt="family" />
       </picture>
 
       <div className={css.titleBottom}>

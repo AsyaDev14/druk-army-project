@@ -6,9 +6,10 @@ const InfoBlock = ({
   description,
   color,
   alignRight,
+  marginLeft,
 }) => {
   const containerStyle = {
-    marginLeft: alignRight ? "auto" : "initial",
+    marginLeft: alignRight ? "auto" : marginLeft || "initial",
   };
 
   return (
