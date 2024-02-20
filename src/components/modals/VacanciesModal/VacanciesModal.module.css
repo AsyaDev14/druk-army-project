@@ -92,9 +92,11 @@
     height: 552px;
     margin-top: -150px;
     margin-bottom: -10px;
+    margin-left: 50px;
   }
   @media only screen and (min-width: 960px) {
     margin-top: 0;
+    margin-left: 0;
   }
 }
 
@@ -118,8 +120,10 @@
   @media only screen and (min-width: 768px) {
     width: 342px;
     height: 47px;
+    margin-left: 50px;
   }
   @media only screen and (min-width: 960px) {
+    margin-left: 20px;
   }
 }
 
@@ -132,6 +136,8 @@
 }
 
 .vacModalTitleFormContainer {
+  margin-top: 30px;
+
   @media only screen and (min-width: 960px) {
     display: flex;
     flex-direction: column;
