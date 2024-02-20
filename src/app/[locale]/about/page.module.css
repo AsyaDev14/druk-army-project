@@ -1,11 +1,8 @@
 .titleTop {
   margin-top: 48px;
   margin-bottom: 36px;
-
-  @media only screen and (min-width: 960px) {
-    margin-bottom: 80px;
-  }
 }
+
 .wrapper {
   position: relative;
 }
@@ -24,6 +21,27 @@
   text-align: center;
   color: var(--bg-details);
   opacity: 0.1;
+
+  
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+
+  margin-bottom: 45px;
+
+  
+}
+
+.aboutCard {
+  width: 320px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0 auto;
+
+ 
 }
 
 .photo {
@@ -31,25 +49,22 @@
   margin: 0 auto 5px;
 }
 
-.title {
+.aboutTitle {
   font-weight: 700;
   font-size: 32px;
   text-transform: uppercase;
   color: var(--title-small);
 }
 
-.text {
+.aboutText {
   font-weight: 500;
   font-size: 14px;
   color: var(--title-small);
 }
 
-.volnov {
-  margin-bottom: 37px;
-}
-
-.sharaievskyi {
-  margin-bottom: 45px;
+.aboutInfo {
+  /* padding-left: 7px;
+  padding-right: 7px; */
 }
 
 .family {
@@ -107,9 +122,9 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 60%; 
-  background-color:var(--accent-color); 
-  z-index: -1; 
+  height: 60%;
+  background-color: var(--accent-color);
+  z-index: -1;
 }
 
 .titleBottom {

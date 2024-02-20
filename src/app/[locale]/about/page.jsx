@@ -18,101 +18,104 @@ const About = () => {
           <TitleBlock
             title="Про ДрукАрмію"
             description="ДрукАрмія — це українська спільнота, що протягом року друкує на 3D принтерах необхідне обладнання для ЗСУ, щоб підтримати оборону України проти російських агресорів."
+            maxWidth="780px"
           />
         </Container>
       </div>
 
-      <picture className={css.photo}>
-        <source
-          className={css.photo}
-          media="(max-width: 480px)"
-          srcSet="/img/about/volnov-320.jpg"
-        />
-        {/* 
-        <source
-          className={css.photo}
-          media="(max-width: 767px)"
-          srcSet="/img/about/volnov-480.jpg"
-        />
-        <source
-          className={css.photo}
-          media="(max-width: 959px)"
-          srcSet="/img/about/volnov-768.jpg"
-        />
-        <source
-          className={css.photo}
-          media="(max-width: 1200px)"
-          srcSet="/img/about/volnov-960.jpg"
-        />
-        <source
-          className={css.photo}
-          media="(min-width: 1200px)"
-          srcSet="/img/about/volnov-1920.jpg"
-        /> 
-        */}
-        <img
-          className={css.photo}
-          src="/img/about/volnov-1920.jpg"
-          alt="volnov"
-        />
-      </picture>
+      <div className={css.about}>
+        <div className={css.aboutCard}>
+          <picture className={css.photo}>
+            <source
+              className={css.photo}
+              media="(max-width: 480px)"
+              srcSet="/img/about/volnov-320.jpg"
+            />
 
-      <div className={css.volnov}>
-        <Container>
-          <h2 className={css.title}>Євген Вольнов</h2>
-          <p className={css.text}>
-            Український пранкер та блогер з Києва, волонтер, співзасновник
-            проекту Друк.Армія. Відомий телефонними розіграшами, які
-            супроводжуються великим об'ємом ненормативної лексики. З 2018 року —
-            офіційний спікер Центру «Миротворець».
-          </p>
-        </Container>
-      </div>
+            <source
+              className={css.photo}
+              media="(max-width: 767px)"
+              srcSet="/img/about/volnov-480.jpg"
+            />
+            <source
+              className={css.photo}
+              media="(max-width: 959px)"
+              srcSet="/img/about/volnov-768.jpg"
+            />
+            <source
+              className={css.photo}
+              media="(max-width: 1200px)"
+              srcSet="/img/about/volnov-960.jpg"
+            />
+            <source
+              className={css.photo}
+              media="(min-width: 1200px)"
+              srcSet="/img/about/volnov-1920.jpg"
+            />
 
-      <picture className={css.photo}>
-        <source
-          className={css.photo}
-          media="(max-width: 480px)"
-          srcSet="/img/about/sharaievskyi-320.jpg"
-        />
+            <img
+              className={css.photo}
+              src="/img/about/volnov-1920.jpg"
+              alt="volnov"
+            />
+          </picture>
 
-        {/* 
-        <source
-          className={css.photo}
-          media="(max-width: 767px)"
-          srcSet="/img/about/sharaievskyi-480.jpg"
-        />
-        <source
-          className={css.photo}
-          media="(max-width: 959px)"
-          srcSet="/img/about/sharaievskyi-768.jpg"
-        />
-        <source
-          className={css.photo}
-          media="(max-width: 1200px)"
-          srcSet="/img/about/sharaievskyi-960.jpg"
-        />
-        <source
-          className={css.photo}
-          media="(min-width: 1200px)"
-          srcSet="/img/about/sharaievskyi-1920.jpg"
-        />
-         */}
-        <img
-          className={css.photo}
-          src="/img/about/sharaievskyi-1920.jpg"
-          alt="sharaievskyi"
-        />
-      </picture>
+          <div className={css.aboutInfo}>
+              <h2 className={css.aboutTitle}>Євген Вольнов</h2>
+              <p className={css.aboutText}>
+                Український пранкер та блогер з Києва, волонтер, співзасновник
+                проекту Друк.Армія. Відомий телефонними розіграшами, які
+                супроводжуються великим об&apos;ємом ненормативної лексики. З
+                2018 року — офіційний спікер Центру «Миротворець».
+              </p>
+          </div>
+        </div>
+        
+        
+        <div className={css.info}>
+          <picture className={css.photo}>
+            <source
+              className={css.photo}
+              media="(max-width: 480px)"
+              srcSet="/img/about/sharaievskyi-320.jpg"
+            />
 
-      <div className={css.sharaievskyi}>
-        <Container>
-          <h2 className={css.title}>Андрій Шараєвський</h2>
-          <p className={css.text}>
-            Український маркетолог з досвідом понад 10 років, який займається
-            блогеркою діяльністю, та допомагає ЗСУ як волонтер.
-          </p>
-        </Container>
+            <source
+              className={css.photo}
+              media="(max-width: 767px)"
+              srcSet="/img/about/sharaievskyi-480.jpg"
+            />
+            <source
+              className={css.photo}
+              media="(max-width: 959px)"
+              srcSet="/img/about/sharaievskyi-768.jpg"
+            />
+            <source
+              className={css.photo}
+              media="(max-width: 1200px)"
+              srcSet="/img/about/sharaievskyi-960.jpg"
+            />
+            <source
+              className={css.photo}
+              media="(min-width: 1200px)"
+              srcSet="/img/about/sharaievskyi-1920.jpg"
+            />
+
+            <img
+              className={css.photo}
+              src="/img/about/sharaievskyi-1920.jpg"
+              alt="sharaievskyi"
+            />
+          </picture>
+
+          <div className={css.sharaievskyi}>
+              <h2 className={css.title}>Андрій Шараєвський</h2>
+              <p className={css.text}>
+                Український маркетолог з досвідом понад 10 років, який
+                займається блогеркою діяльністю, та допомагає ЗСУ як волонтер.
+              </p>
+          </div>
+        </div>
       </div>
 
       <ContainerNoPadding>
@@ -248,10 +251,7 @@ const About = () => {
         />
       </div>
 
-      <a
-        className={css.button}
-        href="/donations"
-      >
+      <a className={css.button} href="/donations">
         <Icon className={css.icon} name="icon-banknote" />
         Підтримати
       </a>
