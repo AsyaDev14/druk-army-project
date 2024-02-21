@@ -1,4 +1,7 @@
 .container {
+  display: inline-block;
+  max-width: fit-content;
+
   background-color: var(--accent-color);
   color: var(--main-bg);
   border-left-width: 2px;
