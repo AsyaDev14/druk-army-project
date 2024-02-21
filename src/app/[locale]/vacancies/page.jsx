@@ -7,7 +7,6 @@ import Section from "@/components/Section/Section";
 import Container from "@/components/container/Container";
 import Icon from "@/components/Icon/Icon";
 import Link from "next/link";
-import InfoBlock from "@/components/InfoBlock/InfoBlock";
 
 import officeImg from "../../../../public/img/vacancies/office-tab.jpg";
 import office2 from "../../../../public/img/vacancies/office2-tab.jpg";
@@ -89,39 +88,29 @@ const Vacancies = () => {
 
   return (
     <Container>
-      <Section>
-        <div className={styles.bannerContainer}>
-          <div className={styles.imageContainer}>
-            <Image
-              src={officeImg}
-              alt="office img"
-              className={styles.centerCrop}
-            />
-          </div>
-
-          <div>
-            <h2 className={styles.vacTitle}>
-              Стати частиною команди <br />
-              <span>ДрукАрмії</span>
-            </h2>
-            <p className={styles.vacTitleDescription}>
-              Над проектом працюють люди, які вважають що їхні професійні
-              навички та досвід, розуміння своєї справи та компетенції можуть
-              бути корисними у спільній справі на шляху до перемоги.
-            </p>
-          </div>
+      <div>
+        <div className={styles.imageContainer}>
+          <Image
+            src={officeImg}
+            alt="office img"
+            className={styles.centerCrop}
+          />
         </div>
-      </Section>
+
+        <div>
+          <h2 className={styles.vacTitle}>
+            Стати частиною команди <br />
+            <span>ДрукАрмії</span>
+          </h2>
+          <p className={styles.vacTitleDescription}>
+            Над проектом працюють люди, які вважають що їхні професійні навички
+            та досвід, розуміння своєї справи та компетенції можуть бути
+            корисними у спільній справі на шляху до перемоги.
+          </p>
+        </div>
+      </div>
 
       <Section>
-        {/* <InfoBlock
-          firstTitle={"Зараз відкриті"}
-          secondTitle={"Вакансія:"}
-          color={"#5169ff"}
-          description={
-            "Якщо ви вважаєте що можете допомогти, ми раді вітати вас у нашій команді."
-          }
-        /> */}
         <div className={styles.allVacanciesContainer}>
           {vacanciesData.map((vacancy, index) => (
             <div key={index}>
