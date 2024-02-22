@@ -3,6 +3,7 @@ import css from "./page.module.css";
 import InfoBlock from "@/components/InfoBlock/InfoBlock";
 import InfoBlockAccent from "@/components/InfoBlockAccent/InfoBlockAccent";
 import Icon from "@/components/Icon/Icon";
+import ShareButton from "@/components/ShareButton/ShareButton";
 
 const About = () => {
   return (
@@ -273,18 +274,7 @@ const About = () => {
           Підтримати
         </a>
 
-        <button
-          className={`${css.button} ${css.secondary}`}
-          // href="/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Icon
-            className={`${css.icon} ${css.secondary}`}
-            name="icon-mix-lines"
-          />
-          поділитися
-        </button>
+        <ShareButton />
       </div>
     </div>
   );
