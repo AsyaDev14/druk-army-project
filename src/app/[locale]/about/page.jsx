@@ -27,7 +27,7 @@ const About = () => {
           <picture className={css.photo}>
             <source
               className={css.photo}
-              media="(max-width: 480px)"
+              media="(max-width: 479px)"
               srcSet="/img/about/volnov-320.jpg"
             />
 
@@ -48,7 +48,12 @@ const About = () => {
             />
             <source
               className={css.photo}
-              media="(min-width: 1200px)"
+              media="(max-width: 1919px)"
+              srcSet="/img/about/volnov-1200.jpg"
+            />
+            <source
+              className={css.photo}
+              media="(min-width: 1920px)"
               srcSet="/img/about/volnov-1920.jpg"
             />
 
@@ -95,7 +100,12 @@ const About = () => {
             />
             <source
               className={css.photo}
-              media="(min-width: 1200px)"
+              media="(max-width: 1919px)"
+              srcSet="/img/about/sharaievskyi-1200.jpg"
+            />
+            <source
+              className={css.photo}
+              media="(min-width: 1920px)"
               srcSet="/img/about/sharaievskyi-1920.jpg"
             />
 
@@ -201,7 +211,7 @@ const About = () => {
             />
             <source
               className={css.photo}
-              media="(min-width: 1200px)"
+              media="(min-width: 1920px)"
               srcSet="/img/about/map-1920.png"
             />
 

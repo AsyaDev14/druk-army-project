@@ -126,6 +126,10 @@
     min-width: 450px;
   }
 
+  @media only screen and (min-width: 1200px) {
+    min-width: 572px;
+  }
+
   @media only screen and (min-width: 1920px) {
     min-width: 495px;
   }
@@ -137,21 +141,32 @@
 }
 
 .aboutTitle {
+  margin-top: 5px;
+
   font-weight: 700;
   font-size: 32px;
   text-transform: uppercase;
   color: var(--title-small);
+
+  @media only screen and (min-width: 960px) {
+    margin-top: 8px;
+    font-size: 36px;
+  }
 }
 
 .aboutText {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--title-small);
+
+  @media only screen and (min-width: 960px) {
+    font-size: 20px;
+  }
 }
 
 .aboutInfo {
-  /* padding-left: 7px;
-  padding-right: 7px; */
+  /* padding-left: 5px;
+  padding-right: 5px; */
 }
 
 .family {
@@ -160,6 +175,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  margin-bottom: 21px;
 }
 
 .background {
@@ -182,6 +198,7 @@
 .canI {
   display: inline-block;
   margin-bottom: 62px;
+  margin-left: 8px;
 
   @media only screen and (min-width: 960px) {
     position: relative;
@@ -218,6 +235,10 @@
 .accent {
   background-color: var(--accent-color);
   padding: 18px 5px 29px;
+
+  @media only screen and (min-width: 960px) {
+    padding-bottom: 80px;
+  }
 
   @media only screen and (min-width: 1200px) {
     background-color: transparent;
@@ -288,6 +309,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    justify-content: start;
+    gap: 36px;
   }
 }
 
