@@ -23,6 +23,8 @@ const About = () => {
       </div>
 
       <div className={css.about}>
+        <div className={css.backgroundAbout}>
+        </div>
         <div className={css.aboutCard}>
           <picture className={css.photo}>
             <source
@@ -128,7 +130,7 @@ const About = () => {
 
       <div className={css.canIWrapper}>
         <div className={css.family}>
-          {/* <div className={css.background}></div> */}
+          <div className={css.backgroundPeople}></div>
           <picture className={css.photo}>
             <source
               className={css.familyImage}
@@ -181,7 +183,14 @@ const About = () => {
       </div>
 
       <div className={css.support}>
+        <div className={css.backgroundMapBottom}>
+          {/* <div className={css.background}></div> */}
+        </div>
         <div className={css.mapWrapper}>
+          <div className={css.backgroundMapTop}>
+            {/* <div className={css.background}></div> */}
+          </div>
+
           <picture className={css.photo}>
             <source
               className={css.photo}
