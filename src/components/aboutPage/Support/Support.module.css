@@ -1,0 +1,156 @@
+.accent {
+  background-color: var(--accent-color);
+  padding: 18px 5px 29px;
+
+  @media only screen and (min-width: 960px) {
+    padding-bottom: 80px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    background-color: transparent;
+  }
+}
+
+.marginLeft {
+  display: inline-block;
+
+  @media only screen and (min-width: 960px) {
+    position: relative;
+    left: 232px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    position: static;
+  }
+}
+
+.mapWrapper {
+  position: relative;
+  width: 100%;
+  height: 452px;
+
+  @media only screen and (min-width: 960px) {
+    height: 800px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    /* overflow: hidden; */
+    width: fit-content;
+  }
+}
+
+.mapWrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background-color: var(--accent-color);
+  /* ! */
+  z-index: -2;
+  /* ! */
+}
+
+@media only screen and (min-width: 1200px) {
+  .mapWrapper::after {
+    /* display: none; */
+    bottom: 20%;
+    left: 0;
+    min-width: 1200px;
+    height: 60%;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .mapWrapper::after {
+    bottom: 20%;
+    left: 0;
+    min-width: 1920px;
+    width: 100%;
+    height: 60%;
+  }
+}
+
+.support {
+  position: relative;
+
+  @media only screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    justify-content: start;
+    gap: 36px;
+  }
+}
+
+.backgroundMapTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 235px;
+  height: 235px;
+  background: url("/img/about/bg-320.png");
+  z-index: -1;
+  background-repeat: no-repeat;
+  top: 60px;
+
+  @media only screen and (min-width: 960px) {
+    width: 800px;
+    height: 383px;
+    top: 120px;
+    left: 80px;
+    background: url("/img/about/bg-960.png");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    /* width: 800px;
+      height: 383px;*/
+    top: 180px;
+    left: 50px;
+    background: url("/img/about/bg-1920.png");
+    /* background-size: contain;
+      background-repeat: no-repeat; */
+  }
+}
+
+.backgroundMapBottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 235px;
+  height: 235px;
+  background: url("/img/about/bg-320.png");
+  z-index: -1;
+  background-repeat: no-repeat;
+  z-index: 0;
+  top: 135px;
+
+  @media only screen and (min-width: 960px) {
+    width: 800px;
+    height: 383px;
+    top: 120px;
+    left: 80px;
+    background: url("/img/about/bg-960.png");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media only screen and (min-width: 1920px) {
+      width: 800px;
+      height: 383px;
+      top: 120px;
+      left: 80px;
+      background: url("/img/about/bg-91920.png");
+
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}
