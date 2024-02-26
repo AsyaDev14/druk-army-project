@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import Icon from "@/components/Icon/Icon";
 import ShareButton from "@/components/aboutPage/ShareButton/ShareButton";
@@ -11,14 +10,14 @@ const Buttons = () => {
 
   return (
     <div className={css.buttonWrapper}>
-      <Link
+      <a
         className={css.button}
         href="/donations"
         aria-label="Перейти на сторінку донатів"
       >
         <Icon className={css.icon} name="icon-banknote" />
         {t("about:linkText")}
-      </Link>
+      </a>
 
       <ShareButton />
     </div>
