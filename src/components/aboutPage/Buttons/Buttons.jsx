@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import Icon from "@/components/Icon/Icon";
-import ShareButton from "@/components/ShareButton/ShareButton";
+import ShareButton from "@/components/aboutPage/ShareButton/ShareButton";
 import css from "./Button.module.css";
 
 const Buttons = () => {

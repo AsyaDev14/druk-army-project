@@ -1,11 +1,13 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import Icon from "../Icon/Icon";
+import Icon from "../../Icon/Icon";
 import css from "./ShareButton.module.css";
 
 const ShareButton = () => {
   const [canShare, setCanShare] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+
   const { t } = useTranslation();
 
   useEffect(() => {

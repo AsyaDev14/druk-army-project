@@ -17,9 +17,9 @@
     padding-right: 20px;
   }
 
-  @media only screen and (min-width: 960px) {
+  @media only screen and (min-width: 768px) {
     padding-top: 72px;
-    /* margin-bottom: 100px; */
+    margin-bottom: 100px;
   }
 
   @media only screen and (min-width: 960px) {
@@ -29,12 +29,16 @@
 
     margin-bottom: 168px;
   }
+
+  @media only screen and (min-width: 1920px) {
+    
+    margin-bottom: 210px;
+  }
 }
 
 .aboutCard {
   @media only screen and (min-width: 960px) {
     min-width: 450px;
-    padding-bottom: 74px;
   }
 
   @media only screen and (min-width: 1200px) {
@@ -71,6 +75,7 @@
   color: var(--title-small);
 
   @media only screen and (min-width: 960px) {
+    font-size: 20px;
   }
 }
 

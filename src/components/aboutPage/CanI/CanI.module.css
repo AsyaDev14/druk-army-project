@@ -44,7 +44,7 @@
     gap: 20px;
   }
 
-  @media only screen and (min-width: 1920px) {
+  @media only screen and (min-width: 1200px) {
     width: 100%;
     margin: 0 auto;
   }
@@ -75,9 +75,14 @@
     background-repeat: no-repeat;
   }
 
+  @media only screen and (min-width: 1200px) {
+    display: none;
+  }
+
+
   @media only screen and (min-width: 1920px) {
-    /* width: 800px;
-    height: 383px; */
+    display: block;
+
     left: -50px;
     background: url("/img/about/bg-1920.png");
     background-size: contain;
