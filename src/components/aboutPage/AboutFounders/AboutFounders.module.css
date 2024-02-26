@@ -19,7 +19,7 @@
 
   @media only screen and (min-width: 960px) {
     padding-top: 72px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
   }
 
   @media only screen and (min-width: 960px) {
@@ -34,6 +34,7 @@
 .aboutCard {
   @media only screen and (min-width: 960px) {
     min-width: 450px;
+    padding-bottom: 74px;
   }
 
   @media only screen and (min-width: 1200px) {
@@ -70,7 +71,6 @@
   color: var(--title-small);
 
   @media only screen and (min-width: 960px) {
-    font-size: 20px;
   }
 }
 
