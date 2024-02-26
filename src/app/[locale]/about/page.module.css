@@ -59,6 +59,12 @@
   }
 }
 
+.picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .reverse {
   display: flex;
   flex-direction: column;

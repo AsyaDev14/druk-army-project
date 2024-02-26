@@ -13,35 +13,29 @@ const Support = () => {
       <div className={css.mapWrapper}>
         <div className={css.backgroundMapTop}></div>
 
-        <picture className={css.photo}>
+        <picture className={css.map}>
           <source
-            className={css.photo}
-            media="(max-width: 480px)"
+            media="(max-width: 479px)"
             srcSet="/img/about/map-320.png"
           />
 
           <source
-            className={css.photo}
             media="(max-width: 767px)"
             srcSet="/img/about/map-480.png"
           />
           <source
-            className={css.photo}
             media="(max-width: 959px)"
             srcSet="/img/about/map-768.png"
           />
           <source
-            className={css.photo}
             media="(max-width: 1199px)"
             srcSet="/img/about/map-960.png"
           />
           <source
-            className={css.photo}
             media="(max-width: 1919px)"
             srcSet="/img/about/map-1200.png"
           />
           <source
-            className={css.photo}
             media="(min-width: 1920px)"
             srcSet="/img/about/map-1920.png"
           />
