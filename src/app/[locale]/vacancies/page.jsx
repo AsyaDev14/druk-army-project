@@ -7,6 +7,8 @@ import Section from "@/components/Section/Section";
 import Container from "@/components/container/Container";
 import Icon from "@/components/Icon/Icon";
 import Link from "next/link";
+import { VacanciesModal } from "@/components/modals/VacanciesModal/VacanciesModal";
+import { useTranslation } from "react-i18next";
 
 import officeImg from "../../../../public/img/vacancies/office-tab.jpg";
 import office2 from "../../../../public/img/vacancies/office2-tab.jpg";
@@ -15,7 +17,6 @@ import fand from "../../../../public/img/vacancies/fand.jpg";
 import manager from "../../../../public/img/vacancies/manager.jpg";
 import designer from "../../../../public/img/vacancies/designer.jpg";
 import smm from "../../../../public/img/vacancies/smm.jpg";
-import { VacanciesModal } from "@/components/modals/VacanciesModal/VacanciesModal";
 
 const vacanciesData = [
   {
@@ -76,6 +77,8 @@ const vacanciesData = [
 ];
 
 const Vacancies = () => {
+  const { t } = useTranslation();
+
   const [isModalOpen, setModalOpen] = React.useState(false);
 
   const handleOpenModal = () => {
@@ -99,6 +102,7 @@ const Vacancies = () => {
 
         <div>
           <h2 className={styles.vacTitle}>
+            {/* {t("vacancies:title")} */}
             Стати частиною команди <br />
             <span>ДрукАрмії</span>
           </h2>

@@ -5,7 +5,7 @@ import TranslationsProvider from "@/components/TranslationProvider/TranslationsP
 import Header from "@/components/header/Header.jsx";
 import Footer from "@/components/footer/Footer.jsx";
 
-import '../globals.css'
+import "../globals.css";
 
 const i18nNamespaces = ["header", "footer", "terms", "notfound"];
 
