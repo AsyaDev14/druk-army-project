@@ -9,12 +9,16 @@
   @media only screen and (min-width: 960px) {
     padding-bottom: 72px;
   }
+
+  @media only screen and (min-width: 1920px) {
+    padding-top: 72px;
+    margin-top: 70px;
+  }
 }
 
 .familyImage {
-  width: 100%;
-  height: auto;
-  margin-top: auto;
+  /* width: 100%;
+  height: auto; */
 }
 
 .canI {
@@ -23,33 +27,35 @@
   margin-left: 8px;
 
   @media only screen and (min-width: 960px) {
-    position: relative;
-    transform: translateX(138px);
-    overflow-x: hidden;
+    
   }
 
   @media only screen and (min-width: 1200px) {
-    transform: translateX(0px);
   }
   @media only screen and (min-width: 1920px) {
     width: fit-content;
+    align-self: start;
+    display: block;
+
+    margin-bottom: 0;
+
+    vertical-align: top;
+
   }
 }
 
 .canIWrapper {
-  position: relative;
+  /* position: relative; */
   width: 100%;
+
   @media only screen and (min-width: 1200px) {
     display: flex;
     gap: 20px;
   }
 
-  @media only screen and (min-width: 1200px) {
-    width: 100%;
-    margin: 0 auto;
-  }
 
   @media only screen and (min-width: 1920px) {
+    position: static;
     width: 1575px;
     margin: 0 auto;
   }
@@ -78,7 +84,6 @@
   @media only screen and (min-width: 1200px) {
     display: none;
   }
-
 
   @media only screen and (min-width: 1920px) {
     display: block;

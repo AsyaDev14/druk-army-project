@@ -13,7 +13,8 @@
   position: relative;
 
   width: 892px;
-  height: 860px;
+  min-height: 860px;
+  padding-bottom: 42px;
 
   background-color: var(--main-bg);
 

@@ -2,7 +2,7 @@
 
 import { useTranslation } from "react-i18next";
 import Icon from "@/components/Icon/Icon";
-import ShareButton from "@/components/aboutPage/ShareButton/ShareButton";
+import Button from "@/components/aboutPage/Button/Button";
 import css from "./Button.module.css";
 
 const Buttons = () => {
@@ -19,7 +19,7 @@ const Buttons = () => {
         {t("about:linkText")}
       </a>
 
-      <ShareButton />
+      <Button />
     </div>
   );
 };

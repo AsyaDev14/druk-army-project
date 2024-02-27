@@ -1,27 +1,30 @@
-import { useCallback, useEffect } from "react";
+"use client";
+
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 import Icon from "@/components/Icon/Icon";
 import InfoBlock from "@/components/InfoBlock/InfoBlock";
 import css from "./Modal.module.css";
+import ShareButton from "../ShareButton/ShareButton";
 
 const Modal = ({ close }) => {
-  const handleKeyDown = useCallback(
-    (e) => {
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
       if (e.key === "Escape") {
         close();
       }
-    },
-    [close]
-  );
+    };
 
-  useEffect(() => {
     document.addEventListener("keydown", handleKeyDown);
     document.body.style.overflow = "hidden";
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
       document.body.style.overflow = "visible";
     };
-  }, [close, handleKeyDown]);
+  }, [close]);
 
   const handleClickOutside = ({ target, currentTarget }) => {
     if (target === currentTarget) {
@@ -44,29 +47,34 @@ const Modal = ({ close }) => {
 
         <div className={css.info}>
           <InfoBlock
-            firstTitle="Долучайте друзів"
-            secondTitle="до наших лав"
-            description="Чим більше цивільних та військових знатимуть про ДрукАрмію, тим більше ми будемо наближатися до перемоги, оскільки наша спільнота безпосередньо створює різні вироби для ЗСУ які допомагають виконувати бойові розпорядження (та кошмарити русню)."
+            firstTitle={t("about:modalFirstTitle")}
+            secondTitle={t("about:modalSecondTitle")}
+            description={t("about:modalText")}
           />
 
           <div className={css.socials}>
-            <span>Поділитися</span>
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icon className={css.icon} name="icon-facebook" />
-            </a>
-            <a
-              href="https://www.twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icon className={css.icon} name="icon-telegram" />
-            </a>
-            <Icon className={css.icon} name="icon-viber" />
-            <Icon className={css.icon} name="icon-watsapp" />
+            <span>{t("about:modalShareText")}</span>
+            <ShareButton>
+              <Icon
+                className={`${css.icon} ${css.facebook}`}
+                name="icon-facebook"
+              />
+            </ShareButton>
+            <ShareButton>
+              <Icon
+                className={`${css.icon} ${css.telegram}`}
+                name="icon-telegram"
+              />
+            </ShareButton>
+            <ShareButton>
+              <Icon className={`${css.icon} ${css.viber}`} name="icon-viber" />
+            </ShareButton>
+            <ShareButton>
+              <Icon
+                className={`${css.icon} ${css.watsapp}`}
+                name="icon-watsapp"
+              />
+            </ShareButton>
           </div>
         </div>
       </div>

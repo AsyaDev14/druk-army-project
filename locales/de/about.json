@@ -16,6 +16,10 @@
   "titleBottom": "",
   "titleBottomDescription": "",
   "linkText": "",
-  "shareButtonText": ""
+  "buttonText": "",
 
+  "modalFirstTitle": "",
+  "modalSecondTitle": "",
+  "modalText": "",
+  "modalShareText": ""
 }

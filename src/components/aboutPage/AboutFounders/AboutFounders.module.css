@@ -27,12 +27,12 @@
     gap: 15px;
     justify-content: space-around;
 
-    margin-bottom: 168px;
+    margin-bottom: 220px;
   }
 
   @media only screen and (min-width: 1920px) {
     
-    margin-bottom: 210px;
+    margin-bottom: 52px;
   }
 }
 
@@ -47,6 +47,8 @@
 
   @media only screen and (min-width: 1920px) {
     min-width: 495px;
+    padding-bottom: 52px;
+
   }
 }
 
