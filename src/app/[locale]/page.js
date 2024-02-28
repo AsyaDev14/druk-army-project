@@ -7,7 +7,7 @@ import HowItWorks from "@/components/HomePage/HowItWorksTitle/HowItWorks";
 export default function Home() {
   return (
     <>
-        <section>
+        <section className={css.sectionHero}>
           <Slider />
           <TitleHomePage />
         </section>

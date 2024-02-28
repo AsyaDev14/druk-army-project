@@ -163,3 +163,25 @@
       padding: 0 114px;
     }
   }
+
+  @media screen and (min-width: 960px) {
+    .mainTitleContainer {
+      margin: 26px 0 0 0;
+      max-width: 612px;
+    }
+
+    .mainTitle {
+      font-size: 36px;
+    }
+
+    .titleAccent {
+      font-size: 64px;
+    }
+
+    .titleAccent span {
+      padding: 0;
+      max-height: 59px;
+      overflow-y: hidden;
+    }
+
+  }

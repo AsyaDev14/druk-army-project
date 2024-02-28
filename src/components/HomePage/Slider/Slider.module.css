@@ -54,3 +54,18 @@
     height: 71px;
   }
 }
+
+@media screen and (min-width: 960px) {
+  .container {
+    max-width: 314px;
+    margin-top: 100px;
+  }
+
+  .logoSliderContainer {
+    width: 173px;
+    height: 98px;
+    bottom: auto;
+    top: -44px;
+    right: -86px;
+  }
+}

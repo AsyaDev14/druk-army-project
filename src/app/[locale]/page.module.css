@@ -1,0 +1,6 @@
+@media screen and (min-width: 960px) {
+  .sectionHero {
+    display: flex;
+    align-items: center;
+  }
+}
