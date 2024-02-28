@@ -27,10 +27,10 @@ const cards = [
 
 const CardsList = () => {
   return (
-    <div>
+    <div className={css.cardsSection}>
       <ul>
         {cards.map((card) => (
-          <li key={card.number}>
+          <li key={card.number} className={css.cardItem}>
             <div className={css.imageContainer}>
               <Image
                 src={card.src}

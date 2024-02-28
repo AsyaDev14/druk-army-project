@@ -50,6 +50,10 @@
 }
 
 @media screen and (min-width: 480px) {
+  .cardsSection {
+    padding: 0 20px;
+  }
+
   .imageContainer {
     width: 480px;
   }
@@ -76,5 +80,27 @@
   .description p {
     font-size: 16px;
     font-weight: 500;
+    max-width: 324px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cardItem {
+    max-width: 541px;
+  }
+
+  .cardItem:first-of-type,
+  .cardItem:last-of-type {
+    margin-left: auto;
+  }
+
+  .description h3 {
+    margin-bottom: 0;
+  }
+
+  .description p {
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 351px;
   }
 }

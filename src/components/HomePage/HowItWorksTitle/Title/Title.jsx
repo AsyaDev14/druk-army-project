@@ -4,7 +4,7 @@ const Title = () => {
   return (
     <div className={css.mainTitleContainer}>
       <h2 className={css.mainTitle}>
-        три простих кроки до перемоги
+        <span className={css.titleFirst}>три простих кроки до перемоги</span>
         <span className={css.titleAccent}>як це працює?</span>
       </h2>
       <p className={css.mainTitleText}>

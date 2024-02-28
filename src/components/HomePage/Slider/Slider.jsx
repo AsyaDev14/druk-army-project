@@ -32,7 +32,7 @@ const Slider = () => {
         className="mySwiper"
       >
         {slides.map(({ img, id }) => (
-          <SwiperSlide key={id}>
+          <SwiperSlide key={id} className={css.slideItemContainer}>
             <Image
               alt="photo"
               src={img}

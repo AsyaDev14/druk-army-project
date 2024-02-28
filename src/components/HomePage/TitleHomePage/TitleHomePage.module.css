@@ -138,6 +138,11 @@
       font-size: 32px;
     }
 
+    .mainTitleContainer {
+      max-width: 572px;
+      margin: 36px auto 50px auto;
+    }
+
     .titleAccent {
       font-size: 48px;
     }
