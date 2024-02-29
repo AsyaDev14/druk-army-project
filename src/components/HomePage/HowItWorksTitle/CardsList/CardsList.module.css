@@ -1,11 +1,12 @@
 .imageContainer {
   width: 320px;
+  margin: 0;
 }
 
 .imageCard {
+  max-width: 452px;
   width: 100%;
   height: auto;
-  margin: 0 auto;
 }
 
 .descriptionContainer {
@@ -61,6 +62,11 @@
   .descriptionContainer,
   .number {
     max-height: 156px;
+    max-width: 480px;
+  }
+
+  .listCards {
+    margin: 0 auto;
   }
 
   .number p {
@@ -109,9 +115,8 @@
   .listCards {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 112px;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;;
   }
 
   .cardItem {
@@ -127,6 +132,10 @@
     height: 357px;
   }
 
+  .cardItem:nth-of-type(2) {
+    z-index: 2;
+  }
+
   .cardItem:first-of-type .imageContainer img {
     object-fit: cover;
     width: 379px;
@@ -137,6 +146,7 @@
     max-width: 502px;
     display: inline-block;
     margin: -150px auto 0 auto;
+    z-index: 3;
   }
 
   .cardItem:last-of-type .imageContainer img {
@@ -148,5 +158,48 @@
 
   .cardItem:first-of-type {
     margin-left: 0;
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+ .imageContainer {
+  width: 452px;
+ }
+
+ .listCards {
+  column-gap: 0;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1180px;
+  justify-content: space-around;
+  column-gap: 180px;
+ }
+
+  .cardItem:first-of-type {
+    width: 458px;
+  }
+
+  .cardItem:first-of-type .imageContainer img {
+    width: 431px;
+    height: 425px;
+  }
+
+  .cardItem:last-of-type,
+  .cardItem:nth-of-type(2) {
+    width: 452px;
+  }
+
+  .cardItem:nth-of-type(2) .imageContainer img {
+    width: 439px;
+    height: 413px;
+  }
+
+  .cardItem:last-of-type  {
+   margin-top: -300px;
+  }
+
+  .descriptionContainer {
+    min-width: 452px;
   }
 }

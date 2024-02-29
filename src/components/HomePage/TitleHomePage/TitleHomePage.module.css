@@ -177,11 +177,4 @@
     .titleAccent {
       font-size: 64px;
     }
-
-    .titleAccent span {
-      padding: 0;
-      max-height: 59px;
-      overflow-y: hidden;
-    }
-
   }

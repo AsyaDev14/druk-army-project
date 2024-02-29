@@ -81,3 +81,9 @@
     max-width: 540px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .mainTitleContainer {
+    margin-left: 130px;
+  }
+}

@@ -70,3 +70,12 @@
     right: -86px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 588px;
+    max-height: 474px;
+    margin-top: 94px;
+    margin-bottom: 120px;
+  }
+}
