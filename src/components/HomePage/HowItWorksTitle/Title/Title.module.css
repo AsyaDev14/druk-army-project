@@ -62,3 +62,22 @@
     padding-right: 90px;
   }
 }
+
+@media screen and (min-width: 960px) {
+  .mainTitleContainer {
+    max-width: 100%;
+    margin-bottom: 63px;
+  }
+
+  .titleFirst {
+    font-size: 36px;
+  }
+
+  .titleAccent {
+    font-size: 64px;
+  }
+
+  .mainTitleText {
+    max-width: 540px;
+  }
+}

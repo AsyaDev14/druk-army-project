@@ -28,7 +28,7 @@ const cards = [
 const CardsList = () => {
   return (
     <div className={css.cardsSection}>
-      <ul>
+      <ul className={css.listCards}>
         {cards.map((card) => (
           <li key={card.number} className={css.cardItem}>
             <div className={css.imageContainer}>

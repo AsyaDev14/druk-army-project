@@ -104,3 +104,49 @@
     max-width: 351px;
   }
 }
+
+@media screen and (min-width: 960px) {
+  .listCards {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 112px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cardItem {
+    max-width: 400px;
+  }
+
+  .imageContainer {
+    width: 400px;
+  }
+
+  .cardItem:nth-of-type(2) .imageContainer img {
+    width: 379px;
+    height: 357px;
+  }
+
+  .cardItem:first-of-type .imageContainer img {
+    object-fit: cover;
+    width: 379px;
+    height: 357px;
+  }
+
+  .cardItem:last-of-type {
+    max-width: 502px;
+    display: inline-block;
+    margin: -150px auto 0 auto;
+  }
+
+  .cardItem:last-of-type .imageContainer img {
+    width: 410px;
+    height: 446px;
+    object-fit: cover;
+    margin-left: 50px;
+  }
+
+  .cardItem:first-of-type {
+    margin-left: 0;
+  }
+}
