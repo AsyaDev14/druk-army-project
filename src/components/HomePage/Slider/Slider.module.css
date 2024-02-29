@@ -73,9 +73,25 @@
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 588px;
+    max-width: 48%;
     max-height: 474px;
     margin-top: 94px;
     margin-bottom: 120px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1078px;
+    max-height: 582px;
+  }
+
+  .slideItem {
+    width: 1078px;
+    height: 582px;
+  }
+
+  .logoSliderContainer {
+    top: 30px;
   }
 }

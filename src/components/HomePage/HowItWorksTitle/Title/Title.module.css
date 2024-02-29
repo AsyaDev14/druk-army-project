@@ -85,5 +85,12 @@
 @media screen and (min-width: 1200px) {
   .mainTitleContainer {
     margin-left: 130px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .mainTitleContainer {
+    margin-left: 180px;
   }
 }
