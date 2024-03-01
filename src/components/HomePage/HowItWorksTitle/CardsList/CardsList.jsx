@@ -4,7 +4,7 @@ import css from "./CardsList.module.css";
 const cards = [
   {
     src: "/img/home/process/solder.png",
-    alt: "Український військовий",
+    alt: "Український військовий - замовник",
     number: 1,
     descTitle: "Замовлення",
     descText: "Військовий або медик замовляє вироби, які йому наразі потрібні",

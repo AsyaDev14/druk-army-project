@@ -19,9 +19,9 @@ export default function Home() {
         <Section>
           <PrintAll/>
         </Section>
-        <Section>
+        <section className={css.sectionPrinters}>
           <InstallPrinter/>
-        </Section>
+        </section>
     </>
   );
 }

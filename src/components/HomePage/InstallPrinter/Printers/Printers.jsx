@@ -39,6 +39,15 @@ const Printers = () => {
           </li>
         ))}
       </ul>
+      <div className={css.imageContainer}>
+        <Image
+          src="/img/home/calculator/working.png"
+          alt="як люди працюють"
+          width={433}
+          height={474}
+          className={css.imageWorking}
+        />
+      </div>
     </div>
   );
 };

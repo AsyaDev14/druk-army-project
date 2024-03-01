@@ -115,7 +115,14 @@
   @media screen and (min-width: 1200px) {
     .mainTitleContainer {
       max-width: 903px;
-      margin-left: 60px;
-      margin-bottom: 0;
+      margin-left: auto;
+      margin-bottom: 58px;
+      z-index: 2;
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    .mainTitleContainer {
+      margin-left: 0;
     }
   }
