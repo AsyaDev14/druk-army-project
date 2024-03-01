@@ -3,6 +3,7 @@ import TitleHomePage from "@/components/HomePage/TitleHomePage/TitleHomePage";
 import Section from "@/components/Section/Section";
 import HowItWorks from "@/components/HomePage/HowItWorksTitle/HowItWorks";
 import PrintAll from "@/components/HomePage/PrintAll/PrintAll";
+import InstallPrinter from "@/components/HomePage/InstallPrinter/InstallPrinter";
 import css from "./page.module.css"
 
 export default function Home() {
@@ -17,6 +18,9 @@ export default function Home() {
         </Section>
         <Section>
           <PrintAll/>
+        </Section>
+        <Section>
+          <InstallPrinter/>
         </Section>
     </>
   );
