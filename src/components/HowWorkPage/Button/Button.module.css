@@ -1,0 +1,25 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  margin: 0 auto 75px;
+  padding: 15px 20px;
+  width: fit-content;
+
+  background-color: var(--bg-details);
+  color: var(--buttons-text);
+  font-family: Benzin-Regular;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 0.9;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.icon {
+  width: 23px;
+  height: 13px;
+  fill: var(--buttons-text);
+}
