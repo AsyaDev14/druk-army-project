@@ -1,8 +1,9 @@
 import Slider from "@/components/HomePage/Slider/Slider.jsx";
 import TitleHomePage from "@/components/HomePage/TitleHomePage/TitleHomePage";
-import css from "./page.module.css"
 import Section from "@/components/Section/Section";
 import HowItWorks from "@/components/HomePage/HowItWorksTitle/HowItWorks";
+import PrintAll from "@/components/HomePage/PrintAll/PrintAll";
+import css from "./page.module.css"
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
         </section>
         <Section>
           <HowItWorks/>
+        </Section>
+        <Section>
+          <PrintAll/>
         </Section>
     </>
   );
