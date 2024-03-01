@@ -1,0 +1,28 @@
+.printersContainer {
+  margin-top: 35px;
+}
+
+.printersList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 38px;
+}
+
+.printerCard {
+  text-align: center;
+}
+
+.printerImage {
+  object-fit: cover;
+}
+
+.model {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.quality {
+  font-size: 16px;
+  font-weight: 500;
+}

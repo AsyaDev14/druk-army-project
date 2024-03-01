@@ -47,6 +47,19 @@
   }
 
   @media screen and (min-width: 480px) {
+   .mainTitleContainer {
+    margin-left: 48px;
+   }
+
+   .decorationLine {
+    width: 20px;
+    left: -32px;
+   }
+
+   .yellowAccent {
+    width: 20px;
+   }
+
     .mainTitle {
       font-size: 20px;
     }

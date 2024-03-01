@@ -1,4 +1,5 @@
 import TitleInstallPrinter from "./TitleInstallPrinter/TitleInstallPrinter";
+import Printers from "./Printers/Printers";
 import css from "./InstallPrinter.module.css";
 
 const InstallPrinter = () => {
@@ -7,6 +8,7 @@ const InstallPrinter = () => {
       <div className={css.container}>
         <TitleInstallPrinter />
       </div>
+      <Printers />
     </div>
   );
 };
