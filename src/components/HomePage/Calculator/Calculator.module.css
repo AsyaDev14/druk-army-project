@@ -10,7 +10,7 @@
 }
 
 .firstPart_textContent {
-    margin-bottom: 69px;
+  margin-bottom: 69px;
 }
 
 .firstPart_textContent h2 {
@@ -33,41 +33,56 @@
   font-weight: 500;
 }
 
+.inputContainer {
+  position: relative;
+}
+
 .rangeScale[type="range"] {
-    appearance: none;
+  appearance: none;
   cursor: pointer;
   width: 100%;
   background-color: transparent;
 }
 
+.fillRange {
+  position: absolute;
+  height: 28px;
+  background-color: var(--accent-color);
+  left: 0;
+  z-index: 1;
+}
+
 /***** Chrome, Safari, Opera, and Edge Chromium *****/
 .rangeScale[type="range"]::-webkit-slider-runnable-track {
-    background: transparent;
-    height: 26px;
-    border: 1px solid white;
+  background: transparent;
+  height: 26px;
+  border: 1px solid white;
 }
 
 .rangeScale[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 5px;
-    height: 46px;
-    background-color: white;
-    margin-top: -10px;
+  -webkit-appearance: none;
+  width: 5px;
+  height: 46px;
+  background-color: white;
+  margin-top: -10px;
+  z-index: 2;
+  position: relative;
 }
 
 /******** Firefox ********/
 .rangeScale[type="range"]::-moz-range-track {
-    background: transparent;
-    height: 26px;
-    border: 1px solid white;
+  background: transparent;
+  height: 26px;
+  border: 1px solid white;
 }
 
 .rangeScale[type="range"]::-moz-range-thumb {
-    appearance: none;
-    width: 5px;
-    height: 46px;
-    background-color: white;
-    margin-top: -10px;
+  appearance: none;
+  width: 5px;
+  height: 46px;
+  background-color: white;
+  border: none;
+  border-radius: 0;
 }
 
 @media only screen and (min-width: 480px) {
