@@ -1,0 +1,28 @@
+.notFoundPageContainer {
+  padding: 0 10px 62px 10px;
+  background-color: var(--header-bg);
+}
+
+@media screen and (min-width: 480px) {
+  .notFoundPageContainer {
+    padding: 0 21px 51px 21px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .notFoundPageContainer {
+    padding: 0 19px 46px 19px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .notFoundPageContainer {
+    padding: 0 18px 57px 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .notFoundPageContainer {
+    padding: 0 68px 141px 68px;
+  }
+}

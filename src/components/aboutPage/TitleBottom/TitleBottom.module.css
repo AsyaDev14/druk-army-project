@@ -1,0 +1,9 @@
+.titleBottom {
+  margin: 50px 5px 15px;
+
+  @media only screen and (min-width: 1920px) {
+    margin-bottom: 118px;
+
+    margin-top: 15px;
+  }
+}

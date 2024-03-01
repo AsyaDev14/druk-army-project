@@ -1,0 +1,20 @@
+.list {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--title-small);
+}
+
+@media screen and (max-width: 1199.98px) {
+  .list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .list {
+      column-gap: 78px;
+  }
+}

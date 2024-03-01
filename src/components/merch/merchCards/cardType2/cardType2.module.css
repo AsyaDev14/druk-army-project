@@ -1,0 +1,193 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0 15px 0;
+}
+.imgContainer {
+  width: 300px;
+  height: 357px;
+  position: relative;
+}
+@media screen and (min-width: 480px) {
+  .imgContainer {
+    width: 440px;
+    height: 500px;
+  }
+}
+.img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .img {
+    margin: 0;
+    object-fit: contain;
+    width: 440px;
+    height: 500px;
+  }
+}
+.price {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #333;
+  padding: 7px 20px;
+  height: 47px;
+  font-family: "Benzin-ExtraBold", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-right: 1px;
+}
+.icon {
+  width: 32px;
+  height: 26px;
+}
+.details {
+  width: 300px;
+  height: 183px;
+  border: 1px solid #333;
+  border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media screen and (min-width: 480px) {
+  .details {
+    width: 440px;
+    height: 240px;
+    padding: 10px 0 10px 0;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}
+.title {
+  font-family: "Benzin-ExtraBold", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: var(--paragraph-text);
+  padding-left: 18px;
+  color: #333;
+  padding-left: 18px;
+  @media screen and (min-width: 480px) {
+  }
+}
+.text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: justify;
+  color: var(--paragraph-text);
+  padding-left: 9px;
+  padding-right: 9px;
+}
+@media screen and (min-width: 480px) {
+  .text {
+    font-size: 20px;
+  }
+}
+.btns {
+  display: flex;
+  width: 300px;
+}
+@media screen and (min-width: 480px) {
+  .btns {
+    width: 440px;
+  }
+}
+
+.radioContainer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: justify;
+  color: var(--paragraph-text);
+  background-color: var(--header-bg);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  width: 166px;
+  border: 1px solid #333;
+  border-left: none;
+}
+@media screen and (min-width: 480px) {
+  .radioContainer {
+    font-size: 20px;
+    width: 220px;
+  }
+}
+.radioLabel {
+  position: relative;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.checkmarkBlack {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  height: 20px;
+  width: 20px;
+  background-color: #333;
+  border-radius: 4px;
+  border: 1px solid #333;
+}
+.checkmarkWhite {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #333;
+}
+.radioLabel input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.radioLabel input:checked + .checkmark {
+  outline: 3px solid #4aba38;
+}
+.select {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: justify;
+  color: var(--paragraph-text);
+  background-color: var(--header-bg);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  width: 145px;
+}
+@media screen and (min-width: 480px) {
+  .select {
+    font-size: 20px;
+    width: 220px;
+    border-top: 1px solid #333;
+  }
+}
+.btn {
+  font-family: "Benzin-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--buttons-text);
+  background-color: var(--bg-details);
+  padding: 13px 15px;
+  width: 300px;
+}
+@media screen and (min-width: 480px) {
+  .btn {
+    font-size: 20px;
+    width: 440px;
+  }
+}

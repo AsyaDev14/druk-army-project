@@ -1,0 +1,96 @@
+.family {
+  position: relative;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 21px;
+
+  @media only screen and (min-width: 960px) {
+    padding-bottom: 72px;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    padding-top: 72px;
+    margin-top: 70px;
+  }
+}
+
+.familyImage {
+  /* width: 100%;
+  height: auto; */
+}
+
+.canI {
+  display: inline-block;
+  margin-bottom: 62px;
+  margin-left: 8px;
+
+  @media only screen and (min-width: 960px) {
+    
+  }
+
+  @media only screen and (min-width: 1200px) {
+  }
+  @media only screen and (min-width: 1920px) {
+    width: fit-content;
+    align-self: start;
+    display: block;
+
+    margin-bottom: 0;
+
+    vertical-align: top;
+
+  }
+}
+
+.canIWrapper {
+  /* position: relative; */
+  width: 100%;
+
+  @media only screen and (min-width: 1200px) {
+    display: flex;
+    gap: 20px;
+  }
+
+
+  @media only screen and (min-width: 1920px) {
+    position: static;
+    width: 1575px;
+    margin: 0 auto;
+  }
+}
+
+.backgroundPeople {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 235px;
+  height: 235px;
+  background: url("/img/about/bg-320.png");
+  z-index: -1;
+  background-repeat: no-repeat;
+
+  @media only screen and (min-width: 960px) {
+    width: 610px;
+    height: 400px;
+    top: 10px;
+    background: url("/img/about/bg-960.png");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    display: none;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    display: block;
+
+    left: -50px;
+    background: url("/img/about/bg-1920.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

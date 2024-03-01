@@ -1,0 +1,63 @@
+.wrapper {
+  position: fixed;
+
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  background: rgba(38, 38, 38, 0.21);
+}
+
+.content {
+  position: relative;
+
+  width: 892px;
+  min-height: 860px;
+  padding-bottom: 42px;
+
+  background-color: var(--main-bg);
+
+  z-index: 1;
+}
+
+.closeButton {
+  position: absolute;
+  top: 0;
+  right: -76px;
+
+  padding: 10px;
+  width: 76px;
+  height: 76px;
+
+  background-color: var(--main-bg);
+  border: none;
+  cursor: pointer;
+}
+
+.iconClose {
+  width: 56px;
+  height: 56px;
+  fill: #333333;
+}
+
+.info {
+  width: fit-content;
+  margin: 40px auto 10px;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--title-small);
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+}

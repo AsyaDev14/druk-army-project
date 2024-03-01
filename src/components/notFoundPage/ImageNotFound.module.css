@@ -1,0 +1,35 @@
+.imageContainer {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 51px 0;
+  }
+
+  @media screen and (min-width: 480px) {
+    .imageContainer {
+      padding: 56px 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .imageContainer {
+        padding: 99px 0 35px 0;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .imageContainer {
+        padding: 55px 0 47px 0;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .imageContainer {
+        padding: 44px 0 79px 0;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .imageContainer {
+        padding: 63px 0 33px 0;
+    }
+}

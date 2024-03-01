@@ -1,0 +1,72 @@
+.backdrop {
+  position: absolute;
+  z-index: 10;
+  width: 100dvw;
+  max-height: 100dvh;
+}
+
+.menuContainer {
+  padding: 30% 0 50% 0;
+  background-color: var(--header-bg);
+  margin-bottom: auto;
+  height: 100dvh;
+}
+
+.navMenuList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+.buttonsBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 21px;
+  margin-top: 38px;
+}
+
+@media screen and (min-width: 480px) {
+  .navMenuList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 335px;
+    row-gap: 28px;
+    column-gap: 65px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop {
+    background-color: rgba(0, 0, 0, 0.068);
+    backdrop-filter: blur(14.8px);
+    min-width: 100dvw;
+    min-height: 100dvh;
+  }
+
+  .menuContainer {
+    padding-top: 58px;
+    padding-bottom: 39px;
+    max-height: 243px;
+  }
+
+  .navMenuList {
+    max-width: 483px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .navMenuList {
+    max-width: 100%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .menuContainer {
+    padding: 2% 0 40% 0;
+    overflow-y: scroll;
+  }
+}

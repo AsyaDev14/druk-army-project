@@ -1,0 +1,62 @@
+.customSelect {
+  position: relative;
+  display: inline-block;
+  max-width: 49px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.icon {
+  width: 10px;
+  height: 10px;
+  margin-left: 2px;
+  margin-bottom: 2px;
+}
+
+.iconRotate {
+  width: 10px;
+  height: 10px;
+  margin-left: 2px;
+  margin-bottom: 2px;
+  transform: rotate(180deg);
+}
+
+.customSelect .selectedText {
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.options {
+  display: none;
+}
+
+.optionsOpen {
+  position: relative;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: var(--accent-color);
+  list-style: none;
+  margin: -2px 0 -2px 0;
+  font-weight: 500;
+  font-size: 20px;
+  display: block;
+  width: 49px;
+}
+
+.customSelect .optionsOpen .item {
+  cursor: pointer;
+  text-align: center;
+  z-index: 5;
+  border-bottom: 3px solid var(--accent-color);
+  transition: all 400ms ease;
+}
+
+.customSelect .optionsOpen .item:hover, .customSelect .optionsOpen .item:focus {
+  background-color: var(--accent-color);
+  color: white;
+}

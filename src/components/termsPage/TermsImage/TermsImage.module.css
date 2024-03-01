@@ -1,0 +1,46 @@
+.imageContainer {
+  min-width: 100%;
+}
+
+.termsImageDark,
+.termsImage {
+  object-fit: cover;
+  object-position: -70px 0;
+  filter: drop-shadow(-1px 31px 29px #000000);
+}
+
+@media screen and (min-width: 480px) {
+  .termsImage {
+    object-position: -110px 0;
+  }
+
+  .termsImageDark {
+    object-position: -160px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .termsImage {
+    object-position: 0 0;
+  }
+
+  .termsImageDark {
+    object-position: -60px 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .termsImage {
+    object-position: 30px 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .termsImage {
+    object-position: 39px 14px;
+  }
+
+  .termsImageDark {
+    object-position: -90px 9px;
+  }
+}

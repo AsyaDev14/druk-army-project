@@ -1,0 +1,80 @@
+.titleBlock {
+  border-left: 2px solid var(--paragraph-text);
+  padding-left: 16px;
+}
+
+.title {
+  font-family: "Benzin-ExtraBold", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #5169ff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-transform: uppercase;
+  line-height: 0.9;
+  margin-bottom: 9px;
+}
+
+.title span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  color: var(--paragraph-text);
+}
+
+.titleBlock_text {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 480px) {
+  .titleBlock {
+    border-left: 3px solid var(--paragraph-text);
+    padding-left: 17px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .titleBlock {
+    margin-top: -10px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .title span {
+    font-size: 32px;
+  }
+
+  .titleBlock_text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .titleBlock {
+    max-width: 480px;
+    margin-left: auto;
+    margin-bottom: 82px;
+    margin-top: -30px;
+  }
+
+  .title span {
+    font-size: 36px;
+  }
+
+  .title {
+    font-size: 64px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .titleBlock {
+    margin-top: -133px;
+    margin-right: -100px;
+  }
+}
