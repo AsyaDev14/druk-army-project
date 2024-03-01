@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import css from "./Calculator.module.css";
+import Image from "next/image";
 
 const Calculator = () => {
   const [quality, setQuality] = useState(500);
@@ -35,8 +36,20 @@ const Calculator = () => {
               className={css.rangeScale}
               onChange={handleRange}
             />
-            <span className={css.fillRange} style={{width: quality/1000*296}}></span>
+            <span
+              className={css.fillRange}
+              style={{ width: (quality / 1000) * 296 }}
+            ></span>
           </label>
+          <div className={css.scaleContainer}>
+            <Image
+              src={"/img/home/calculator/scale.png"}
+              alt="Range scale from 0 to 1000$"
+              width={297}
+              height={44}
+              className={css.scale}
+            />
+          </div>
         </div>
       </div>
       <div className={css.secondPart}>

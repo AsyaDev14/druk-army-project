@@ -85,6 +85,15 @@
   border-radius: 0;
 }
 
+.scaleContainer {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.scale {
+    object-fit: contain;
+}
+
 @media only screen and (min-width: 480px) {
   .container {
     width: 480px;
