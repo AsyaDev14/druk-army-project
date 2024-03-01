@@ -1,0 +1,92 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--bg-details);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.message {
+  font-family: "Benzin-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--buttons-text);
+  padding: 13px 15px;
+  line-height: normal;
+}
+@media screen and (min-width: 480px) {
+  .message {
+    font-size: 20px;
+  }
+}
+
+.yesBtn {
+  background-color: var(--header-bg);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.noBtn {
+  background-color: var(--header-bg);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.yesBtn:hover {
+  background-color: darkgreen;
+}
+
+.noBtn:hover {
+  background-color: darkred;
+}
+
+.yesBtn,
+.noBtn {
+  font-family: "Benzin-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--paragraph-text);
+  padding: 13px 15px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+@media screen and (min-width: 480px) {
+  .yesBtn,
+  .noBtn {
+    font-size: 20px;
+  }
+}
+
+.yesBtn:focus,
+.noBtn:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* 
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+} */

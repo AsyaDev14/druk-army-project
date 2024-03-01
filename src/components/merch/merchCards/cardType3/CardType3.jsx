@@ -2,58 +2,74 @@
 import Icon from "@/components/Icon/Icon";
 import styles from "./cardType3.module.css";
 import Image from "next/image";
-import { useState } from "react";
+import { useContext, useState, useEffect } from "react";
+import CartContext from "@/context/CartContext";
 
 const products = [
   {
     id: 5,
     name: "T-Shirt",
-    title: "футболка",
+    title: "Футболка",
     description:
       "Ця футболка - це не просто одяг, це вираз вашого патріотизму та готовності сміятися над життям. Коли &quot;Армія друку&quot; друкує речі для військових, ми друкуємо футболки для справжніх героїв - вас!",
     price: 1500,
     size: "",
-    whiteImg: "/img/merch/t-shirt-white.png",
+    color: "",
+    whiteImg: "/img/merch/t-shirtd.png",
   },
 ];
 
 const CardType3 = () => {
+  const { addItemToCart } = useContext(CartContext);
   const [selectedQuantity, setSelectedQuantity] = useState(1);
-  const [selectedSize, setSelectedSize] = useState("Розмір: M");
-  const [selectedColor, setSelectedColor] = useState("white");
+  const [selectedSize, setSelectedSize] = useState("M");
+  const [selectedColor, setSelectedColor] = useState("білий");
   const handleSelectAmountChange = (event) => {
     setSelectedQuantity(parseInt(event.target.value, 10));
   };
   const handleSelectSizeChange = (event) => {
-    setSelectedSize(parseInt(event.target.value, 10));
+    setSelectedSize(event.target.value);
   };
-  const handleButtonClick = () => {
-    // Perform actions when the button is clicked, e.g., add to cart
-    console.log(`Adding ${selectedQuantity} item(s) to the cart`);
-  };
+
+  useEffect(() => {}, [selectedColor]);
 
   const handleColorChange = (event) => {
     setSelectedColor(event.target.value);
   };
+
+  const addToCartHandler = (product) => {
+    addItemToCart({
+      id: product.id,
+      name: product.name,
+      title: product.title,
+      description: product.description,
+      price: product.price,
+      image: product.whiteImg,
+      quantity: selectedQuantity,
+      color: selectedColor,
+      size: selectedSize,
+    });
+  };
+
   return (
     <>
       {products.map((product) => (
-        <div className={styles.container} key={product.id}>
+        <div key={product.id} className={styles.container}>
           <div className={styles.imgContainer}>
-            {selectedColor === "white" && (
+            {selectedColor === "білий" && (
               <Image
                 src={product.whiteImg}
                 className={styles.img}
-                alt={products.name}
+                alt={product.name}
                 width={300}
                 height={300}
               />
             )}
-            {selectedColor === "black" && (
+            {selectedColor === "чорний" && (
               <Image
-                src={products.whiteImg}
+                src={product.whiteImg}
                 className={styles.img}
-                alt={products.name}
+                alt={product.name}
                 width={300}
                 height={300}
               />
@@ -69,13 +85,13 @@ const CardType3 = () => {
           <div className={styles.btns}>
             <select
               className={styles.select}
-              value={selectedQuantity}
+              value={selectedSize}
               onChange={handleSelectSizeChange}
             >
-              <option value={1}>Розмір: M</option>
-              <option value={2}>Розмір: L</option>
-              <option value={3}>Розмір: S</option>
-              <option value={4}>Розмір: XL</option>
+              <option value="M">Розмір: M</option>
+              <option value="L">Розмір: L</option>
+              <option value="S">Розмір: S</option>
+              <option value="XL">Розмір: XL</option>
             </select>
             <div className={styles.radioContainer}>
               Колір:
@@ -83,8 +99,8 @@ const CardType3 = () => {
                 <input
                   type="radio"
                   name="color"
-                  value="black"
-                  checked={selectedColor === "black"}
+                  value="чорний"
+                  checked={selectedColor === "чорний"}
                   onChange={handleColorChange}
                 />
                 <span
@@ -95,8 +111,8 @@ const CardType3 = () => {
                 <input
                   type="radio"
                   name="color"
-                  value="white"
-                  checked={selectedColor === "white"}
+                  value="білий"
+                  checked={selectedColor === "білий"}
                   onChange={handleColorChange}
                 />
                 <span
@@ -115,7 +131,12 @@ const CardType3 = () => {
               <option value={2}>Кількість: 2 шт.</option>
               <option value={3}>Кількість: 3 шт.</option>
             </select>
-            <button className={styles.btn}>до кошика</button>
+            <button
+              className={styles.btn}
+              onClick={() => addToCartHandler(product)}
+            >
+              до кошика
+            </button>
           </div>
         </div>
       ))}

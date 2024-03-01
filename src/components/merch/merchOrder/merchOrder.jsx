@@ -1,65 +1,25 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import { useContext, useState, useEffect } from "react";
+import CartContext from "@/context/CartContext";
+
 import Image from "next/image";
 import Icon from "@/components/Icon/Icon";
 import styles from "./merchOrder.module.css";
 
-const orderedProducts = [
-  {
-    id: 1,
-    name: "Pen",
-    title: "Pen",
-    quantity: "Кілкість: 3шт.",
-    price: 200,
-    color: "balck",
-    size: "",
-  },
-  {
-    id: 2,
-    name: "T-shirt",
-    title: "T-shirt",
-    quantity: "Кілкість: 3 шт.",
-    price: 1500,
-    size: "Розмір: M",
-    color: "white",
-  },
-  {
-    id: 3,
-    name: "T-shirt",
-    title: "T-shirt",
-    quantity: "Кілкість: 2 шт.",
-    price: 1500,
-    size: "Розмір: M",
-    color: "white",
-  },
-];
-
 const MerchOrder = () => {
+  const { cart, deleteItemFromCart } = useContext(CartContext);
   const [totalSum, setTotalSum] = useState(0);
 
-  const calculateTotalSum = () => {
-    const sum = orderedProducts.reduce((acc, product) => {
-      const quantity = parseInt(product.quantity.split(" ")[1]);
-      if (!isNaN(quantity)) {
-        const productTotal = quantity * product.price;
-        console.log(
-          `Product: ${product.name}, Quantity: ${quantity}, Total: ${productTotal}`
-        );
-        return acc + productTotal;
-      }
-      return acc + productTotal;
-    }, 0);
-    setTotalSum(sum);
-  };
-
   useEffect(() => {
-    calculateTotalSum();
-  }, [orderedProducts]);
+    if (cart && Array.isArray(cart.cartItems)) {
+      const sum = cart.cartItems.reduce((acc, item) => {
+        return acc + (item.price || 0) * (item.quantity || 0);
+      }, 0);
+      setTotalSum(sum);
+    }
+  }, [cart]);
 
-  const handleCancel = (productId) => {
-    // Handle cancellation logic here
-  };
   return (
     <>
       <div className={styles.orderContainer}>
@@ -78,28 +38,27 @@ const MerchOrder = () => {
             </thead>
 
             <tbody>
-              {orderedProducts.map((product) => (
+              {cart?.cartItems?.map((cartItem) => (
                 <tr
-                  key={product.id}
-                  product={product}
+                  key={cartItem.id}
+                  product={cartItem}
                   className={styles.trList}
                 >
-                  <td className={styles.tdList}>{product.title}</td>
-                  <td className={styles.tdList}>
-                    {parseInt(product.quantity.split(" ")[1])} шт.
-                  </td>
-                  <td className={styles.tdList}>{product.color}</td>
+                  <td className={styles.tdList}>{cartItem.title}</td>
+                  <td className={styles.tdList}>{cartItem.quantity} шт.</td>
+                  <td className={styles.tdList}>{cartItem.color}</td>
 
                   <td className={`${styles.tdList} ${styles.thTdSize}`}>
-                    {product.size.split(" ").slice(1).join(" ")}
+                    {cartItem.size}
                   </td>
 
                   <td className={styles.tdList}>
-                    <Icon
-                      name="icon-close"
-                      className={styles.cancelIcon}
-                      onClick={() => handleCancel(product.id)}
-                    />
+                    <button
+                      className={styles.cancelBtn}
+                      onClick={() => deleteItemFromCart(cartItem?.id)}
+                    >
+                      <Icon name="icon-close" className={styles.cancelIcon} />
+                    </button>
                   </td>
                 </tr>
               ))}

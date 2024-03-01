@@ -1,8 +1,12 @@
 .container {
+  display: inline-block;
+  max-width: fit-content;
+  
   border-left-width: 2px;
   border-left-style: solid;
   /* border-left-color: ; */
   padding: 0 6px;
+
 
   @media only screen and (min-width: 768px) {
     max-width: 450px;
@@ -15,7 +19,7 @@
   }
 
   @media only screen and (min-width: 1920px) {
-    max-width: 625px;
+    max-width: 772px;
   }
 }
 
@@ -55,7 +59,7 @@
 }
 
 .description {
-  width: 90%;
+  width: 95%;
   font-size: 14px;
 
   @media only screen and (min-width: 960px) {

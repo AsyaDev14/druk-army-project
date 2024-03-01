@@ -1,0 +1,76 @@
+.centralBlock {
+  margin: 0 auto;
+  padding-left: 7px;
+  padding-right: 7px;
+
+  @media only screen and (min-width: 1920px) {
+    width: 1920px;
+    padding-left: 350px;
+    padding-right: 350px;
+    margin-bottom: 50px;
+  }
+}
+
+.cablesWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-bottom: 20px;
+  height: 100%;
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: column-reverse;
+  }
+
+  @media only screen and (min-width: 960px) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+}
+
+.cables {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+
+  @media only screen and (min-width: 960px) {
+    /* flex-direction: column-reverse; */
+  }
+}
+
+.connectorsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: column-reverse;
+  }
+
+  @media only screen and (min-width: 960px) {
+    flex-direction: row-reverse;
+    margin-bottom: -200px;
+  }
+}
+
+.connectors {
+  max-width: 100%;
+  height: auto;
+
+  @media only screen and (min-width: 768px) {
+    align-self: flex-end;
+    position: relative;
+    top: -60px;
+    margin-bottom: -70px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    position: relative;
+    top: -120px;
+    right: 0;
+    margin-bottom: 0px;
+  }
+}

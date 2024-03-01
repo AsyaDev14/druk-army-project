@@ -2,7 +2,10 @@
 import Icon from "@/components/Icon/Icon";
 import styles from "./cardType2.module.css";
 import Image from "next/image";
-import { useState } from "react";
+import { useContext, useState, useEffect } from "react";
+import CartContext from "@/context/CartContext";
+import { nanoid } from "nanoid";
+
 
 const products = [
   {
@@ -12,15 +15,17 @@ const products = [
     description:
       'Ця ручка - це не просто інструмент для записів, це орудієм великих посмішок та маленьких добрих справ. "Армія друку" друкує речі для наших військових, а ми робимо кожен ваш запис особливим!',
     price: 350,
+    color: "",
     whiteImg: "/img/merch/pen-white.png",
   },
   {
     id: 2,
     name: "Cup",
-    title: "кружка",
+    title: "Кружка",
     description:
       'Ця кружка - це не просто посуд, це келих для справжніх героїв, які знають, як зробити світ яскравішим та смішнішим. "Армія друку" принесла у світ 3D-друк та безкоштовну допомогу військовим, а ми принесли цю кружку для вас!',
     price: 500,
+    color: "",
     whiteImg: "/img/merch/cup-white.png",
   },
   {
@@ -30,43 +35,58 @@ const products = [
     description:
       'Записничок "Армії друку" - це не просто записник. Це магічний космос для творчості, веселих ідей та безцінних моментів, які залишають відбиток у серцях.',
     price: 750,
+    color: "",
     whiteImg: "/img/merch/notebook-white.png",
   },
 ];
 
 const CardType2 = () => {
+  const { addItemToCart } = useContext(CartContext);
   const [selectedQuantity, setSelectedQuantity] = useState(1);
-  const [selectedColor, setSelectedColor] = useState("white");
+  const [selectedColor, setSelectedColor] = useState("білий");
+
   const handleSelectChange = (event) => {
     setSelectedQuantity(parseInt(event.target.value, 10));
   };
-  const handleButtonClick = () => {
-    // Perform actions when the button is clicked, e.g., add to cart
-    console.log(`Adding ${selectedQuantity} item(s) to the cart`);
-  };
+
+  useEffect(() => {}, [selectedColor]);
 
   const handleColorChange = (event) => {
     setSelectedColor(event.target.value);
   };
+
+  const addToCartHandler = (product) => {
+    addItemToCart({
+      id: product.id,
+      name: product.name,
+      title: product.title,
+      description: product.description,
+      price: product.price,
+      image: product.whiteImg,
+      quantity: selectedQuantity,
+      color: selectedColor,
+    });
+  };
+
   return (
     <>
       {products.map((product) => (
         <div className={styles.container} key={product.id}>
           <div className={styles.imgContainer}>
-            {selectedColor === "white" && (
+            {selectedColor === "білий" && (
               <Image
                 src={product.whiteImg}
                 className={styles.img}
-                alt={products.name}
+                alt={product.name}
                 width={300}
                 height={300}
               />
             )}
-            {selectedColor === "black" && (
+            {selectedColor === "чорний" && (
               <Image
-                src={products.whiteImg}
+                src={product.whiteImg}
                 className={styles.img}
-                alt={products.name}
+                alt={product.name}
                 width={300}
                 height={300}
               />
@@ -95,8 +115,8 @@ const CardType2 = () => {
                 <input
                   type="radio"
                   name="color"
-                  value="black"
-                  checked={selectedColor === "black"}
+                  value="чорний"
+                  checked={selectedColor === "чорний"}
                   onChange={handleColorChange}
                 />
                 <span
@@ -107,8 +127,8 @@ const CardType2 = () => {
                 <input
                   type="radio"
                   name="color"
-                  value="white"
-                  checked={selectedColor === "white"}
+                  value="білий"
+                  checked={selectedColor === "білий"}
                   onChange={handleColorChange}
                 />
                 <span
@@ -117,7 +137,12 @@ const CardType2 = () => {
               </label>
             </div>
           </div>
-          <button className={styles.btn}>Додати до кошика</button>
+          <button
+            className={styles.btn}
+            onClick={() => addToCartHandler(product)}
+          >
+            Додати до кошика
+          </button>
         </div>
       ))}
     </>

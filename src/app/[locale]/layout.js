@@ -5,9 +5,10 @@ import TranslationsProvider from "@/components/TranslationProvider/TranslationsP
 import Header from "@/components/header/Header.jsx";
 import Footer from "@/components/footer/Footer.jsx";
 
-import '../globals.css'
+import "../globals.css";
+import { GlobalProvider } from "@/app/GlobalProvider";
 
-const i18nNamespaces = ["header", "footer", "terms", "notfound", "home"];
+const i18nNamespaces = ["header", "footer", "home", "terms", "notfound", "about", "vacancies", "how-it-works"];
 
 const font = Inter({ subsets: ["latin"] });
 
@@ -28,9 +29,11 @@ export default async function RootLayout({ children, params: { locale } }) {
             locale={locale}
             resources={resources}
           >
-            <Header />
-            <main>{children}</main>
-            <Footer />
+            <GlobalProvider>
+              <Header />
+              <main>{children}</main>
+              <Footer />
+            </GlobalProvider>
           </TranslationsProvider>
         </Providers>
       </body>

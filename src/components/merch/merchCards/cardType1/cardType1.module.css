@@ -70,7 +70,7 @@
   font-weight: 400;
   font-size: 32px;
   text-transform: uppercase;
-  color: #333;
+  color: var(--paragraph-text);
   padding-left: 18px;
   @media screen and (min-width: 480px) {
   }
@@ -80,7 +80,7 @@
   font-weight: 500;
   font-size: 14px;
   text-align: justify;
-  color: #333;
+  color: var(--paragraph-text);
   padding-left: 9px;
   padding-right: 9px;
   @media screen and (min-width: 480px) {
@@ -99,16 +99,21 @@
   font-weight: 500;
   font-size: 14px;
   text-align: justify;
-  color: #333;
+  color: var(--paragraph-text);
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
   width: 136px;
-  @media screen and (min-width: 480px) {
+  background-color: var(--header-bg);
+}
+@media screen and (min-width: 480px) {
+  .select {
     font-size: 20px;
     width: 220px;
   }
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .select {
     border-left: 1px solid #333;
   }
 }
@@ -118,10 +123,12 @@
   font-size: 16px;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
-  background: #333;
+  color: var(--buttons-text);
+  background-color: var(--bg-details);
   padding: 13px 15px;
-  @media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 480px) {
+  .btn {
     width: 220px;
     font-size: 20px;
   }
