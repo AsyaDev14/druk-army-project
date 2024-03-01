@@ -103,6 +103,7 @@
 @media screen and (min-width: 768px) {
   .mainTitleContainer {
     max-width: 580px;
+    margin: 0 auto;
   }
 
   .mainTitle {
@@ -120,6 +121,10 @@
   .mainTitleText {
     font-size: 20px;
     padding-right: 90px;
+  }
+
+  .btn {
+    margin-bottom: 0;
   }
 }
 
@@ -139,18 +144,15 @@
 
   .mainTitleText {
     max-width: 540px;
+    padding-right: 60px;
+    margin-bottom: 14px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .mainTitleContainer {
-    margin-left: 130px;
+    margin-left: 60px;
     margin-bottom: 0;
   }
 }
 
-@media screen and (min-width: 1920px) {
-  .mainTitleContainer {
-    margin-left: 180px;
-  }
-}

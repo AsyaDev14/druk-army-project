@@ -5,10 +5,10 @@ import css from "./PrintAll.module.css";
 
 const PrintAll = () => {
   return (
-    <div>
-      <Container>
+    <div className={css.sectionPrintAll}>
+      <div className={css.container}>
         <PrintAllTitle />
-      </Container>
+      </div>
       <PrintAllImage />
     </div>
   );

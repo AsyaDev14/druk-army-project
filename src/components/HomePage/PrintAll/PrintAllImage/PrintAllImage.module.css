@@ -52,3 +52,19 @@
         right: -24px;
     }
 }
+
+@media screen and (min-width: 960px) {
+    .imagesContainer {
+        margin: 44px 0 160px 0;
+    }
+
+    .tweet {
+        right: -240px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .imagesContainer {
+        margin: 0 0 110px 0;
+    }
+}
