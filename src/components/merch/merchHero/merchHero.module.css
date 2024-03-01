@@ -72,7 +72,7 @@
   }
 }
 .details {
-  border-left: 4px solid black;
+  border-left: 4px solid var(--paragraph-text);
   padding-left: 8px;
 }
 @media screen and (min-width: 480px) {
@@ -93,6 +93,7 @@
   font-weight: 700;
   font-size: 15px;
   text-transform: uppercase;
+  color: var(--paragraph-text);
 }
 @media screen and (min-width: 480px) {
   .title {
@@ -130,7 +131,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 14px;
-  color: #333;
+  color: var(--paragraph-text);
 }
 @media screen and (min-width: 480px) {
   .text {
@@ -145,14 +146,14 @@
 
 .btn {
   padding: 13px 20px;
-  background: #333;
   height: 44px;
   font-family: "Benzin-Medium", sans-serif;
   font-weight: 400;
   font-size: 15px;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: var(--buttons-text);
+  background-color: var(--bg-details);
   cursor: pointer;
 }
 @media screen and (min-width: 480px) {
@@ -164,11 +165,13 @@
   }
 }
 .icon {
-  fill: #fff;
+  fill: var(--buttons-text);
   width: 18px;
   height: 14px;
   margin-right: 1px;
-  @media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 480px) {
+  .icon {
     width: 27px;
     height: 21px;
   }

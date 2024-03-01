@@ -6,6 +6,7 @@ import Header from "@/components/header/Header.jsx";
 import Footer from "@/components/footer/Footer.jsx";
 
 import "../globals.css";
+import { GlobalProvider } from "@/app/GlobalProvider";
 
 const i18nNamespaces = [
   "header",
@@ -36,10 +37,11 @@ export default async function RootLayout({ children, params: { locale } }) {
             locale={locale}
             resources={resources}
           >
-            <Header />
-            <main>{children}</main>
-
-            <Footer />
+            <GlobalProvider>
+              <Header />
+              <main>{children}</main>
+              <Footer />
+            </GlobalProvider>
           </TranslationsProvider>
         </Providers>
       </body>

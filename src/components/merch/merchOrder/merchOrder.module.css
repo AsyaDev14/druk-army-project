@@ -14,8 +14,10 @@
   font-weight: 400;
   font-size: 24px;
   text-transform: uppercase;
-  color: #333;
-  @media screen and (min-width: 480px) {
+  color: var(--paragraph-text);
+}
+@media screen and (min-width: 480px) {
+  .formTitle {
     font-size: 32px;
   }
 }
@@ -31,7 +33,9 @@
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   text-align: left;
-  @media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 480px) {
+  .theadRow {
     font-size: 20px;
   }
 }
@@ -53,7 +57,9 @@
   width: max-content;
   margin-right: 14px;
   text-align: left;
-  @media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 480px) {
+  .tdList {
     font-size: 20px;
   }
 }
@@ -65,10 +71,16 @@
     display: table-cell;
   }
 }
+.cancelBtn {
+  border: none;
+  background-color: transparent;
+}
 .cancelIcon {
   width: 10px;
   height: 10px;
-  @media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 480px) {
+  .cancelIcon {
     width: 16px;
     height: 16px;
   }
@@ -80,8 +92,6 @@
   flex-direction: column;
   gap: 15px;
   border-left: 3px solid #333;
-  @media screen and (min-width: 480px) {
-  }
 }
 
 .sumInfo {
@@ -89,7 +99,7 @@
   font-weight: 400;
   font-size: 36px;
   text-transform: uppercase;
-  color: #333;
+  color: var(--paragraph-text);
 }
 .sumItself {
   display: flex;
@@ -104,14 +114,18 @@
   color: #fff;
   width: max-content;
   align-items: center;
-  @media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 480px) {
+  .sumItself {
     font-size: 64px;
   }
 }
 .icon {
   width: 44px;
   height: 36px;
-  @media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 480px) {
+  .icon {
     width: 54px;
     height: 46px;
   }
@@ -127,14 +141,18 @@
   font-weight: 700;
   font-size: 15px;
   text-transform: uppercase;
-  color: #333;
+  color: var(--paragraph-text);
   margin-bottom: -5px;
   padding-left: 16px;
-  @media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 480px) {
+  .infoTitle {
     font-size: 20px;
     margin: 0;
   }
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .infoTitle {
     font-size: 36px;
   }
 }
@@ -142,7 +160,6 @@
   font-family: "Benzin-ExtraBold", sans-serif;
   font-weight: 400;
   font-size: 24px;
-
   text-transform: uppercase;
   color: #5169ff;
   padding-left: 16px;
@@ -165,12 +182,16 @@
   font-weight: 500;
   font-size: 14px;
   text-align: justify;
-  color: #333;
+  color: var(--paragraph-text);
   padding-left: 16px;
-  @media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 480px) {
+  .longText {
     font-size: 16px;
   }
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .longText {
     font-size: 20px;
   }
 }
@@ -180,7 +201,9 @@
   flex-direction: column;
   gap: 10px;
   padding-top: 30px;
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .dataSending {
     flex-direction: row;
     gap: 20px;
   }
@@ -191,7 +214,8 @@
   font-weight: 500;
   font-size: 20px;
   text-align: center;
-  color: #929292;
+  color: var(--paragraph-text);
+  background-color: var(--header-bg);
   width: 300px;
   padding: 12px;
 }
@@ -221,7 +245,8 @@
   font-weight: 500;
   font-size: 20px;
   text-align: center;
-  color: #929292;
+  color: var(--paragraph-text);
+  background-color: var(--header-bg);
   width: 300px;
   padding: 12px;
 }
@@ -253,8 +278,8 @@
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
-  background-color: #333;
-  color: #fff;
+  color: var(--buttons-text);
+  background-color: var(--bg-details);
   width: 300px;
   padding: 7px;
 }

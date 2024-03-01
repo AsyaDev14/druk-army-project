@@ -8,7 +8,9 @@
   width: 300px;
   height: 357px;
   position: relative;
-  @media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 480px) {
+  .imgContainer {
     width: 440px;
     height: 500px;
   }
@@ -16,7 +18,9 @@
 .img {
   margin-top: 20px;
   margin-bottom: 20px;
-  @media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 480px) {
+  .img {
     width: 440px;
     height: 500px;
     margin: 0;
@@ -38,14 +42,10 @@
   text-align: center;
   color: #fff;
   margin-right: 1px;
-  @media screen and (min-width: 480px) {
-  }
 }
 .icon {
   width: 32px;
   height: 26px;
-  @media screen and (min-width: 480px) {
-  }
 }
 .details {
   width: 300px;
@@ -55,7 +55,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  @media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 480px) {
+  .details {
     width: 440px;
     height: 240px;
     padding: 10px 0 10px 0;
@@ -68,27 +70,29 @@
   font-weight: 400;
   font-size: 32px;
   text-transform: uppercase;
-  color: #333;
+  color: var(--paragraph-text);
   padding-left: 18px;
-  @media screen and (min-width: 480px) {
-  }
 }
 .text {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 14px;
   text-align: justify;
-  color: #333;
+  color: var(--paragraph-text);
   padding-left: 9px;
   padding-right: 9px;
-  @media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 480px) {
+  .text {
     font-size: 20px;
   }
 }
 .btns {
   display: flex;
   width: 300px;
-  @media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 480px) {
+  .btns {
     width: 440px;
   }
 }
@@ -98,18 +102,23 @@
   font-weight: 500;
   font-size: 14px;
   text-align: justify;
-  color: #333;
+  color: var(--paragraph-text);
+  background-color: var(--header-bg);
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
   width: 166px;
   border: 1px solid #333;
   border-left: none;
-  @media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 480px) {
+  .radioContainer {
     width: 220px;
     font-size: 20px;
   }
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .radioContainer {
     border-left: 1px solid #333;
   }
 }
@@ -152,16 +161,21 @@
   font-weight: 500;
   font-size: 14px;
   text-align: justify;
-  color: #333;
+  color: var(--paragraph-text);
+  background-color: var(--header-bg);
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
   width: 145px;
-  @media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 480px) {
+  .select {
     width: 220px;
     font-size: 20px;
   }
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .select {
     border-left: 1px solid #333;
   }
 }
@@ -171,11 +185,13 @@
   font-size: 16px;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
-  background: #333;
+  color: var(--buttons-text);
+  background-color: var(--bg-details);
   padding: 13px 15px;
   width: 300px;
-  @media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 480px) {
+  .btn {
     width: 220px;
     font-size: 20px;
   }
