@@ -8,7 +8,15 @@ import Footer from "@/components/footer/Footer.jsx";
 import "../globals.css";
 import { GlobalProvider } from "./GlobalProvider";
 
-const i18nNamespaces = ["header", "footer", "terms", "notfound", "about", "vacancies"];
+const i18nNamespaces = [
+  "header",
+  "footer",
+  "terms",
+  "notfound",
+  "about",
+  "vacancies",
+  "how-it-works",
+];
 
 
 const font = Inter({ subsets: ["latin"] });
