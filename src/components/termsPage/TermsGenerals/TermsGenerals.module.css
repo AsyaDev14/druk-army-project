@@ -1,0 +1,51 @@
+.content h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  color: var(--paragraph-text);
+}
+
+.content h4,
+.content h3 {
+  text-transform: uppercase;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.content h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.content p {
+  text-align: justify;
+}
+
+.textList li {
+  display: flex;
+  align-items: flex-start;
+}
+
+.textList li::before {
+  font-weight: 700;
+  content: ".";
+  margin-right: 0.5em;
+}
+
+@media screen and (min-width: 1200px) {
+  .content {
+    margin-top: 102px;
+  }
+
+  .content h4,
+  .content h3 {
+    font-size: 36px;
+    line-height: 1.22;
+  }
+
+  .content p {
+    font-size: 20px;
+  }
+}

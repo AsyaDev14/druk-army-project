@@ -72,6 +72,10 @@
   text-transform: uppercase;
   color: var(--paragraph-text);
   padding-left: 18px;
+  color: #333;
+  padding-left: 18px;
+  @media screen and (min-width: 480px) {
+  }
 }
 .text {
   font-family: "Montserrat", sans-serif;

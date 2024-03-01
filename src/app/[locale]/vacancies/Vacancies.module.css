@@ -1,0 +1,338 @@
+.imageContainer {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+  margin-left: -10px;
+  margin-right: -10px;
+
+  @media only screen and (min-width: 768px) {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+}
+
+.centerCrop {
+  width: 100%;
+  height: 423px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.vacTitle {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: var(--paragraph-text);
+  text-align: center;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+.vacTitle span {
+  font-family: "Benzin-ExtraBold", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--accent-color);
+
+  @media only screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1;
+  }
+}
+
+.vacTitleDescription {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: var(--paragraph-text);
+
+  @media only screen and (min-width: 768px) {
+    font-size: 20px;
+    width: 552px;
+    margin: 0 auto;
+  }
+}
+
+.allVacanciesContainer {
+  @media only screen and (min-width: 960px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-gap: 20px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-gap: 20px;
+  }
+}
+
+.vacancieContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 39px;
+
+  @media only screen and (min-width: 768px) {
+    margin-top: 40px;
+  }
+}
+
+.vacancieDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 290px;
+  margin-top: 30px;
+
+  @media only screen and (min-width: 768px) {
+    margin-top: 50px;
+    width: 727px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    width: 450px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 391px;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    width: 493px;
+  }
+}
+
+.vacImgBtnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @media only screen and (min-width: 480px) {
+    width: 440px;
+    height: 344px;
+  }
+  @media only screen and (min-width: 768px) {
+    width: 728px;
+    height: 344px;
+  }
+  @media only screen and (min-width: 960px) {
+    width: 450px;
+    height: 344px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 374px;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    width: 493px;
+  }
+}
+
+.vacancieImg {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+
+  @media only screen and (min-width: 480px) {
+    width: 440px;
+    height: 344px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 728px;
+    height: 344px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    width: 450px;
+    height: 344px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 374px;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    width: 493px;
+  }
+}
+
+.vacancieTitle {
+  color: var(--paragraph-text);
+  font-family: Montserrat-Bold;
+  font-size: 24px;
+  line-height: normal;
+  text-transform: uppercase;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 36px;
+  }
+}
+
+.skillsTitle {
+  color: var(--paragraph-text);
+  font-family: Montserrat-Semibold;
+  font-size: 20px;
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+.skillsDescription {
+  color: var(--paragraph-text);
+
+  font-family: Montserrat-Medium, sans-serif;
+  font-size: 14px;
+  line-height: normal;
+
+  list-style: disc;
+  margin-left: 20px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    margin-bottom: 8px;
+  }
+}
+
+.btnRespond {
+  width: 247px;
+  height: 35px;
+  position: relative;
+  color: var(--buttons-text);
+  text-align: center;
+  border: none;
+  font-family: Benzin-Medium;
+  font-size: 15px;
+  line-height: normal;
+  text-transform: uppercase;
+  background: var(--accent-color);
+
+  display: flex;
+  padding: 15px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  z-index: 1;
+  margin-top: -55px;
+  margin-left: 53px;
+
+  @media only screen and (min-width: 768px) {
+    width: 247px;
+  }
+}
+
+.vacBottomSectionContainer {
+  margin-top: -50px;
+}
+
+.vacBottomDescription {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: var(--paragraph-text);
+
+  @media only screen and (min-width: 768px) {
+    font-size: 20px;
+    width: 726px;
+    margin: 0 auto;
+  }
+  @media only screen and (min-width: 960px) {
+    width: 866px;
+  }
+}
+
+.vacanciesContacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row-reverse;
+  }
+}
+
+.vacContactInfo {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #5e6a8a;
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+}
+
+.vacContactInfo a {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.btnContactUs {
+  position: relative;
+  color: var(--buttons-text);
+  text-align: center;
+  border: none;
+  font-family: Benzin-Medium;
+  font-size: 15px;
+  line-height: normal;
+  text-transform: uppercase;
+  display: inline-flex;
+  width: 246px;
+  height: 51px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-details);
+  margin: 8px auto;
+
+  overflow: hidden;
+  z-index: 1;
+
+  @media only screen and (min-width: 768px) {
+    margin: 8px 0;
+    width: 298px;
+  }
+}
+
+.btnContactUs::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: var(--bg-details);
+  transition: width 600ms ease;
+  z-index: -1;
+}
+
+.btnContactUs:hover::after {
+  background: var(--accent-color);
+  width: 100%;
+}
+
+.btnSvg {
+  width: 37px;
+  height: 21px;
+  fill: var(--buttons-text);
+  margin-right: 10px;
+}

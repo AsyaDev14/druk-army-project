@@ -2,6 +2,7 @@
 
 import { useContext, useState, useEffect } from "react";
 import CartContext from "@/context/CartContext";
+
 import Image from "next/image";
 import Icon from "@/components/Icon/Icon";
 import styles from "./merchOrder.module.css";

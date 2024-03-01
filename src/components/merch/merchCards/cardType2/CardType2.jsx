@@ -6,6 +6,7 @@ import { useContext, useState, useEffect } from "react";
 import CartContext from "@/context/CartContext";
 import { nanoid } from "nanoid";
 
+
 const products = [
   {
     id: 1,

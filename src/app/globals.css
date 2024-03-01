@@ -1,4 +1,4 @@
-@import 'modern-normalize/modern-normalize.css';
+@import "modern-normalize/modern-normalize.css";
 
 :root {
   --header-bg: #ffffff;
@@ -6,18 +6,21 @@
   --bg-details: #333333;
   --title-small: #333333;
   --paragraph-text: #333333;
+  --footer-bg: #333333;
   --buttons-text: #ffffff;
   --accent-color: #5169ff;
+  --bg-loader: #5e6a8a;
 }
-body.page-theme-dark {
+[data-theme="dark"] {
   --header-bg: #0f1022;
-  /* --main-bg: url('../../public/img/homePage/darkMood-bg.jpg'); */
   --bg-details: #ffffff;
   --title-small: #ffffff;
   --title-accent: #5169ff;
   --paragraph-text: #ffffff;
+  --footer-bg: #0f1022;
   --buttons-text: #0f1022;
   --accent-color: #5169ff;
+  --bg-loader: #ffffff;
 }
 
 @font-face {
@@ -99,13 +102,10 @@ body.page-theme-dark {
 h1,
 h2,
 h3,
-h4 {
+h4,
+p {
   margin: 0;
   padding: 0;
-}
-p {
-  margin-top: 0;
-  margin-bottom: 12px;
 }
 
 ul,
@@ -123,6 +123,11 @@ a {
   color: inherit;
 }
 
+abbr[title] {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
 button {
   cursor: pointer;
 }
@@ -131,7 +136,7 @@ body {
   font-family: "Montserrat-Medium";
   font-weight: 500;
   font-size: 16px;
-  background: var(--main-bg);
+  background: var(--header-bg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

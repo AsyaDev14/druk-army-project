@@ -1,0 +1,65 @@
+.wrapper {
+  position: relative;
+}
+
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media only screen and (min-width: 480px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media only screen and (min-width: 960px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+.titleTop {
+  margin-top: 48px;
+  margin-bottom: 36px;
+}
+
+.backText {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-family: "Benzin-ExtraBold", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+
+  line-height: 0;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--bg-details);
+  opacity: 0.1;
+
+  @media only screen and (min-width: 960px) {
+    font-size: 96px;
+  }
+  @media only screen and (min-width: 1920px) {
+    font-size: 128px;
+  }
+}

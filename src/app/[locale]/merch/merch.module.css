@@ -4,12 +4,14 @@
     margin-left: -100px;
   }
 }
-/* @media screen and (min-width: 960px) {
+
+@media screen and (min-width: 960px) {
   .merchOrder {
     margin-left: -100px;
     margin-right: -100px;
   }
-} */
+}
+
 @media screen and (min-width: 1920px) {
   .merchOrder {
     padding-top: 158px;

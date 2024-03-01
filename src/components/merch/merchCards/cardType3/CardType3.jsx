@@ -24,7 +24,6 @@ const CardType3 = () => {
   const [selectedQuantity, setSelectedQuantity] = useState(1);
   const [selectedSize, setSelectedSize] = useState("M");
   const [selectedColor, setSelectedColor] = useState("білий");
-
   const handleSelectAmountChange = (event) => {
     setSelectedQuantity(parseInt(event.target.value, 10));
   };

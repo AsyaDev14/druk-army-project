@@ -1,0 +1,21 @@
+.logoImage {
+  width: 76px;
+  height: 37px;
+}
+
+.logo {
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 24px;
+    padding-bottom: 13px;
+  }
+
+  .logoImage {
+    width: 95px;
+    height: 47px;
+  }
+}

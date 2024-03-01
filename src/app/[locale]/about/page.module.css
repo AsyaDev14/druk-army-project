@@ -1,0 +1,75 @@
+.pageWrapper {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+
+  outline: 1px solid green;
+
+  @media only screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media only screen and (min-width: 960px) {
+    width: 960px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    width: 1920px;
+  }
+}
+
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media only screen and (min-width: 480px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media only screen and (min-width: 960px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and (min-width: 1920px) {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reverse {
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (min-width: 1920px) {
+    flex-direction: column-reverse;
+  }
+}
