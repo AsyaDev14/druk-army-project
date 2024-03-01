@@ -6,7 +6,7 @@ import Header from "@/components/header/Header.jsx";
 import Footer from "@/components/footer/Footer.jsx";
 
 import "../globals.css";
-import { GlobalProvider } from "./GlobalProvider";
+import { GlobalProvider } from "@/app/GlobalProvider";
 
 const i18nNamespaces = [
   "header",
@@ -17,7 +17,6 @@ const i18nNamespaces = [
   "vacancies",
   "how-it-works",
 ];
-
 
 const font = Inter({ subsets: ["latin"] });
 
