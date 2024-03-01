@@ -5,9 +5,9 @@ import TranslationsProvider from "@/components/TranslationProvider/TranslationsP
 import Header from "@/components/header/Header.jsx";
 import Footer from "@/components/footer/Footer.jsx";
 
-import '../globals.css'
+import "../globals.css";
 
-const i18nNamespaces = ["header", "footer", "terms", "notfound"];
+const i18nNamespaces = ["header", "footer", "terms", "notfound", "vacancies"];
 
 const font = Inter({ subsets: ["latin"] });
 
@@ -30,6 +30,7 @@ export default async function RootLayout({ children, params: { locale } }) {
           >
             <Header />
             <main>{children}</main>
+
             <Footer />
           </TranslationsProvider>
         </Providers>

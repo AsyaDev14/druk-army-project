@@ -7,6 +7,7 @@ import Section from "@/components/Section/Section";
 import Container from "@/components/container/Container";
 import Icon from "@/components/Icon/Icon";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 import officeImg from "../../../../public/img/vacancies/office-tab.jpg";
 import office2 from "../../../../public/img/vacancies/office2-tab.jpg";
@@ -15,7 +16,8 @@ import fand from "../../../../public/img/vacancies/fand.jpg";
 import manager from "../../../../public/img/vacancies/manager.jpg";
 import designer from "../../../../public/img/vacancies/designer.jpg";
 import smm from "../../../../public/img/vacancies/smm.jpg";
-import { VacanciesModal } from "@/components/modals/VacanciesModal/VacanciesModal";
+import { VacanciesFeedbackModal } from "@/components/modals/VacanciesModal/VacanciesFeedbackModal";
+import { VacanciesFeedbackResultModal } from "@/components/modals/VacanciesModal/VacanciesFeedbackResultModal";
 
 const vacanciesData = [
   {
@@ -76,14 +78,27 @@ const vacanciesData = [
 ];
 
 const Vacancies = () => {
-  const [isModalOpen, setModalOpen] = React.useState(false);
+  const { t } = useTranslation();
 
-  const handleOpenModal = () => {
-    setModalOpen(true);
+  const [isFeedbackModalOpen, setFeedbackModalOpen] = React.useState(false);
+  const [isFeedbackResultModalOpen, setFeedbackResultModalOpen] =
+    React.useState(false);
+
+  const handleFeedbackOpenModal = () => {
+    setFeedbackModalOpen(true);
   };
 
-  const handleCloseModal = () => {
-    setModalOpen(false);
+  const handleFeedbackResultOpenModal = () => {
+    setFeedbackResultModalOpen(true);
+    setFeedbackModalOpen(false);
+  };
+
+  const handleFeedbackCloseModal = () => {
+    setFeedbackModalOpen(false);
+  };
+
+  const handleFeedbackResultCloseModal = () => {
+    setFeedbackResultModalOpen(false);
   };
 
   return (
@@ -99,14 +114,10 @@ const Vacancies = () => {
 
         <div>
           <h2 className={styles.vacTitle}>
-            Стати частиною команди <br />
-            <span>ДрукАрмії</span>
+            {t("vacancies:title")} <br />
+            <span> {t("vacancies:name")}</span>
           </h2>
-          <p className={styles.vacTitleDescription}>
-            Над проектом працюють люди, які вважають що їхні професійні навички
-            та досвід, розуміння своєї справи та компетенції можуть бути
-            корисними у спільній справі на шляху до перемоги.
-          </p>
+          <p className={styles.vacTitleDescription}>{t("vacancies:text")}</p>
         </div>
       </div>
 
@@ -125,14 +136,21 @@ const Vacancies = () => {
                     <button
                       className={styles.btnRespond}
                       type="button"
-                      onClick={handleOpenModal}
+                      onClick={handleFeedbackOpenModal}
                     >
                       {vacancy.btnText}
                     </button>
                   )}
-                  <VacanciesModal
-                    isOpen={isModalOpen}
-                    onClose={handleCloseModal}
+                  <VacanciesFeedbackModal
+                    isModalOpen={isFeedbackModalOpen}
+                    handleFeedbackResultOpenModal={
+                      handleFeedbackResultOpenModal
+                    }
+                    handleCloseModal={handleFeedbackCloseModal}
+                  />
+                  <VacanciesFeedbackResultModal
+                    isModalOpen={isFeedbackResultModalOpen}
+                    handleCloseModal={handleFeedbackResultCloseModal}
                   />
                 </div>
                 <div className={styles.vacancieDescriptionContainer}>
@@ -168,15 +186,11 @@ const Vacancies = () => {
             />
           </div>
           <h3 className={styles.vacTitle}>
-            Стати частиною команди <br />
-            <span>ДрукАрмії</span>
+            {t("vacancies:title")} <br />
+            <span>{t("vacancies:name")}</span>
           </h3>
           <p className={styles.vacBottomDescription}>
-            Якщо ви розумієте, як ваші компетенції можуть бути корисними для
-            допомоги у досягненні цілей, для яких була створена ДрукАрмія, будь
-            ласка, напишіть на пошту. Ваш внесок може мати велике значення,
-            дозволяючи використовувати ваші унікальні навички та знання для
-            спільного блага.{" "}
+            {t("vacancies:support")}{" "}
           </p>
           <div className={styles.vacanciesContacts}>
             <div className={styles.vacContactInfo}>
@@ -186,7 +200,7 @@ const Vacancies = () => {
             </div>
             <button className={styles.btnContactUs} type="button">
               <Icon name="icon-people" className={styles.btnSvg} />
-              Напишіть нам
+              {t("vacancies:contactUs")}
             </button>
           </div>
         </div>

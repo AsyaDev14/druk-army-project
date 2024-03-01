@@ -182,3 +182,40 @@
 
   margin-bottom: 20px;
 }
+
+/*second modal*/
+
+.vacModalResultImgContainer {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.modalImgResult {
+  width: 512px;
+  height: 512px;
+}
+
+.vacModalTitleResultContainer {
+  margin-top: 30px;
+
+  @media only screen and (min-width: 960px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: -70px;
+  }
+}
+
+.vacModalResultBtnContainer {
+  @media only screen and (min-width: 960px) {
+    gap: 10px;
+  }
+}
+
+.vacModalResultBtn {
+  @media only screen and (min-width: 960px) {
+    width: 200px;
+    height: 35px;
+  }
+}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./VacanciesForm.module.css";
 
-const VacanciesForm = () => {
+const VacanciesForm = ({ handleFeedbackResultOpenModal }) => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [nameError, setNameError] = useState("");
@@ -37,6 +37,7 @@ const VacanciesForm = () => {
 
     // const formData = { name, phone };
     // console.log("Дані, які будуть відправлені:", formData);
+    handleFeedbackResultOpenModal();
   };
 
   return (
