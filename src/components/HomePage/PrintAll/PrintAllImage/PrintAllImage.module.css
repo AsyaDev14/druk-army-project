@@ -67,4 +67,8 @@
     .imagesContainer {
         margin: 0 0 110px 0;
     }
+
+    .tweet {
+        top: -36px;
+    }
 }

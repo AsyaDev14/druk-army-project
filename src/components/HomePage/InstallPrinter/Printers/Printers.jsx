@@ -1,25 +1,30 @@
+"use client"
+
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 import css from "./Printer.module.css";
 
-const printers = [
-  {
-    image: "/img/home/calculator/printer1.png",
-    title: "ENDER-3 V3 SE",
-    quality: "1084 шт.",
-  },
-  {
-    image: "/img/home/calculator/printer.png",
-    title: "CREALITY ENDER 3 V2",
-    quality: "478 шт.",
-  },
-  {
-    image: "/img/home/calculator/printer3.png",
-    title: "CREALITY ENDER 3",
-    quality: "415 шт.",
-  },
-];
-
 const Printers = () => {
+  const { t } = useTranslation();
+
+  const printers = [
+    {
+      image: "/img/home/calculator/printer1.png",
+      title: "ENDER-3 V3 SE",
+      quality: `1084 ${t("home:units")}`,
+    },
+    {
+      image: "/img/home/calculator/printer.png",
+      title: "CREALITY ENDER 3 V2",
+      quality: `478 ${t("home:units")}`,
+    },
+    {
+      image: "/img/home/calculator/printer3.png",
+      title: "CREALITY ENDER 3",
+      quality: `415 ${t("home:units")}`,
+    },
+  ];
+
   return (
     <div className={css.printersContainer}>
       <ul className={css.printersList}>

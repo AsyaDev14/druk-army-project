@@ -1,6 +1,10 @@
+"use client"
+
+import { useTranslation } from "react-i18next";
 import css from "./TitleInstallPrinter.module.css";
 
 const TitleInstallPrinter = () => {
+  const { t } = useTranslation();
   return (
       <div className={css.mainTitleContainer}>
         {/*============== Жовто-блакитна лінія ===============*/}
@@ -9,15 +13,12 @@ const TitleInstallPrinter = () => {
         </div>
         {/* ============================================== */}
         <h2 className={css.mainTitle}>
-          <span className={css.titleFirst}>встанови принтер</span>
-          <span className={css.titleAccent}>в УкраЇні</span>
+          <span className={css.titleFirst}>{t("home:install")}</span>
+          <span className={css.titleAccent}>{t("home:inUkraine")}</span>
         </h2>
         <p className={css.mainTitleText}>
-          Розташування 3D-принтера в Україні підвищує логістичну ефективність
-          порівняно з друком за кордоном, оскільки зменшуються витрати на
-          доставку.   Встановлена вебкамера дозволяє спостерігати за процесом друку в
-          реальному часі, забезпечуючи максимальну ефективність принтера для{" "}
-          <abbr title="Збройні Сили України">ЗСУ</abbr>.
+         {t("home:installTitleText")}
+          <abbr title={t("home:armyOfUkraine")}>{t("home:armyAbbr")}</abbr>.
         </p>
       </div>
   );

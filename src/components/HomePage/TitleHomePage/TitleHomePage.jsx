@@ -1,34 +1,35 @@
-import React from "react";
-import css from "./TitleHomePage.module.css";
+"use client"
+
+import { useTranslation } from 'react-i18next';
 import Link from "next/link";
 import Container from "@/components/container/Container";
 import Icon from "@/components/Icon/Icon";
+import css from "./TitleHomePage.module.css";
 
 const TitleHomePage = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Container className={css.container}>
         <div className={css.mainTitleContainer}>
           <h1 className={css.mainTitle}>
-            Друкуйте перемогу
+            {t("home:printVictory")}
             <span className={css.titleAccent}>
-              разом з <span>da</span>
+             {t("home:together")} <span>da</span>
             </span>
           </h1>
           <p className={css.mainTitleText}>
-            Спільнота українців, які допомагають армії захищати Україну. Ми
-            нічого не продаємо, всі витрати покриваються коштом друкарів,
-            донорів та волонтерів.
+            {t("home:mainTitleText")}
           </p>
           <div className={css.contactsUs}>
             <button
               type="button"
-              aria-label="Долучитися і перейти до форми"
+              aria-label={t("home:participate")}
               className={css.btn}
             >
               <span className={css.btnText}>
                 <Icon className={css.communityIcon} name={"icon-people"} />
-                Долучитися
+                {t("home:participate")}
               </span>
             </button>
             <div className={css.links}>

@@ -1,31 +1,36 @@
+"use client";
+
+import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import css from "./CardsList.module.css";
 
-const cards = [
-  {
-    src: "/img/home/process/solder.png",
-    alt: "Український військовий - замовник",
-    number: 1,
-    descTitle: "Замовлення",
-    descText: "Військовий або медик замовляє вироби, які йому наразі потрібні",
-  },
-  {
-    src: "/img/home/process/printer.png",
-    alt: "Друкар, що друкує 3D вироби",
-    number: 2,
-    descTitle: "Друк",
-    descText: "Ви реєструєтесь та друкуєте вироби на 3D-принтері",
-  },
-  {
-    src: "/img/home/process/volunteer.png",
-    alt: "Волонтер, що відправляє вироби",
-    number: 3,
-    descTitle: "Відправлення",
-    descText: "Відправляєте надруковане — підвищуєте нашу обороноздатність",
-  },
-];
-
 const CardsList = () => {
+  const { t } = useTranslation();
+
+  const cards = [
+    {
+      src: "/img/home/process/solder.png",
+      alt: t("home:orderAlt"),
+      number: 1,
+      descTitle: t("home:order"),
+      descText: t("home:orderText"),
+    },
+    {
+      src: "/img/home/process/printer.png",
+      alt: t("home:printAlt"),
+      number: 2,
+      descTitle: t("home:print"),
+      descText: t("home:printText"),
+    },
+    {
+      src: "/img/home/process/volunteer.png",
+      alt: t("home:deliveryAlt"),
+      number: 3,
+      descTitle: t("home:delivery"),
+      descText: t("home:deliveryText"),
+    },
+  ];
+
   return (
     <div className={css.cardsSection}>
       <ul className={css.listCards}>

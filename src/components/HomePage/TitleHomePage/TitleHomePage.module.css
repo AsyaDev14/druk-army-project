@@ -50,7 +50,7 @@
   font-size: 15px;
   text-align: center;
   transition: all 400ms ease;
-  padding: 0 20px;
+  width: 274px;
   height: 43px;
   border: none;
   outline: none;
@@ -125,7 +125,6 @@
     .btn {
       font-size: 20px;
       height: 51px;
-      padding: 15px 20px;
     }
 
     .btn::after {

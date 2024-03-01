@@ -41,7 +41,7 @@
   font-size: 15px;
   text-align: center;
   transition: all 400ms ease;
-  padding: 0 20px;
+  width: 274px;
   height: 43px;
   border: none;
   outline: none;
@@ -140,6 +140,7 @@
 
   .titleFirst {
     font-size: 36px;
+    padding-right: 0;
   }
 
   .titleAccent {
@@ -148,7 +149,7 @@
 
   .mainTitleText {
     max-width: 540px;
-    padding-right: 60px;
+    padding-right: 0;
     margin-bottom: 14px;
   }
 }
