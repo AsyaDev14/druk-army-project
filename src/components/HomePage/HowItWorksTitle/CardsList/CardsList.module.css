@@ -181,7 +181,7 @@
 
 @media screen and (min-width: 1200px) {
   .imageContainer {
-    width: 452px;
+    max-width: 400px;
   }
 
   .listCards {

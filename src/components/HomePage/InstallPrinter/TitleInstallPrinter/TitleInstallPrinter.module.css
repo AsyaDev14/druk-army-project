@@ -75,16 +75,12 @@
   
   @media screen and (min-width: 768px) {
     .mainTitleContainer {
-      max-width: 580px;
-      margin: 0 auto;
+      max-width: 680px;
+      margin: 0 auto 46px auto;
     }
   
     .mainTitle {
       font-size: 32px;
-    }
-  
-    .titleFirst {
-      padding-right: 190px;
     }
   
     .titleAccent {
@@ -92,14 +88,14 @@
     }
   
     .mainTitleText {
+      max-width: 100%;
       font-size: 20px;
-      padding-right: 90px;
     }
   }
   
   @media screen and (min-width: 960px) {
     .mainTitleContainer {
-      max-width: 100%;
+      max-width: 96%;
       margin-bottom: 63px;
     }
   
@@ -112,14 +108,13 @@
     }
   
     .mainTitleText {
-      max-width: 540px;
-      padding-right: 60px;
       margin-bottom: 14px;
     }
   }
   
   @media screen and (min-width: 1200px) {
     .mainTitleContainer {
+      max-width: 903px;
       margin-left: 60px;
       margin-bottom: 0;
     }
