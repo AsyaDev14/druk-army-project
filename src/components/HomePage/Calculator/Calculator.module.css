@@ -1,0 +1,108 @@
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.firstPart {
+  background-color: #333333;
+  color: white;
+  padding: 24px 12px 20px 12px;
+}
+
+.firstPart_textContent {
+    margin-bottom: 69px;
+}
+
+.firstPart_textContent h2 {
+  font-family: "Benzin-ExtraBold", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.firstPart_textContent h3 {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.firstPart_textContent p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.rangeScale[type="range"] {
+    appearance: none;
+  cursor: pointer;
+  width: 100%;
+  background-color: transparent;
+}
+
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+.rangeScale[type="range"]::-webkit-slider-runnable-track {
+    background: transparent;
+    height: 26px;
+    border: 1px solid white;
+}
+
+.rangeScale[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 5px;
+    height: 46px;
+    background-color: white;
+    margin-top: -10px;
+}
+
+/******** Firefox ********/
+.rangeScale[type="range"]::-moz-range-track {
+    background: transparent;
+    height: 26px;
+    border: 1px solid white;
+}
+
+.rangeScale[type="range"]::-moz-range-thumb {
+    appearance: none;
+    width: 5px;
+    height: 46px;
+    background-color: white;
+    margin-top: -10px;
+}
+
+@media only screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .container {
+    width: 960px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .container {
+    width: 1920px;
+  }
+}

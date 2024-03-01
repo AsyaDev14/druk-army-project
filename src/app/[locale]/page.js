@@ -4,6 +4,7 @@ import Section from "@/components/Section/Section";
 import HowItWorks from "@/components/HomePage/HowItWorksTitle/HowItWorks";
 import PrintAll from "@/components/HomePage/PrintAll/PrintAll";
 import InstallPrinter from "@/components/HomePage/InstallPrinter/InstallPrinter";
+import Calculator from "@/components/HomePage/Calculator/Calculator";
 import css from "./page.module.css"
 
 export default function Home() {
@@ -22,6 +23,9 @@ export default function Home() {
         <section className={css.sectionPrinters}>
           <InstallPrinter/>
         </section>
+        <Section>
+          <Calculator/>
+        </Section>
     </>
   );
 }
