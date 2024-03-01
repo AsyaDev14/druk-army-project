@@ -1,12 +1,15 @@
-import css from "./PrintAll.module.css"
-import PrintAllTitle from "./PrintAllTitle/PrintAllTitle"
+import css from "./PrintAll.module.css";
+import Container from "@/components/container/Container";
+import PrintAllTitle from "./PrintAllTitle/PrintAllTitle";
 
 const PrintAll = () => {
   return (
     <div>
-        <PrintAllTitle/>
+      <Container>
+        <PrintAllTitle />
+      </Container>
     </div>
-  )
-}
+  );
+};
 
-export default PrintAll
+export default PrintAll;
