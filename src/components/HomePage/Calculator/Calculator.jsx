@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
 import Icon from "@/components/Icon/Icon";
+import ModelsPrinters from "./ModelsPrinters/ModelsPrinters";
 import css from "./Calculator.module.css";
 
 const Calculator = () => {
@@ -108,10 +109,7 @@ const Calculator = () => {
           </div>
         </div>
       </div>
-      <div className={css.secondPart}>
-        <div className={css.secondPart_textContent}></div>
-        <div></div>
-      </div>
+     <ModelsPrinters quality={quality}/>
     </div>
   );
 };
