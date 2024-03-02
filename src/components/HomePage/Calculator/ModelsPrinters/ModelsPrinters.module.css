@@ -153,3 +153,35 @@
     top: 40px;
   }
 }
+
+@media screen and (min-width: 960px) {
+  .secondPart {
+    width: 522px;
+    height: 563px;
+    margin-left: -192px;
+    padding-bottom: 4px;
+  }
+
+  .secondPart_textContent {
+    margin-top: 40px;
+  }
+
+  .modelOne,
+  .modelTwo {
+    position: relative;
+    z-index: 6;
+    max-width: 468px;
+  }
+
+  .imagesModelsPrinters {
+    max-width: 522px;
+    z-index: 6;
+  }
+
+  .modelPrinterFirst {
+    right: -20px;
+    top: -48px;
+    z-index: 6;
+    object-position: 38px 12px;
+  }
+}
