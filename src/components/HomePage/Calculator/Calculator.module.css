@@ -110,6 +110,50 @@
   text-align: center;
   padding-top: 4px;
 }
+/* Якщо бігунок доходить до правого краю */
+.counterRightLimit {
+  position: absolute;
+  width: 74px;
+  height: 27px;
+  top: -64px;
+  left: -47px;
+  color: white;
+  background-color: var(--accent-color);
+  text-align: center;
+  padding-top: 4px;
+}
+
+.shapeRightLimit {
+  position: absolute;
+  bottom: -14px;
+  left: 47px;
+  width: 27px;
+  height: 27px;
+  z-index: 1;
+}
+
+/* Якщо бігунок доходить доь лівого краю */
+.counterLeftLimit {
+  position: absolute;
+  width: 74px;
+  height: 27px;
+  top: -64px;
+  left: 0px;
+  color: white;
+  background-color: var(--accent-color);
+  text-align: center;
+  padding-top: 4px;
+}
+
+.shapeLeftLimit {
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+  width: 27px;
+  height: 27px;
+  z-index: 1;
+}
+/* ****************************************** */
 
 .shape {
   position: absolute;

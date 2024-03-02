@@ -1,26 +1,42 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
 import Icon from "@/components/Icon/Icon";
 import css from "./Calculator.module.css";
 
 const Calculator = () => {
+  // Ліміт при якому не потрібно змінювати попап бігунку
+  const ableLimit = useMediaQuery({ minWidth: 370 });
+  // ======================================================
+  const elementRef = useRef(null);
   const [quality, setQuality] = useState(500);
   const [widthValue, setWidthValue] = useState(148);
+  const [xCoordinate, setXCoordinate] = useState(null);
 
+  // Отримаємо координату X коли рухаємо контролер
+  useEffect(() => {
+    if (quality !== 500) {
+      if (elementRef.current) {
+        const rect = elementRef.current.getBoundingClientRect();
+        setXCoordinate(rect.left);
+      }
+    }
+  }, [quality]);
+
+  // Функція обробки значень інпуту з корегуванням значень і перетворенням  значень в ширину
   const handleRange = (event) => {
     const money = event.target.value;
     setQuality(Math.round(money));
-    let value = money/1000*296;
-     if(money <= 350) {
+    let value = (money / 1000) * 296;
+    if (money <= 350) {
       value += 2;
-     } else if (money >= 700) {
+    } else if (money >= 700) {
       value -= 2;
-     } else {
+    } else {
       value;
-     }
-    
+    }
     setWidthValue(Math.round(value));
   };
 
@@ -39,8 +55,32 @@ const Calculator = () => {
 
         <div>
           <label htmlFor="money" className={css.inputContainer}>
-            <span className={css.counter} style={{marginLeft: widthValue - 12}}>
-              <Icon className={css.shape} name={"icon-modal"}/>
+            {/* Зміна попап буде залежати від координати Х, ширини вьюпорту, та показника лічильника */}
+            <span
+              className={
+                (xCoordinate <= 2 && !ableLimit) ||
+                (quality <= 70 && !ableLimit)
+                  ? css.counterLeftLimit
+                  : (xCoordinate >= 245 && !ableLimit) ||
+                    (quality >= 912 && !ableLimit)
+                  ? css.counterRightLimit
+                  : css.counter
+              }
+              style={{ marginLeft: widthValue - 12 }}
+              ref={elementRef}
+            >
+              <Icon
+                className={
+                  (xCoordinate <= 2 && !ableLimit) ||
+                  (quality <= 70 && !ableLimit)
+                    ? css.shapeLeftLimit
+                    : (xCoordinate >= 245 && !ableLimit) ||
+                      (quality >= 912 && !ableLimit)
+                    ? css.shapeRightLimit
+                    : css.shape
+                }
+                name={"icon-modal"}
+              />
               <p className={css.showResult}>{quality}$</p>
             </span>
             <input
