@@ -41,8 +41,12 @@ const Calculator = () => {
     setWidthInputRange(723);
     setMaxQuality(990);
     setMinQuality(30);
+   } else if (isBigTablet && isDesktopEnd && !isTabletEnd) {
+    setWidthInputRange(570);
+    setMaxQuality(2000);
+    setMinQuality(30);
    }
-  }, [isBigMobile, isBigMobileEnd, isMobile, isMobileEnd, isTablet, isTabletEnd]);
+  }, [isBigMobile, isBigMobileEnd, isBigTablet, isDesktopEnd, isMobile, isMobileEnd, isTablet, isTabletEnd]);
   // =========================================================================
 
   useEffect(() => {
