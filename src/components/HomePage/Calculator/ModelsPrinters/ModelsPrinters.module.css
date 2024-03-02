@@ -35,7 +35,7 @@
 
 .modelPrinterFirst_Bambulab,
 .modelPrinterFirst {
-  object-fit: cover;
+  object-fit: contain;
   position: absolute;
   top: -40px;
   right: 0px;
@@ -44,6 +44,7 @@
 
 .modelPrinterFirst_Bambulab {
   top: -14px;
+  left: 40px;
 }
 
 .modelPrinterSecond {
@@ -86,6 +87,7 @@
     width: 360px;
     height: 318px;
     top: -10px;
+    left: 50px;
   }
 
   .modelPrinterSecond {
@@ -96,5 +98,58 @@
   .modelPrinterSecond_Bambulab {
     width: 280px;
     height: 252px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .secondPart {
+    height: 530px;
+    padding-bottom: 28px;
+  }
+
+  .secondPart_textContent {
+    padding-left: 0px;
+    max-width: 491px;
+    margin: 0 auto;
+  }
+
+  .resultTitle {
+    font-size: 64px;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+
+  .result {
+    font-size: 36px;
+  }
+
+  .imagesModelsPrinters {
+    max-width: 768px;
+  }
+
+  .modelPrinterFirst {
+    width: 468px;
+    height: 420px;
+    right: 100px;
+    top: -60px;
+  }
+
+  .modelPrinterSecond {
+    width: 349px;
+    height: 318px;
+    left: 100px;
+  }
+
+  .modelPrinterFirst_Bambulab {
+    width: 428px;
+    height: 380px;
+    left: 140px;
+  }
+
+  .modelPrinterSecond_Bambulab {
+    width: 309px;
+    height: 288px;
+    right: 100px;
+    top: 40px;
   }
 }

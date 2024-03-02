@@ -36,7 +36,7 @@ const ModelsPrinters = ({ quality }) => {
               alt="3D-принтер моделі BAMBULAB"
               width={225}
               height={204}
-              style={resultCalc === "one Bambulab" ? {left: 50} : {left: 6}}
+              style={resultCalc === "two Bambulab" && {left: 20}}
               className={css.modelPrinterFirst_Bambulab}
             />
           )}

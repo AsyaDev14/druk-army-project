@@ -8,13 +8,6 @@ import ModelsPrinters from "./ModelsPrinters/ModelsPrinters";
 import css from "./Calculator.module.css";
 
 const Calculator = () => {
-  // Ліміт при якому не потрібно змінювати попап бігунку
-  const ableLimit320 = useMediaQuery({ minWidth: 370 });
-  const ableLimit480 = useMediaQuery({minWidth: 530});
-  const ableLimit768 = useMediaQuery({minWidth: 818});
-  const ableLimit960 = useMediaQuery({minWidth: 1010});
-  const ableLimit1200 = useMediaQuery({minWidth: 1250});
-  // ======================================================
   // ================= MEDIAQUERIES ==========================
   const isMobile = useMediaQuery({minWidth: 320});
   const isMobileEnd = useMediaQuery({ maxWidth: 479.98 });
@@ -34,21 +27,22 @@ const Calculator = () => {
   // =================================================================================================
   const [widthInputRange, setWidthInputRange] = useState(null);
   const [widthValue, setWidthValue] = useState(widthInputRange*0.5);
-  const [ableLimit, setAbleLimit] = useState(ableLimit320);
   //  Ширина інпуту в залежності віж ширини вьюпорту
   useEffect(() => {
    if(isMobile && isMobileEnd) {
     setWidthInputRange(296);
-    setAbleLimit(ableLimit320)
     setMaxQuality(912);
     setMinQuality(70);
    } else if (isBigMobile && isBigMobileEnd && !isMobileEnd) {
     setWidthInputRange(436);
-    setAbleLimit(ableLimit480)
     setMaxQuality(950)
     setMinQuality(1)
+   } else if (isTablet && isTabletEnd && !isBigMobileEnd) {
+    setWidthInputRange(723);
+    setMaxQuality(990);
+    setMinQuality(30);
    }
-  }, [ableLimit320, ableLimit480, isBigMobile, isBigMobileEnd, isMobile, isMobileEnd]);
+  }, [isBigMobile, isBigMobileEnd, isMobile, isMobileEnd, isTablet, isTabletEnd]);
   // =========================================================================
 
   useEffect(() => {
@@ -87,22 +81,15 @@ const Calculator = () => {
           <label htmlFor="money" className={css.inputContainer}>
             {/* Зміна попап буде залежати від координати Х, ширини вьюпорту, та показника лічильника */}
             <span
-              className={
-                (quality <= minQuality && !ableLimit)
-                  ? css.counterLeftLimit
-                  : 
-                    (quality >= maxQuality && !ableLimit)
-                  ? css.counterRightLimit
-                  : css.counter
-              }
+              className={quality <= minQuality ? css.counterLeftLimit : quality >= maxQuality ? css.counterRightLimit : css.counter}
               style={{ marginLeft: widthValue - 12 }}
             >
               <Icon
                 className={
-                  (quality <= minQuality && !ableLimit)
+                  (quality <= minQuality)
                     ? css.shapeLeftLimit
                     :
-                      (quality >= maxQuality && !ableLimit)
+                      (quality >= maxQuality)
                     ? css.shapeRightLimit
                     : css.shape
                 }
