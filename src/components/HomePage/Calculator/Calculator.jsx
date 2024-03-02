@@ -82,7 +82,7 @@ const Calculator = () => {
                 }
                 name={"icon-modal"}
               />
-              <p className={css.showResult}>{quality}$</p>
+              <p className={css.showResult}>{quality <= 100 ? 100 : quality}$</p>
             </span>
             <input
               type="range"

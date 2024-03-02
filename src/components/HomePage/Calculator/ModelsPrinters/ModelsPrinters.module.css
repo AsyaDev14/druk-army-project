@@ -1,0 +1,63 @@
+.secondPart {
+    background-color: var(--accent-color);
+    color: white;
+    padding-bottom: 16px;
+    height: 294px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.secondPart_textContent {
+    padding-left: 6px;
+}
+
+.resultTitle {
+    font-family: "Benzin-ExtraBold", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+.result {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.imagesModelsPrinters {
+    position: relative;
+    max-width: 320px;
+    width: 100%;
+    height: 100%;
+}
+
+.modelPrinterFirst_Bambulab,
+.modelPrinterFirst {
+    object-fit: cover;
+    position: absolute;
+    top: -40px;
+    right: 0px;
+    z-index: 5;
+}
+
+.modelPrinterFirst_Bambulab {
+    top: -14px;
+}
+
+.modelPrinterSecond {
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    filter: blur(8px);
+}
+
+.modelPrinterSecond_Bambulab {
+    object-fit: cover;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    filter: blur(8px);
+}
