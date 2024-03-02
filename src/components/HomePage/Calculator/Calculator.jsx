@@ -1,15 +1,27 @@
 "use client";
 
 import { useState } from "react";
-import css from "./Calculator.module.css";
 import Image from "next/image";
+import Icon from "@/components/Icon/Icon";
+import css from "./Calculator.module.css";
 
 const Calculator = () => {
   const [quality, setQuality] = useState(500);
+  const [widthValue, setWidthValue] = useState(148);
 
   const handleRange = (event) => {
     const money = event.target.value;
-    setQuality(money);
+    setQuality(Math.round(money));
+    let value = money/1000*296;
+     if(money <= 350) {
+      value += 2;
+     } else if (money >= 700) {
+      value -= 2;
+     } else {
+      value;
+     }
+    
+    setWidthValue(Math.round(value));
   };
 
   return (
@@ -27,6 +39,10 @@ const Calculator = () => {
 
         <div>
           <label htmlFor="money" className={css.inputContainer}>
+            <span className={css.counter} style={{marginLeft: widthValue - 12}}>
+              <Icon className={css.shape} name={"icon-modal"}/>
+              <p className={css.showResult}>{quality}$</p>
+            </span>
             <input
               type="range"
               min={0}
@@ -38,7 +54,7 @@ const Calculator = () => {
             />
             <span
               className={css.fillRange}
-              style={{ width: (quality / 1000) * 296 }}
+              style={{ width: widthValue }}
             ></span>
           </label>
           <div className={css.scaleContainer}>

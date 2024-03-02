@@ -35,19 +35,21 @@
 
 .inputContainer {
   position: relative;
+  max-width: 297px;
 }
 
 .rangeScale[type="range"] {
   appearance: none;
   cursor: pointer;
-  width: 100%;
+  width: 298px;
   background-color: transparent;
 }
 
 .fillRange {
   position: absolute;
-  height: 28px;
+  height: 26px;
   background-color: var(--accent-color);
+  top: -10px;
   left: 0;
   z-index: 1;
 }
@@ -93,6 +95,40 @@
 .scale {
     object-fit: contain;
 }
+
+/* *********************************************
+       COUNTER MONEY
+***********************************************/
+.counter {
+  position: absolute;
+  width: 74px;
+  height: 27px;
+  top: -64px;
+  left: -22px;
+  color: white;
+  background-color: var(--accent-color);
+  text-align: center;
+  padding-top: 4px;
+}
+
+.shape {
+  position: absolute;
+  bottom: -14px;
+  left: 22px;
+  width: 27px;
+  height: 27px;
+  z-index: 1;
+}
+
+.showResult {
+  font-family: "Benzin-ExtraBold", sans-serif;
+  position: relative;
+  z-index: 2;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* ******************************************** */
 
 @media only screen and (min-width: 480px) {
   .container {
