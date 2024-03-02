@@ -72,7 +72,7 @@ const ModelsPrinters = ({ quality }) => {
               ? 1
               : 2}&nbsp;
           </span>
-          ОД.
+          ОД.&nbsp;
           {resultCalc === "one printer" || resultCalc === "two printers"
             ? printers[1]
             : printers[0]}

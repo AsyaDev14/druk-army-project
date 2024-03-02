@@ -1,63 +1,100 @@
 .secondPart {
-    background-color: var(--accent-color);
-    color: white;
-    padding-bottom: 16px;
-    height: 294px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+  background-color: var(--accent-color);
+  color: white;
+  padding-bottom: 16px;
+  height: 294px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .secondPart_textContent {
-    padding-left: 6px;
+  padding-left: 6px;
 }
 
 .resultTitle {
-    font-family: "Benzin-ExtraBold", sans-serif;
-    font-size: 36px;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: 7px;
+  font-family: "Benzin-ExtraBold", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 7px;
 }
 
 .result {
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .imagesModelsPrinters {
-    position: relative;
-    max-width: 320px;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  max-width: 320px;
+  width: 100%;
+  height: 100%;
 }
 
 .modelPrinterFirst_Bambulab,
 .modelPrinterFirst {
-    object-fit: cover;
-    position: absolute;
-    top: -40px;
-    right: 0px;
-    z-index: 5;
+  object-fit: cover;
+  position: absolute;
+  top: -40px;
+  right: 0px;
+  z-index: 5;
 }
 
 .modelPrinterFirst_Bambulab {
-    top: -14px;
+  top: -14px;
 }
 
 .modelPrinterSecond {
-    object-fit: cover;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    filter: blur(8px);
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  filter: blur(8px);
 }
 
 .modelPrinterSecond_Bambulab {
-    object-fit: cover;
-    position: absolute;
-    top: 20px;
-    right: 0px;
-    filter: blur(8px);
+  object-fit: cover;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  filter: blur(8px);
+}
+
+@media screen and (min-width: 480px) {
+  .secondPart {
+    padding-bottom: 25px;
+    height: 454px;
+  }
+
+  .secondPart_textContent {
+    padding-left: 21px;
+  }
+
+  .imagesModelsPrinters {
+    max-width: 480px;
+  }
+
+  .modelPrinterFirst {
+    width: 410px;
+    height: 378px;
+    right: -10px;
+  }
+
+  .modelPrinterFirst_Bambulab {
+    width: 360px;
+    height: 318px;
+    top: -10px;
+  }
+
+  .modelPrinterSecond {
+    width: 314.1px;
+    height: 286.2px;
+  }
+
+  .modelPrinterSecond_Bambulab {
+    width: 280px;
+    height: 252px;
+  }
 }
