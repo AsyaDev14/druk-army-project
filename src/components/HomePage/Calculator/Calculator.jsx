@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
 import Icon from "@/components/Icon/Icon";
@@ -9,28 +9,57 @@ import css from "./Calculator.module.css";
 
 const Calculator = () => {
   // Ліміт при якому не потрібно змінювати попап бігунку
-  const ableLimit = useMediaQuery({ minWidth: 370 });
+  const ableLimit320 = useMediaQuery({ minWidth: 370 });
+  const ableLimit480 = useMediaQuery({minWidth: 530});
+  const ableLimit768 = useMediaQuery({minWidth: 818});
+  const ableLimit960 = useMediaQuery({minWidth: 1010});
+  const ableLimit1200 = useMediaQuery({minWidth: 1250});
   // ======================================================
-  const elementRef = useRef(null);
+  // ================= MEDIAQUERIES ==========================
+  const isMobile = useMediaQuery({minWidth: 320});
+  const isMobileEnd = useMediaQuery({ maxWidth: 479.98 });
+  const isBigMobile = useMediaQuery({ minWidth: 480 });
+  const isBigMobileEnd = useMediaQuery({ maxWidth: 767.98 });
+  const isTablet = useMediaQuery({ minWidth: 768 });
+  const isTabletEnd = useMediaQuery({ maxWidth: 959.98 });
+  const isBigTablet = useMediaQuery({ minWidth: 960 });
+  const isBigTabletEnd = useMediaQuery({ maxWidth: 1199.98 });
+  const isDesktop = useMediaQuery({ minWidth: 1200 });
+  const isDesktopEnd = useMediaQuery({ maxWidth: 1919.98 });
+  const isBigDesktop = useMediaQuery({ minWidth: 1920 });
+  // ===========================================================================
   const [quality, setQuality] = useState(500);
-  const [widthValue, setWidthValue] = useState(148);
-  const [xCoordinate, setXCoordinate] = useState(null);
-
-  // Отримаємо координату X коли рухаємо контролер
+  const [minQuality, setMinQuality] = useState(null);
+  const [maxQuality, setMaxQuality] = useState(null);
+  // =================================================================================================
+  const [widthInputRange, setWidthInputRange] = useState(null);
+  const [widthValue, setWidthValue] = useState(widthInputRange*0.5);
+  const [ableLimit, setAbleLimit] = useState(ableLimit320);
+  //  Ширина інпуту в залежності віж ширини вьюпорту
   useEffect(() => {
-    if (quality !== 500) {
-      if (elementRef.current) {
-        const rect = elementRef.current.getBoundingClientRect();
-        setXCoordinate(rect.left);
-      }
-    }
-  }, [quality]);
+   if(isMobile && isMobileEnd) {
+    setWidthInputRange(296);
+    setAbleLimit(ableLimit320)
+    setMaxQuality(912);
+    setMinQuality(70);
+   } else if (isBigMobile && isBigMobileEnd && !isMobileEnd) {
+    setWidthInputRange(436);
+    setAbleLimit(ableLimit480)
+    setMaxQuality(950)
+    setMinQuality(1)
+   }
+  }, [ableLimit320, ableLimit480, isBigMobile, isBigMobileEnd, isMobile, isMobileEnd]);
+  // =========================================================================
+
+  useEffect(() => {
+    setWidthValue(0.5*widthInputRange);
+  }, [widthInputRange])
 
   // Функція обробки значень інпуту з корегуванням значень і перетворенням  значень в ширину
   const handleRange = (event) => {
     const money = event.target.value;
     setQuality(Math.round(money));
-    let value = (money / 1000) * 296;
+    let value = (money / 1000) * widthInputRange;
     if (money <= 350) {
       value += 2;
     } else if (money >= 700) {
@@ -59,30 +88,29 @@ const Calculator = () => {
             {/* Зміна попап буде залежати від координати Х, ширини вьюпорту, та показника лічильника */}
             <span
               className={
-                (xCoordinate <= 2 && !ableLimit) ||
-                (quality <= 70 && !ableLimit)
+                (quality <= minQuality && !ableLimit)
                   ? css.counterLeftLimit
-                  : (xCoordinate >= 245 && !ableLimit) ||
-                    (quality >= 912 && !ableLimit)
+                  : 
+                    (quality >= maxQuality && !ableLimit)
                   ? css.counterRightLimit
                   : css.counter
               }
               style={{ marginLeft: widthValue - 12 }}
-              ref={elementRef}
             >
               <Icon
                 className={
-                  (xCoordinate <= 2 && !ableLimit) ||
-                  (quality <= 70 && !ableLimit)
+                  (quality <= minQuality && !ableLimit)
                     ? css.shapeLeftLimit
-                    : (xCoordinate >= 245 && !ableLimit) ||
-                      (quality >= 912 && !ableLimit)
+                    :
+                      (quality >= maxQuality && !ableLimit)
                     ? css.shapeRightLimit
                     : css.shape
                 }
                 name={"icon-modal"}
               />
-              <p className={css.showResult}>{quality <= 100 ? 100 : quality}$</p>
+              <p className={css.showResult}>
+                {quality <= 100 ? 100 : quality}$
+              </p>
             </span>
             <input
               type="range"
@@ -109,7 +137,7 @@ const Calculator = () => {
           </div>
         </div>
       </div>
-     <ModelsPrinters quality={quality}/>
+      <ModelsPrinters quality={quality} />
     </div>
   );
 };

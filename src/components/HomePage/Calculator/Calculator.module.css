@@ -177,8 +177,51 @@
 @media only screen and (min-width: 480px) {
   .container {
     width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
+  }
+
+  .firstPart {
+    padding: 24px 20px 22px 20px;
+  }
+
+  .firstPart_textContent h2 {
+    font-size: 36px;
+  }
+
+  .firstPart_textContent h3 {
+    font-size: 20px;
+  }
+
+  .firstPart_textContent p {
+    font-size: 16px;
+  }
+
+  .inputContainer {
+    max-width: 437px;
+  }
+
+  .scaleContainer,
+  .rangeScale[type="range"] {
+    width: 437px;
+  }
+
+  .rangeScale[type="range"]::-moz-range-track, 
+  .rangeScale[type="range"]::-webkit-slider-runnable-track {
+    border: 2px solid white;
+  }
+
+  .rangeScale[type="range"]::-moz-range-thumb,
+  .rangeScale[type="range"]::-webkit-slider-thumb {
+    width: 9px;
+  }
+
+  .scaleContainer {
+    width: 436px;
+    height: 51px;
+  }
+
+  .scale {
+    width: 436px;
+    height: 51px;
   }
 }
 
