@@ -1,0 +1,75 @@
+.upperPart, .lowerPart {
+    display: flex;
+    column-gap: 6px;
+}
+
+.box_printed,
+.box_need,
+.box_printers,
+.box_people {
+  background-color: var(--bg-details);
+  color: var(--cards-text);
+  padding: 14.8px 12.68px;
+  width: 160.64px;
+  height: 58.48px;
+  display: flex;
+  align-items: center;
+  column-gap: 8.93px;
+}
+
+.text_content p {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.text_content span {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.middle_box {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 29px 31px;
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    margin: 6px 0;
+}
+
+.middle_box_text p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.middle_box_text span {
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.icon_box {
+    max-width: 28.89px;
+    min-height: 28.89px;
+}
+
+.icon_wagon {
+    max-width: 35.93px;
+    min-height: 28.89px;
+}
+
+.icon_watch {
+    max-width: 71.16px;
+    height: 71.16px;
+}
+
+.icon_bolt {
+    max-width: 31.14px;
+    min-height: 33.11px;
+}
+
+.icon_printers {
+    max-width: 34.52px;
+    min-height: 27.48px;
+}

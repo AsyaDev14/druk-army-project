@@ -4,8 +4,8 @@
 }
 
 .firstPart {
-  background-color: #333333;
-  color: white;
+  background-color: var(--bg-details);
+  color: var(--cards-text);
   padding: 24px 12px 20px 12px;
 }
 
@@ -58,14 +58,14 @@
 .rangeScale[type="range"]::-webkit-slider-runnable-track {
   background: transparent;
   height: 26px;
-  border: 1px solid white;
+  border: 1px solid var(--cards-text);
 }
 
 .rangeScale[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 5px;
   height: 46px;
-  background-color: white;
+  background-color: var(--cards-text);
   margin-top: -10px;
   z-index: 2;
   position: relative;
@@ -75,14 +75,14 @@
 .rangeScale[type="range"]::-moz-range-track {
   background: transparent;
   height: 26px;
-  border: 1px solid white;
+  border: 1px solid var(--cards-text);
 }
 
 .rangeScale[type="range"]::-moz-range-thumb {
   appearance: none;
   width: 5px;
   height: 46px;
-  background-color: white;
+  background-color: var(--cards-text);
   border: none;
   border-radius: 0;
 }
