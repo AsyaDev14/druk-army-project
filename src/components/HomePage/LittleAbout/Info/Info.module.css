@@ -1,6 +1,7 @@
-.upperPart, .lowerPart {
-    display: flex;
-    column-gap: 6px;
+.upperPart,
+.lowerPart {
+  display: flex;
+  column-gap: 6px;
 }
 
 .box_printed,
@@ -18,58 +19,121 @@
 }
 
 .text_content p {
-    font-size: 11px;
-    font-weight: 500;
+  font-size: 11px;
+  font-weight: 500;
 }
 
 .text_content span {
-    font-size: 16px;
-    font-weight: 700;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .middle_box {
-    background-color: var(--accent-color);
-    color: white;
-    padding: 29px 31px;
-    display: flex;
-    align-items: center;
-    column-gap: 25px;
-    margin: 6px 0;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 29px 31px;
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+  margin: 6px 0;
 }
 
 .middle_box_text p {
-    font-size: 16px;
-    font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .middle_box_text span {
-    font-size: 64px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1;
+  font-size: 64px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
 }
 
 .icon_box {
-    max-width: 28.89px;
-    min-height: 28.89px;
+  max-width: 28.89px;
+  min-height: 28.89px;
+  fill: var(--cards-text);
 }
 
 .icon_wagon {
-    max-width: 35.93px;
-    min-height: 28.89px;
+  max-width: 35.93px;
+  min-height: 28.89px;
+  fill: var(--cards-text);
 }
 
 .icon_watch {
-    max-width: 71.16px;
-    height: 71.16px;
+  max-width: 71.16px;
+  height: 71.16px;
 }
 
 .icon_bolt {
-    max-width: 31.14px;
-    min-height: 33.11px;
+  max-width: 31.14px;
+  min-height: 33.11px;
+  fill: var(--cards-text);
 }
 
 .icon_printers {
-    max-width: 34.52px;
-    min-height: 27.48px;
+  max-width: 34.52px;
+  min-height: 27.48px;
+  fill: var(--cards-text);
+}
+
+@media screen and (min-width: 480px) {
+  .upperPart,
+  .lowerPart {
+    column-gap: 9px;
+  }
+
+  .box_printed,
+  .box_need,
+  .box_printers,
+  .box_people {
+    width: 228px;
+    height: 83px;
+    padding: 21px 0px 21px 10px;
+    column-gap: 10px;
+  }
+
+  .text_content p {
+    font-size: 16px;
+  }
+
+  .text_content span {
+    font-size: 32px;
+  }
+
+  .middle_box {
+    padding: 40px 0 40px 44px;
+    margin: 9px 0;
+  }
+
+  .middle_box_text p {
+    font-size: 24px;
+  }
+
+  .icon_box {
+    max-width: 41px;
+    min-height: 41px;
+  }
+
+  .icon_wagon {
+    max-width: 51px;
+    min-height: 41px;
+  }
+
+  .icon_watch {
+    max-width: 101px;
+    height: 101px;
+  }
+
+  .icon_bolt {
+    max-width: 46px;
+    min-height: 47px;
+  }
+
+  .icon_printers {
+    max-width: 49px;
+    min-height: 39px;
+  }
 }

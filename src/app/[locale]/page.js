@@ -27,9 +27,9 @@ export default function Home() {
         <Section>
           <Calculator/>
         </Section>
-        <Section>
+        <section className={css.sectionLittleAbout}>
           <LittleAbout/>
-        </Section>
+        </section>
     </>
   );
 }
