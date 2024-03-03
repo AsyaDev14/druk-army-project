@@ -5,6 +5,7 @@ import HowItWorks from "@/components/HomePage/HowItWorksTitle/HowItWorks";
 import PrintAll from "@/components/HomePage/PrintAll/PrintAll";
 import InstallPrinter from "@/components/HomePage/InstallPrinter/InstallPrinter";
 import Calculator from "@/components/HomePage/Calculator/Calculator";
+import LittleAbout from "@/components/HomePage/LittleAbout/LittleAbout";
 import css from "./page.module.css"
 
 export default function Home() {
@@ -25,6 +26,9 @@ export default function Home() {
         </section>
         <Section>
           <Calculator/>
+        </Section>
+        <Section>
+          <LittleAbout/>
         </Section>
     </>
   );
