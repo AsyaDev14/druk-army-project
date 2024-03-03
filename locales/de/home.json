@@ -24,5 +24,18 @@
     "installTitleText":"Die Platzierung des 3D-Druckers in der Ukraine erhöht die logistische Effizienz im Vergleich zum Drucken im Ausland, da die Versandkosten reduziert werden. Eine installierte Webcam ermöglicht es, den Druckprozess in Echtzeit zu überwachen, was die maximale Effizienz des Druckers für die",
     "armyOfUkraine":"Bewaffnete Streitkräfte der Ukraine",
     "armyAbbr":"ZSU",
-    "units":"stk."
+    "units":"stk.",
+    "calc":"meter",
+    "chooseWhich":"Welchen Drucker wählen",
+    "calcTitleText":"Wählen Sie einen Drucker basierend auf der Menge Geld, die Sie jeden Monat für Kunststoff ausgeben können. Durchschnittlich kostet ein Kilogramm Kunststoff (PLA, PEGT) 500 UAH.",
+    "result":"Ergebnis",
+    "littleNumbers":"Ein paar Zahlen",
+    "aboutUs":"über uns",
+    "aboutUsTitleText":"Die Gemeinschaft der Ukrainer, die der Armee helfen, die Ukraine zu verteidigen. Wir verkaufen nichts; alle Ausgaben werden von den Druckern, Spendern und Freiwilligen getragen.",
+    "wasPrinted":"Gedruckt",
+    "kilo":"kg",
+    "need":"Benötigt",
+    "turno":"Bestellwarteschlange",
+    "printers":"3D-Drucker",
+    "peoplePrinters":"Druckereien"
 }

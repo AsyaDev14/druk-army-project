@@ -24,5 +24,18 @@
     "installTitleText":"The location of the 3D printer in Ukraine increases logistic efficiency compared to printing abroad, as it reduces delivery costs. An installed webcam allows monitoring the printing process in real-time, ensuring maximum printer efficiency for",
     "armyOfUkraine":"Armed Forces of Ukraine",
     "armyAbbr":"AFU",
-    "units":"pcs."
+    "units":"pcs.",
+    "calc":"meter",
+    "chooseWhich":"which printer to choose",
+    "calcTitleText":"Choose a printer based on the amount of money you can spend on plastic each month. On average, a kilogram of plastic (PLA, PEGT) costs 500 UAH.",
+    "result":"Result",
+    "littleNumbers":"A little bit of numbers",
+    "aboutUs":"about us",
+    "aboutUsTitleText":"A community of Ukrainians who help the army defend Ukraine. We don't sell anything; all expenses are covered by the contributions of printers, donors, and volunteers.",
+    "wasPrinted":"Printed",
+    "kilo":"kg",
+    "need":"Needed",
+    "turno":"Order queue",
+    "printers":"3D printers",
+    "peoplePrinters":"Printers"
 }
