@@ -28,6 +28,12 @@
   font-weight: 700;
 }
 
+.text_content > span > .kilo {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+}
+
 .middle_box {
   background-color: var(--accent-color);
   color: white;
@@ -95,6 +101,7 @@
     column-gap: 10px;
   }
 
+  .text_content > span > .kilo, 
   .text_content p {
     font-size: 16px;
   }
@@ -149,5 +156,61 @@
 
   .middle_box_text span {
     font-size: 96px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .upperPart,
+  .lowerPart {
+    column-gap: 20px;
+  }
+
+  .box_printed,
+  .box_need,
+  .box_printers,
+  .box_people {
+    width: 289px;
+    padding: 16px 0px 16px 10px;
+    column-gap: 15px;
+  }
+
+  .box_printers,
+  .box_people {
+    width: 237px;
+  }
+
+  .middle_box {
+    width: 514px;
+    margin: 20px 0;
+  }
+
+  .text_content > span > .kilo, 
+  .text_content p {
+    font-size: 20px;
+  }
+
+  .text_content span {
+    font-size: 48px;
+    line-height: 1;
+  }
+
+  .icon_box {
+    max-width: 51px;
+    min-height: 51px;
+  }
+
+  .icon_wagon {
+    max-width: 61px;
+    min-height: 49px;
+  }
+
+  .icon_bolt {
+    max-width: 58px;
+    min-height: 61px;
+  }
+
+  .icon_printers {
+    max-width: 59px;
+    min-height: 47px;
   }
 }

@@ -9,14 +9,14 @@ const Info = () => {
           <Icon className={css.icon_box} name={"icon-packet"} />
           <div className={css.text_content}>
             <p>Віддруковано</p>
-            <span>49 162 кг</span>
+            <span>49 162 <span className={css.kilo}>кг</span></span>
           </div>
         </div>
         <div className={css.box_need}>
             <Icon className={css.icon_wagon} name={"icon-wagon"} />
           <div className={css.text_content}>
             <p>Необхідно</p>
-            <span>3 501 кг</span>
+            <span>3 501 <span className={css.kilo}>кг</span></span>
           </div>
         </div>
       </div>

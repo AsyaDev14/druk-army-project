@@ -70,8 +70,8 @@
   
   @media screen and (min-width: 960px) {
     .mainTitleContainer {
-      max-width: 100%;
-      margin-bottom: 63px;
+      max-width: 484px;
+      margin-bottom: 42px;
     }
   
     .titleFirst {
@@ -83,19 +83,6 @@
     }
   
     .mainTitleText {
-      max-width: 540px;
-    }
-  }
-  
-  @media screen and (min-width: 1200px) {
-    .mainTitleContainer {
-      margin-left: 130px;
-      margin-bottom: 0;
-    }
-  }
-  
-  @media screen and (min-width: 1920px) {
-    .mainTitleContainer {
-      margin-left: 180px;
+      max-width: 428px;
     }
   }
