@@ -84,7 +84,7 @@
   
   @media only screen and (min-width: 1920px) {
       .container {
-        width: 1400px;
+        width: 1420px;
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
@@ -99,17 +99,13 @@
       }
 
       .bg_girl {
-        position: absolute;
-        border: 1px solid white;
-        transform: rotate(90deg);
         top: 197px;
         left: 155px;
-        z-index: -1;
       }
       
       .girl {
         width: 524px;
         height: 522px;
-        object-position: 12px 0px;
+        object-position: -8px 0px;
       }
     }
