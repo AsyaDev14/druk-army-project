@@ -10,6 +10,10 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
+  .sectionLittleAbout {
+    padding-top: 80px;
+  }
 }
 
 @media screen and (min-width: 960px) {

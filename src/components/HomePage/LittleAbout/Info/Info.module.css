@@ -137,3 +137,17 @@
     min-height: 39px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .middle_box {
+    padding: 30px 0 30px 44px;
+  }
+
+  .middle_box_text p {
+    font-size: 32px;
+  }
+
+  .middle_box_text span {
+    font-size: 96px;
+  }
+}

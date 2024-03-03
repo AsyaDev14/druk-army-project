@@ -48,9 +48,10 @@
   }
 
   .menuContainer {
-    padding-top: 58px;
+    padding-top: 60px;
     padding-bottom: 39px;
     max-height: 243px;
+    margin-top: -2px;
   }
 
   .navMenuList {
