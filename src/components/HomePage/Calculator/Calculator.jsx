@@ -63,7 +63,7 @@ const Calculator = () => {
     if (money <= 350) {
       value += 2;
     } else if (money >= 700) {
-      value -= 2;
+      value -= 4;
     } else {
       value;
     }
