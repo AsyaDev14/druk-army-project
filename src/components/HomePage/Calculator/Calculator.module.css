@@ -51,7 +51,7 @@
   background-color: var(--accent-color);
   top: -10px;
   left: 0;
-  z-index: 1;
+  z-index: 9;
 }
 
 /***** Chrome, Safari, Opera, and Edge Chromium *****/
@@ -67,7 +67,7 @@
   height: 46px;
   background-color: var(--cards-text);
   margin-top: -10px;
-  z-index: 2;
+  z-index: 10;
   position: relative;
 }
 
@@ -84,6 +84,7 @@
   height: 46px;
   background-color: var(--cards-text);
   border: none;
+  z-index: 10;
   border-radius: 0;
 }
 

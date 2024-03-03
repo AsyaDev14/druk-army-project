@@ -18,6 +18,10 @@
   font-weight: 400;
   font-size: 24px;
   color: var(--accent-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 560px;
 }
 
 .mainTitleText {
@@ -158,6 +162,16 @@
   .mainTitleContainer {
     margin-left: 60px;
     margin-bottom: 0;
+  }
+
+  .titleAccent {
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .titleAccent {
+    max-width: 900px;
   }
 }
 
