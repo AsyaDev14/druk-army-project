@@ -36,6 +36,10 @@
     padding-bottom: 60px;
     margin: 0 0 0 auto;
   }
+
+  .sectionLittleAbout {
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (min-width: 1920px) {

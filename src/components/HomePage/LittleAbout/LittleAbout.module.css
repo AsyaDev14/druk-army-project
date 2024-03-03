@@ -25,11 +25,23 @@
        position: absolute;
        top: -92px;
        right: 0;
+       overflow-y: hidden;
+    }
+
+    
+    .bg_girl {
+      position: absolute;
+      border: 1px solid white;
+      transform: rotate(90deg);
+      top: 251px;
+      left: 315px;
+      z-index: -1;
     }
 
     .girl {
       object-fit: cover;
       object-position: 248px;
+      z-index: 2;
     }
   }
 
@@ -42,6 +54,11 @@
 
     .girl_container {
       top: -34px;
+    }
+
+    .bg_girl {
+      top: 182px;
+      left: 266px;
     }
 
     .girl {
@@ -67,6 +84,32 @@
   
   @media only screen and (min-width: 1920px) {
       .container {
-        width: 1920px;
+        width: 1400px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .girl_container {
+        width: 524px;
+        height: 522px;
+        top: -123px;
+        right: 439px;
+      }
+
+      .bg_girl {
+        position: absolute;
+        border: 1px solid white;
+        transform: rotate(90deg);
+        top: 197px;
+        left: 155px;
+        z-index: -1;
+      }
+      
+      .girl {
+        width: 524px;
+        height: 522px;
+        object-position: 12px 0px;
       }
     }

@@ -34,6 +34,13 @@ const LittleAbout = () => {
               theme === "dark" && { objectPosition: "267px 29px" }
             }
           />
+          {theme === "dark" && <Image
+            src={"/img/home/bg.png"}
+            alt="background layout"
+            width={287}
+            height={366}
+            className={css.bg_girl}
+          />}
         </div>
       )}
     </div>
