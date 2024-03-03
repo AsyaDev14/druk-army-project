@@ -37,5 +37,6 @@
     "need":"Needed",
     "turno":"Order queue",
     "printers":"3D printers",
-    "peoplePrinters":"Printers"
+    "peoplePrinters":"Printers",
+    "altImagePrinters":"3D printer model"
 }

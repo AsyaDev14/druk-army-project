@@ -213,6 +213,10 @@
     padding-bottom: 33px;
   }
 
+  .secondPart_textContent {
+    max-width: 500px;
+  }
+
   .modelPrinterFirst {
     top: -120px;
   }

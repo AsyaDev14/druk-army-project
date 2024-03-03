@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
 import Icon from "@/components/Icon/Icon";
@@ -8,6 +9,7 @@ import ModelsPrinters from "./ModelsPrinters/ModelsPrinters";
 import css from "./Calculator.module.css";
 
 const Calculator = () => {
+  const { t } = useTranslation();
   // ================= MEDIAQUERIES ==========================
   const isMobile = useMediaQuery({minWidth: 320});
   const isMobileEnd = useMediaQuery({ maxWidth: 479.98 });
@@ -74,12 +76,10 @@ const Calculator = () => {
     <div className={css.container}>
       <div className={css.firstPart}>
         <div className={css.firstPart_textContent}>
-          <h2>личило</h2>
-          <h3>який принтер обрати</h3>
+          <h2>{t("home:calc")}</h2>
+          <h3>{t("home:chooseWhich")}</h3>
           <p>
-            Обирайте принтер виходячи з кільності грошей, яку ви можете
-            витратити на пластик кожного місяця. В середньому кілограм пластику
-            (PLA, PEGT) коштує 500 грн.
+            {t("home:calcTitleText")}
           </p>
         </div>
 

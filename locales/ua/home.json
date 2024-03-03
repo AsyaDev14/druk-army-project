@@ -37,5 +37,6 @@
     "need":"Необхідно",
     "turno":"Черга замовлень",
     "printers":"3D принтерів",
-    "peoplePrinters":"Друкарів"
+    "peoplePrinters":"Друкарів",
+    "altImagePrinters":"3D-принтер моделі"
 }

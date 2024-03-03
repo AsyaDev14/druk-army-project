@@ -37,5 +37,6 @@
     "need":"Benötigt",
     "turno":"Bestellwarteschlange",
     "printers":"3D-Drucker",
-    "peoplePrinters":"Druckereien"
+    "peoplePrinters":"Druckereien",
+    "altImagePrinters":"3D-Drucker Modell"
 }

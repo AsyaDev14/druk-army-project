@@ -37,5 +37,6 @@
     "need":"Potrzebne",
     "turno":"Kolejka zamówień",
     "printers":"3D drukarek",
-    "peoplePrinters":"Drukarek"
+    "peoplePrinters":"Drukarek",
+    "altImagePrinters":"drukarka 3D modelu"
 }
