@@ -169,19 +169,69 @@
   .modelOne,
   .modelTwo {
     position: relative;
-    z-index: 6;
     max-width: 468px;
   }
 
   .imagesModelsPrinters {
     max-width: 522px;
-    z-index: 6;
   }
 
   .modelPrinterFirst {
     right: -20px;
     top: -48px;
-    z-index: 6;
+    z-index: 8;
     object-position: 38px 12px;
+  }
+
+  .modelPrinterSecond {
+    left: 20px;
+    z-index: 6;
+  }
+
+  .modelPrinterFirst_Bambulab {
+    width: 398px;
+    height: 350px;
+    top: -40px;
+    left: 100px;
+    z-index: 8;
+  }
+
+  .modelPrinterSecond_Bambulab {
+    width: 279px;
+    height: 258px;
+    right: -20px;
+    top: 20px;
+    z-index: 6;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .secondPart {
+    width: 571px;
+    height: 444px;
+    margin-left: 0;
+    padding-bottom: 33px;
+  }
+
+  .modelPrinterFirst {
+    top: -120px;
+  }
+
+  .modelPrinterSecond {
+    top: -60px;
+    left: -20px;
+  }
+
+  .modelPrinterFirst_Bambulab {
+    top: -80px;
+  }
+
+  .modelPrinterSecond_Bambulab {
+    top: -20px;
+    right: -60px;
+  }
+
+  .result {
+    letter-spacing: 0.04em;
   }
 }
