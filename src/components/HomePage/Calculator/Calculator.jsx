@@ -16,8 +16,6 @@ const Calculator = () => {
   const isTablet = useMediaQuery({ minWidth: 768 });
   const isTabletEnd = useMediaQuery({ maxWidth: 959.98 });
   const isBigTablet = useMediaQuery({ minWidth: 960 });
-  const isBigTabletEnd = useMediaQuery({ maxWidth: 1199.98 });
-  const isDesktop = useMediaQuery({ minWidth: 1200 });
   const isDesktopEnd = useMediaQuery({ maxWidth: 1919.98 });
   const isBigDesktop = useMediaQuery({ minWidth: 1920 });
   // ===========================================================================
@@ -45,8 +43,12 @@ const Calculator = () => {
     setWidthInputRange(570);
     setMaxQuality(2000);
     setMinQuality(30);
+   } else if (isBigDesktop && !isDesktopEnd) {
+    setWidthInputRange(634);
+    setMaxQuality(5000);
+    setMinQuality(-5000);
    }
-  }, [isBigMobile, isBigMobileEnd, isBigTablet, isDesktopEnd, isMobile, isMobileEnd, isTablet, isTabletEnd]);
+  }, [isBigDesktop, isBigMobile, isBigMobileEnd, isBigTablet, isDesktopEnd, isMobile, isMobileEnd, isTablet, isTabletEnd]);
   // =========================================================================
 
   useEffect(() => {

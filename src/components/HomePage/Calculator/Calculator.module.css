@@ -327,5 +327,36 @@
 @media only screen and (min-width: 1920px) {
   .container {
     width: 1920px;
+    justify-content: center;
+  }
+
+  .firstPart {
+    width: 731px;
+    max-width: 731px;
+    padding: 60px 20px 33px 46px;
+  }
+
+  .firstPart_textContent {
+    max-width: 100%;
+  }
+
+  .firstPart_textContent p,
+  .firstPart_textContent h3 {
+    letter-spacing: 0.04em;
+  }
+
+  .inputContainer {
+    max-width: 634px;
+  }
+
+  .scale,
+  .scaleContainer,
+  .scaleContainer,
+  .rangeScale[type="range"] {
+    width: 634px;
+  }
+
+  .scale {
+    object-fit: contain;
   }
 }
