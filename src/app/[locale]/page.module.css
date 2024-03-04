@@ -1,0 +1,36 @@
+.sectionPrinters {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+@media only screen and (min-width: 768px) {
+  .sectionPrinters {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .sectionHero {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sectionPrinters {
+    max-width: 1400px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 16px;
+    margin: 0 0 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .sectionPrinters {
+    max-width: 1756px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
