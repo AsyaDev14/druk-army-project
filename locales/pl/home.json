@@ -24,5 +24,19 @@
     "installTitleText":"Lokalizacja drukarki 3D w Ukrainie zwiększa efektywność logistyczną w porównaniu z drukiem za granicą, ponieważ redukują się koszty dostawy. Zainstalowana kamera internetowa umożliwia obserwowanie procesu drukowania w czasie rzeczywistym, co zapewnia maksymalną efektywność drukarki",
     "armyOfUkraine":"Siły Zbrojne Ukrainy",
     "armyAbbr":"SZU",
-    "units":"szt."
+    "units":"szt.",
+    "calc":"metry",
+    "chooseWhich":"jaki drukarkę wybrać",
+    "calcTitleText":"Wybierz drukarkę w zależności od kwoty, którą możesz wydać na plastik każdego miesiąca. Średnio jeden kilogram plastiku (PLA, PEGT) kosztuje 500 hrywien.",
+    "result":"wynik",
+    "littleNumbers":"trochę liczb",
+    "aboutUs":"o nas",
+    "aboutUsTitleText":"Społeczność Ukraińców, którzy pomagają armii bronić Ukrainy. Niczego nie sprzedajemy, wszystkie koszty pokrywają drukarze, darczyńcy i wolontariusze.",
+    "wasPrinted":"Wydrukowane",
+    "kilo":"kg",
+    "need":"Potrzebne",
+    "turno":"Kolejka zamówień",
+    "printers":"3D drukarek",
+    "peoplePrinters":"Drukarek",
+    "altImagePrinters":"drukarka 3D modelu"
 }
