@@ -22,7 +22,8 @@ export const VacanciesFeedbackResultModal = ({
         <div className={styles.vacModalTitleResultContainer}>
           <div>
             <h2 className={styles.vacModalResultTitle}>
-              Дякуємо за <span>Відгук</span>
+              Дякуємо за <br />
+              <span>Відгук</span>
             </h2>
             <p className={styles.vacModalResultDescription}>
               Найближчим часом ми з вами разом будемо різати русню.
